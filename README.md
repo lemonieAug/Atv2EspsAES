@@ -1,12 +1,13 @@
 # AES-128 em dois ESP32 via UART
 
 Ambiente de trabalho organizado a partir do [enunciado](AES_Trabalho.pdf).
-O algoritmo e os documentos finais ainda precisam ser desenvolvidos.
-O teste UART inicial está preparado em `Codigo/src/main.cpp`, com ambientes
-`esp_a`/`esp_b` no `platformio.ini` da raiz. Consulte o
-[estado real da validação](Relatorio/validacao-laboratorio.md): o enlace UART
-bidirecional foi comprovado, com 1 PONG perdido em 1.000; AES ainda não foi
-implementado nem executado nas placas.
+O firmware está em `Codigo/src/`: AES-128 do zero em C, ECB, PKCS#7 e quadro
+binário `0xAA | n | 16·n` na UART2. O transmissor é `esp_a` e o receptor `esp_b`,
+no `platformio.ini` da raiz. Ele foi validado nas duas placas reais em 19/10/2026
+com as **matrículas fictícias do enunciado**; as matrículas reais, o relatório e a
+apresentação continuam PENDENTES. Consulte o
+[estado real da validação](Relatorio/validacao-laboratorio.md) e as
+[instruções do código](Codigo/README.md).
 
 | Local | Responsabilidade | Ponto de entrada |
 | --- | --- | --- |
@@ -39,25 +40,25 @@ comando de status dedicado nesta auditoria.
 - Endereço do repositório GitHub, não informado no PDF.
 
 Na sessão de laboratório foi utilizado o PlatformIO MCP instalado (Core 6.2.0)
-com espressif32 7.1.3. Os builds `esp_a` e `esp_b` passaram e os firmwares UART
-foram gravados nas duas placas. A é ESP32-D0WD-V3 v3.0 e B v3.1; o usuário
+com espressif32 7.1.3. Os builds `esp_a` e `esp_b` passaram e o firmware AES
+`aes128-ecb-v1` foi gravado nas duas placas. A é ESP32-D0WD-V3 v3.0 e B v3.1; o usuário
 confirmou módulos ESP32-WROOM-32. O loopback de A recebeu 999/1.000 ecos e o
 enlace entre placas recebeu 999/1.000 PONGs em A, com os 1.000 PINGs observados
-em B. A troca física foi comprovada, mas o firmware marcou a sequência como
-FAIL por uma perda no início. Veja as evidências e próximos passos em
+em B. Depois, com o firmware AES, B recuperou a mensagem cifrada por A em
+todos os envios, e rejeitou o padding quando 1 bit da chave de A foi invertido. Veja as evidências e próximos passos em
 [validação do laboratório](Relatorio/validacao-laboratorio.md). Mapeamento físico:
 A em USB location 3-3 e B em 3-1; os nomes `/dev/ttyUSB*` podem trocar ao
 reconectar.
 
 ## Ordem de execução
 
-1. Corrigir o descarte da primeira linha RX após boot e repetir o PING/PONG até
-   obter 1.000/1.000, preservando logs dos dois lados.
-2. Implementar AES e validar os vetores FIPS-197 no computador.
-3. Implementar PKCS#7, ECB e os dados derivados das matrículas quando disponíveis.
-4. Validar a comunicação criptografada nas placas reais.
-5. Registrar estados intermediários, avalanche e experimento ECB.
-6. Finalizar relatório e apresentação usando as evidências obtidas.
+1. ~~Implementar AES, PKCS#7, ECB e o quadro, e validar no PC e nas placas~~
+   (feito em 19/10 com as matrículas fictícias).
+2. Informar as matrículas reais em `Codigo/src/dupla.h` e gravar as duas placas.
+3. Registrar estados intermediários, avalanche e experimento ECB com os dados da dupla.
+4. Escrever `Apresentacao/README.md` e ensaiar a demonstração nos dois monitores.
+5. Finalizar relatório e apresentação usando as evidências obtidas.
+6. Opcional: gravar `diag_a`/`diag_b` e repetir o PING/PONG até 1.000/1.000.
 
 O relatório e o roteiro podem ser preparados em paralelo com o código; os
 resultados só devem ser preenchidos depois da validação correspondente.

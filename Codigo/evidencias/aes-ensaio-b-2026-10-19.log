@@ -1,0 +1,52 @@
+# Captura serial real: firmware aes128-ecb-v1, placa B (receptor), 2026-10-19 ~21:23-21:30 UTC
+# MCP session e288e120-94a2-4df0-aab9-08f79a917057; /dev/ttyUSB1; USB location 3-1; 115200 baud; MAC esptool d8:bc:38:fd:a8:80
+# Monitor aberto com B ja em execucao: boot/autoteste de B NAO capturados nesta sessao. A primeira linha e um resto parcial do buffer da porta.
+# Linhas extraidas sem alteracao das respostas serial_session_read (cursores 0, 10, 19, 28, 39, 47; total 48).
+0x1 (POWERON_RESET),boot:0x13 (S[B] QUADRO ERRO n=0 invalido; aguardando novo 0xAA
+[B] QUADRO 1 recebido marcador=0xaa n=2 bytes=34 descartados_antes=2202
+[B] CIFRADO_RECEBIDO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[B] CIFRADO_RECEBIDO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[B] DECIFRADO_COM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[B] DECIFRADO_COM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[B] PKCS7 status=valido removidos=11 bytes de valor 0x0b
+[B] MENSAGEM_RECUPERADA tamanho=21 texto="A:20231001;B:20231002"
+[B] MENSAGEM_RECUPERADA_HEX 413a32303233313030313b423a3230323331303032
+[B] COMPARACAO igual_a_mensagem_da_dupla=SIM
+[B] QUADRO 2 recebido marcador=0xaa n=2 bytes=34 descartados_antes=66
+[B] CIFRADO_RECEBIDO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[B] CIFRADO_RECEBIDO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[B] DECIFRADO_COM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[B] DECIFRADO_COM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[B] PKCS7 status=valido removidos=11 bytes de valor 0x0b
+[B] MENSAGEM_RECUPERADA tamanho=21 texto="A:20231001;B:20231002"
+[B] MENSAGEM_RECUPERADA_HEX 413a32303233313030313b423a3230323331303032
+[B] COMPARACAO igual_a_mensagem_da_dupla=SIM
+[B] QUADRO 3 recebido marcador=0xaa n=2 bytes=34 descartados_antes=80
+[B] CIFRADO_RECEBIDO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[B] CIFRADO_RECEBIDO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[B] DECIFRADO_COM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[B] DECIFRADO_COM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[B] PKCS7 status=valido removidos=11 bytes de valor 0x0b
+[B] MENSAGEM_RECUPERADA tamanho=21 texto="A:20231001;B:20231002"
+[B] MENSAGEM_RECUPERADA_HEX 413a32303233313030313b423a3230323331303032
+[B] COMPARACAO igual_a_mensagem_da_dupla=SIM
+[B] QUADRO 4 recebido marcador=0xaa n=3 bytes=50 descartados_antes=0
+[B] CIFRADO_RECEBIDO bloco 1: 9b95cf667a30c36ea8b0b0d2317d9b23
+[B] CIFRADO_RECEBIDO bloco 2: 90fc2be94f680e141a5122e0381ad254
+[B] CIFRADO_RECEBIDO bloco 3: cef16e18c35074eca209b36f9e617de0
+[B] DECIFRADO_COM_PKCS7 bloco 1: 4d656e736167656d206e6f7661206461
+[B] DECIFRADO_COM_PKCS7 bloco 2: 20617267756963616f20283336206279
+[B] DECIFRADO_COM_PKCS7 bloco 3: 746573290c0c0c0c0c0c0c0c0c0c0c0c
+[B] PKCS7 status=valido removidos=12 bytes de valor 0x0c
+[B] MENSAGEM_RECUPERADA tamanho=36 texto="Mensagem nova da arguicao (36 bytes)"
+[B] MENSAGEM_RECUPERADA_HEX 4d656e736167656d206e6f766120646120617267756963616f2028333620627974657329
+[B] COMPARACAO igual_a_mensagem_da_dupla=NAO
+[B] QUADRO 5 recebido marcador=0xaa n=3 bytes=50 descartados_antes=0
+[B] CIFRADO_RECEBIDO bloco 1: 0c7bdc38066bd04fae391f1e56e66d04
+[B] CIFRADO_RECEBIDO bloco 2: f689548dc3f33b6ecfa61968c076923c
+[B] CIFRADO_RECEBIDO bloco 3: b553651f095f203183274b7704dffe8f
+[B] DECIFRADO_COM_PKCS7 bloco 1: 4af88afaccd6ebb90a15e7162a70319b
+[B] DECIFRADO_COM_PKCS7 bloco 2: f7b4e935a6846b7f47b62ae718312c4f
+[B] DECIFRADO_COM_PKCS7 bloco 3: 854ab4880cd8d1cb402eb6d9a0c3e4b0
+[B] PKCS7 status=INVALIDO motivo=valor_de_preenchimento_invalido; mensagem descartada
+[B] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0

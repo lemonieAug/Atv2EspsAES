@@ -1,6 +1,46 @@
-# Validação de laboratório — UART antes de AES
+# Validação de laboratório — UART e AES nas placas
 
 Data: 18/10/2026 (America/Cuiaba). Evidências do MCP usam UTC.
+
+## Firmware AES nas duas placas — 19/10/2026, ~21:17-21:35 UTC
+
+Execução física com o firmware `aes128-ecb-v1` (commit `434a01f`) e as
+**matrículas fictícias do enunciado** (A=20231001, B=20231002). As matrículas reais
+continuam PENDENTES, e os registros abaixo validam o procedimento, não os dados
+da dupla. Resumo completo em
+[aes-ensaio-2026-10-19.json](../Codigo/evidencias/aes-ensaio-2026-10-19.json).
+
+- **Testes no computador PASS:** 66/66 verificações do mesmo código C, incluindo
+  os estados da rodada 1 do FIPS-197 Apêndice B
+  ([log](../Codigo/evidencias/testes-host-2026-10-19.log)). Execução no PC.
+- **Build e gravação PASS:** `esp_a` e `esp_b` compilados pelo MCP e gravados
+  individualmente com aprovação. O esptool verificou os hashes e o MAC de cada
+  placa (A `a8:42:e3:8f:a9:d0` em `3-3`, B `d8:bc:38:fd:a8:80` em `3-1`).
+- **Autoteste nas placas PASS:** 11/11 em A e 11/11 em B (FIPS-197 B e C.1,
+  exemplo fictício e três blocos ECB).
+- **Transmissão A→B PASS:** B recuperou a mensagem `A:20231001;B:20231002` em três
+  quadros de 34 bytes (`AA 02 ...`) com cifrado idêntico ao enviado e ao do PDF.
+  Recuperou também uma mensagem nova de 36 bytes (`MSG`, 3 blocos, PKCS#7 12×`0c`)
+  e o reenvio pelo botão BOOT. O ruído na TX2 de A durante gravação e boot foi
+  descartado pela sincronização no `0xAA` (até 2.202 bytes, inclusive um `n=0`
+  rejeitado).
+- **Chave errada:** com `BITCHAVE 0` em A (`0x32`→`0xb2`), B recebeu outro
+  cifrado e rejeitou o padding (`valor_de_preenchimento_invalido`).
+- **Etapa 3, com os dados fictícios:** chave de rodada 1 `373411f4060421c5343413f6050423c4`;
+  estados do bloco 1 `730a0003…`, `8f67637b…`, `8f7b0163…`, `ea195336…` e
+  `dd2d42c2…`. Avalanche: bit 0 da chave alterou 131/256 bits (51,17%); bit 0 da
+  mensagem alterou 61/128 no bloco 1 e 0 no bloco 2, efeito do ECB.
+- **Experimento ECB da página 2 PASS** nas duas placas; bloco 3 = bloco 1.
+- O OpenSSL, como referência externa, reproduziu os cifrados da mensagem de 36
+  bytes com a chave correta e com a chave alterada.
+
+Logs: [A](../Codigo/evidencias/aes-ensaio-a-2026-10-19.log),
+[B](../Codigo/evidencias/aes-ensaio-b-2026-10-19.log),
+[boot de B](../Codigo/evidencias/aes-ensaio-b-boot-2026-10-19.log) e
+[botão de A](../Codigo/evidencias/aes-ensaio-a-botao-2026-10-19.log). Os monitores
+mostram registros dos firmwares, não uma captura elétrica independente da UART2.
+**Pendente:** repetir com as matrículas reais e registrar a Etapa 3 da dupla. O
+diagnóstico PING/PONG corrigido (`diag_a`/`diag_b`) foi compilado, mas não gravado.
 
 ## Estado consolidado após retomada — 19/10/2026
 
@@ -319,7 +359,7 @@ identificação e o fluxo de build/upload ainda dependem das permissões do host
 ## Implementação e compilação
 
 [platformio.ini](../platformio.ini) define `esp_a` e `esp_b`, portas explícitas
-e [Codigo/src/main.cpp](../Codigo/src/main.cpp) contém somente PING/PONG.
+e [Codigo/src/diag/uart_diag.cpp](../Codigo/src/diag/uart_diag.cpp) (antes `Codigo/src/main.cpp`) contém o diagnóstico PING/PONG.
 A envia 1.000 mensagens `PING A <id-hex-da-execução> <sequência>`; B responde
 `PONG B <mesmo-id> <mesma-sequência>`. O identificador e a sequência são conferidos
 em A; respostas inesperadas, perdas e erros de recepção são contabilizados.

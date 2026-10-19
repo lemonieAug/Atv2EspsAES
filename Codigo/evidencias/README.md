@@ -1,8 +1,9 @@
 # Evidências de execução
 
 Há evidências reais de identificação dos chips, builds, gravações e UART nas
-placas. O enlace físico bidirecional foi demonstrado, com uma resposta perdida
-em 1.000; AES ainda não foi implementado. Consulte o
+placas. O enlace físico bidirecional foi demonstrado e o firmware AES foi
+validado nas duas placas com as matrículas fictícias do enunciado; os dados
+reais da dupla continuam PENDENTES. Consulte o
 [registro de laboratório](../../Relatorio/validacao-laboratorio.md).
 
 - `preflight-2026-10-18.json`: respostas reais do MCP e correção dos papéis A/B.
@@ -74,6 +75,19 @@ em 1.000; AES ainda não foi implementado. Consulte o
   ainda sob investigação), 0 erros durante RUN, RTT
   5.503/5.554,28/6.583 µs (mín./média/máx.). O firmware imprime `status=FAIL` por
   essa única perda.
+- `testes-host-2026-10-19.log`: testes **no computador** do código C de
+  `Codigo/src` (66/66 PASS) e conferência externa do exemplo com OpenSSL.
+  Não é execução nas placas.
+- `build-aes-esp_a-2026-10-19.log`, `build-aes-esp_b-2026-10-19.log`,
+  `upload-aes-esp_a-2026-10-19.log` e `upload-aes-esp_b-2026-10-19.log`: build e
+  gravação reais do firmware `aes128-ecb-v1` pelo MCP, com hashes verificados
+  pelo esptool e MAC de cada placa.
+- `aes-ensaio-2026-10-19.json` e os logs `aes-ensaio-*`: primeiro ensaio AES nas
+  duas placas (~21:23-21:35 UTC), **com as matrículas fictícias do enunciado**.
+  Autoteste 11/11 em A e B; registros da Etapa 3, avalanche e experimento ECB em
+  A; mensagem da dupla, mensagem nova de 36 bytes e reenvio pelo botão BOOT
+  recuperados em B, com cifrados idênticos aos enviados; com 1 bit da chave
+  invertido em A, B rejeitou o PKCS#7.
 
 Ao adicionar resultados, informe data, versão do código, ferramenta e comando
 utilizados, dados de entrada e se a execução ocorreu no computador ou nas placas.

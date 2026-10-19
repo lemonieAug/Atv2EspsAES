@@ -25,25 +25,37 @@ Marcar como concluído somente quando houver implementação ou evidência verif
       `5f7a5b57`: A→B 1.000/1.000, B→A 999/1.000; seq 1 ausente em A após RX_ERROR no boot;
       `Codigo/evidencias/uart-pingpong-2026-10-19.json`).
 - [ ] Repetir a sequência UART após tratar o `RX_ERROR`/descarte no boot e obter
-      1.000/1.000 PONGs, com resumo PASS e evidência nos dois monitores.
+      1.000/1.000 PONGs, com resumo PASS e evidência nos dois monitores. A correção
+      (limpar RX no `RUN`) está em `diag_a`/`diag_b`, compilada mas não gravada;
+      o enlace já foi exercido pelo firmware AES (ver abaixo).
 - [x] Diagnosticar o loopback local GPIO17→GPIO16 de A (após esclarecer a
       associação incerta dos jumpers anteriores, com TX2→RX2 PASS em 19/10
       ~01:25 UTC: 999/1.000 ecos,
       0 erros; ver `Codigo/evidencias/uart-loopback-a-pass-2026-10-19.json`).
-- [ ] Implementar SubBytes, ShiftRows, MixColumns e AddRoundKey.
-- [ ] Implementar expansão de chave AES-128 e decifragem.
-- [ ] Validar os vetores FIPS-197 B e C.1 e a recuperação do texto claro.
-- [ ] Implementar derivação da chave e mensagem com as matrículas.
-- [ ] Implementar PKCS#7, sua validação e remoção, e ECB.
-- [ ] Conferir o exemplo fictício do enunciado.
-- [ ] Implementar o transmissor com quadro binário AA | n | 16*n bytes.
-- [ ] Implementar receptor com sincronização, tempo limite e validação do quadro.
-- [ ] Validar transmissão e recuperação da mensagem nas duas placas reais.
-- [ ] Capturar chave, mensagem preenchida, cifrado e chaves de rodada 0 e 1.
-- [ ] Capturar os cinco estados solicitados do primeiro bloco.
-- [ ] Executar avalanche e registrar contagem e percentual de bits alterados.
-- [ ] Executar os três blocos do experimento ECB da página 2.
-- [ ] Comentar e revisar o código do transmissor e receptor.
+- [x] Implementar SubBytes, ShiftRows, MixColumns e AddRoundKey (`Codigo/src/aes128.c`).
+- [x] Implementar expansão de chave AES-128 e decifragem.
+- [x] Validar os vetores FIPS-197 B e C.1 e a recuperação do texto claro: 66/66 testes
+      no PC (`Codigo/evidencias/testes-host-2026-10-19.log`) e autoteste 11/11 em A e B
+      (`Codigo/evidencias/aes-ensaio-2026-10-19.json`).
+- [x] Implementar derivação da chave e mensagem com as matrículas (`Codigo/src/dupla.c`;
+      valores em `Codigo/src/dupla.h`, hoje com as matrículas fictícias).
+- [x] Implementar PKCS#7, sua validação e remoção, e ECB.
+- [x] Conferir o exemplo fictício do enunciado (PC e nas duas placas).
+- [x] Implementar o transmissor com quadro binário AA | n | 16*n bytes (`transmissor.cpp`).
+- [x] Implementar receptor com sincronização, tempo limite e validação do quadro
+      (`receptor.cpp`, `quadro.c`).
+- [x] Validar transmissão e recuperação da mensagem nas duas placas reais (19/10 ~21:23 UTC,
+      com as matrículas fictícias: mensagem da dupla, mensagem nova de 36 bytes, chave
+      com 1 bit invertido rejeitada, reenvio pelo botão BOOT). Repetir com as reais.
+- [ ] Capturar chave, mensagem preenchida, cifrado e chaves de rodada 0 e 1 — procedimento
+      validado nas placas com dados fictícios; PENDENTE com as matrículas reais.
+- [ ] Capturar os cinco estados solicitados do primeiro bloco — idem; PENDENTE dados reais.
+- [ ] Executar avalanche e registrar contagem e percentual de bits alterados — idem
+      (fictício: chave bit 0 → 131/256, 51,17%); PENDENTE dados reais.
+- [x] Executar os três blocos do experimento ECB da página 2 (chave do exemplo, nas duas
+      placas; bloco 3 = bloco 1).
+- [ ] Comentar e revisar o código do transmissor e receptor — código comentado; falta a
+      revisão pela dupla.
 
 ## Entrega
 

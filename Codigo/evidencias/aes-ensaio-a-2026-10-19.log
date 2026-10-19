@@ -1,0 +1,193 @@
+# Captura serial real: firmware aes128-ecb-v1, placa A (transmissor), 2026-10-19 ~21:23-21:30 UTC
+# MCP session 319fd03e-eb76-4091-b136-c03e2be46946; /dev/ttyUSB0; USB location 3-3; 115200 baud; MAC esptool a8:42:e3:8f:a9:d0
+# Ligacao: A TX2/17 -> B RX2/16, B TX2/17 -> A RX2/16, GND comum. Matriculas FICTICIAS do enunciado (dados reais PENDENTES).
+# Dois boots capturados (EN). Comandos USB enviados via MCP com aprovacao: MSG ..., BITCHAVE 0, ENVIAR, CHAVERESET.
+# Linhas extraidas sem alteracao das respostas serial_session_read (cursores 0, 80, 173, 174; total 188).
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+[A] BOOT firmware=aes128-ecb-v1 papel=transmissor chip=ESP32-D0WD-V3 revisao=3 efuse_mac=d0a98fe342a8
+[A] AVISO matriculas=FICTICIAS_DO_ENUNCIADO (A=20231001 B=20231002); dados reais da dupla PENDENTES em Codigo/src/dupla.h
+[A] AUTOTESTE PASS FIPS-197 Apendice B_cifrar obtido=3925841d02dc09fbdc118597196a0b32
+[A] AUTOTESTE PASS FIPS-197 Apendice B_decifrar obtido=3243f6a8885a308d313198a2e0370734
+[A] AUTOTESTE PASS FIPS-197 Apendice C.1_cifrar obtido=69c4e0d86a7b0430d8cdb78070b4c55a
+[A] AUTOTESTE PASS FIPS-197 Apendice C.1_decifrar obtido=00112233445566778899aabbccddeeff
+[A] AUTOTESTE PASS exemplo_ficticio_chave obtido=32303233313030313230323331303032
+[A] AUTOTESTE PASS exemplo_ficticio_pkcs7 obtido=413a32303233313030313b423a32303233313030320b0b0b0b0b0b0b0b0b0b0b
+[A] AUTOTESTE PASS exemplo_ficticio_cifrado obtido=3a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+[A] AUTOTESTE PASS exemplo_ficticio_decifrar_e_remover_pkcs7
+[A] AUTOTESTE PASS ecb_pdf_bloco_1 obtido=e0c22a6f02664f487dc9528642203dec
+[A] AUTOTESTE PASS ecb_pdf_bloco_2 obtido=2b4d065ea65478b60696616244cd5070
+[A] AUTOTESTE PASS ecb_pdf_bloco_3 obtido=e0c22a6f02664f487dc9528642203dec
+[A] AUTOTESTE resumo status=PASS aprovados=11/11
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_DA_DUPLA tamanho=21 texto="A:20231001;B:20231002"
+[A] UART2_PRONTA rx=16 tx=17 baud=115200 formato=8N1 quadro=AA|n|16n
+[A] ETAPA3 inicio
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] ETAPA3 MENSAGEM tamanho=21 texto="A:20231001;B:20231002"
+[A] ETAPA3 PKCS7 tamanho_final=32 acrescentados=11 valor=0x0b
+[A] ETAPA3 MENSAGEM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[A] ETAPA3 MENSAGEM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[A] ETAPA3 CIFRADO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] ETAPA3 CIFRADO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] ETAPA3 CHAVE_RODADA_0 32303233313030313230323331303032
+[A] ETAPA3 CHAVE_RODADA_1 373411f4060421c5343413f6050423c4
+[A] ETAPA3 BLOCO1 entrada 413a32303233313030313b423a323032
+[A] ETAPA3 BLOCO1 (1)_AddRoundKey_inicial_chave0 730a000303030101020109710b020000
+[A] ETAPA3 BLOCO1 (2)_SubBytes 8f67637b7b7b7c7c777c01a32b776363
+[A] ETAPA3 BLOCO1 (3)_ShiftRows 8f7b01637b7c637b7777637c2b677ca3
+[A] ETAPA3 BLOCO1 (4)_MixColumns ea1953366a5d4c646840427520c24a3b
+[A] ETAPA3 BLOCO1 (5)_AddRoundKey_chave1 dd2d42c26c596da15c74518325c669ff
+[A] ETAPA3 fim
+[A] AVALANCHE alvo=chave bit=0 (byte 0, mascara 0x80)
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] AVALANCHE CIFRADO_ALTERADO bloco 1: 3e595895369ae1236bf022f157210712
+[A] AVALANCHE CIFRADO_ALTERADO bloco 2: 256f176506fd144bdd5f6434fc988581
+[A] AVALANCHE bloco 1: 65/128 bits diferentes (50.78%)
+[A] AVALANCHE bloco 2: 66/128 bits diferentes (51.56%)
+[A] AVALANCHE total: 131/256 bits diferentes (51.17%)
+[A] AVALANCHE alvo=mensagem bit=0 (byte 0, mascara 0x80)
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] AVALANCHE CIFRADO_ALTERADO bloco 1: bd90008301a2897838d899d836b7845a
+[A] AVALANCHE CIFRADO_ALTERADO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] AVALANCHE bloco 1: 61/128 bits diferentes (47.66%)
+[A] AVALANCHE bloco 2: 0/128 bits diferentes (0.00%)
+[A] AVALANCHE total: 61/256 bits diferentes (23.83%)
+[A] ECB chave_do_exemplo 32303233313030313230323331303032
+[A] ECB bloco 1 claro="LIGAR LED VERDE." cifrado=e0c22a6f02664f487dc9528642203dec esperado_pdf=SIM
+[A] ECB bloco 2 claro="DESLIGAR LED    " cifrado=2b4d065ea65478b60696616244cd5070 esperado_pdf=SIM
+[A] ECB bloco 3 claro="LIGAR LED VERDE." cifrado=e0c22a6f02664f487dc9528642203dec esperado_pdf=SIM
+[A] ECB bloco3_igual_bloco1=SIM (blocos claros iguais -> cifrados iguais)
+[A] AJUDA ENVIAR | MSG <texto> | MSGRESET | MENSAGEM | AJUDA | botao BOOT = ENVIAR
+[A] AJUDA AUTOTESTE | ETAPA3 | ECB | CHAVE | BITCHAVE <0..127> | CHAVERESET
+[A] AJUDA AVALANCHE CHAVE <0..127> | AVALANCHE MSG <bit da mensagem da dupla>
+[A] PRONTO envio automatico em 3000 ms
+[A] ENVIO 1 inicio
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_ORIGINAL tamanho=21 texto="A:20231001;B:20231002"
+[A] PKCS7 acrescentados=11 bytes de valor 0x0b tamanho_final=32
+[A] MENSAGEM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[A] MENSAGEM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[A] CIFRADO_ENVIADO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] CIFRADO_ENVIADO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] QUADRO_TX aa023a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+[A] ENVIO 1 fim bytes=34 escritos=34 blocos=2 marcador=0xaa
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+[A] BOOT firmware=aes128-ecb-v1 papel=transmissor chip=ESP32-D0WD-V3 revisao=3 efuse_mac=d0a98fe342a8
+[A] AVISO matriculas=FICTICIAS_DO_ENUNCIADO (A=20231001 B=20231002); dados reais da dupla PENDENTES em Codigo/src/dupla.h
+[A] AUTOTESTE PASS FIPS-197 Apendice B_cifrar obtido=3925841d02dc09fbdc118597196a0b32
+[A] AUTOTESTE PASS FIPS-197 Apendice B_decifrar obtido=3243f6a8885a308d313198a2e0370734
+[A] AUTOTESTE PASS FIPS-197 Apendice C.1_cifrar obtido=69c4e0d86a7b0430d8cdb78070b4c55a
+[A] AUTOTESTE PASS FIPS-197 Apendice C.1_decifrar obtido=00112233445566778899aabbccddeeff
+[A] AUTOTESTE PASS exemplo_ficticio_chave obtido=32303233313030313230323331303032
+[A] AUTOTESTE PASS exemplo_ficticio_pkcs7 obtido=413a32303233313030313b423a32303233313030320b0b0b0b0b0b0b0b0b0b0b
+[A] AUTOTESTE PASS exemplo_ficticio_cifrado obtido=3a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+[A] AUTOTESTE PASS exemplo_ficticio_decifrar_e_remover_pkcs7
+[A] AUTOTESTE PASS ecb_pdf_bloco_1 obtido=e0c22a6f02664f487dc9528642203dec
+[A] AUTOTESTE PASS ecb_pdf_bloco_2 obtido=2b4d065ea65478b60696616244cd5070
+[A] AUTOTESTE PASS ecb_pdf_bloco_3 obtido=e0c22a6f02664f487dc9528642203dec
+[A] AUTOTESTE resumo status=PASS aprovados=11/11
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_DA_DUPLA tamanho=21 texto="A:20231001;B:20231002"
+[A] UART2_PRONTA rx=16 tx=17 baud=115200 formato=8N1 quadro=AA|n|16n
+[A] ETAPA3 inicio
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] ETAPA3 MENSAGEM tamanho=21 texto="A:20231001;B:20231002"
+[A] ETAPA3 PKCS7 tamanho_final=32 acrescentados=11 valor=0x0b
+[A] ETAPA3 MENSAGEM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[A] ETAPA3 MENSAGEM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[A] ETAPA3 CIFRADO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] ETAPA3 CIFRADO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] ETAPA3 CHAVE_RODADA_0 32303233313030313230323331303032
+[A] ETAPA3 CHAVE_RODADA_1 373411f4060421c5343413f6050423c4
+[A] ETAPA3 BLOCO1 entrada 413a32303233313030313b423a323032
+[A] ETAPA3 BLOCO1 (1)_AddRoundKey_inicial_chave0 730a000303030101020109710b020000
+[A] ETAPA3 BLOCO1 (2)_SubBytes 8f67637b7b7b7c7c777c01a32b776363
+[A] ETAPA3 BLOCO1 (3)_ShiftRows 8f7b01637b7c637b7777637c2b677ca3
+[A] ETAPA3 BLOCO1 (4)_MixColumns ea1953366a5d4c646840427520c24a3b
+[A] ETAPA3 BLOCO1 (5)_AddRoundKey_chave1 dd2d42c26c596da15c74518325c669ff
+[A] ETAPA3 fim
+[A] AVALANCHE alvo=chave bit=0 (byte 0, mascara 0x80)
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] AVALANCHE CIFRADO_ALTERADO bloco 1: 3e595895369ae1236bf022f157210712
+[A] AVALANCHE CIFRADO_ALTERADO bloco 2: 256f176506fd144bdd5f6434fc988581
+[A] AVALANCHE bloco 1: 65/128 bits diferentes (50.78%)
+[A] AVALANCHE bloco 2: 66/128 bits diferentes (51.56%)
+[A] AVALANCHE total: 131/256 bits diferentes (51.17%)
+[A] AVALANCHE alvo=mensagem bit=0 (byte 0, mascara 0x80)
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] AVALANCHE CIFRADO_ALTERADO bloco 1: bd90008301a2897838d899d836b7845a
+[A] AVALANCHE CIFRADO_ALTERADO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] AVALANCHE bloco 1: 61/128 bits diferentes (47.66%)
+[A] AVALANCHE bloco 2: 0/128 bits diferentes (0.00%)
+[A] AVALANCHE total: 61/256 bits diferentes (23.83%)
+[A] ECB chave_do_exemplo 32303233313030313230323331303032
+[A] ECB bloco 1 claro="LIGAR LED VERDE." cifrado=e0c22a6f02664f487dc9528642203dec esperado_pdf=SIM
+[A] ECB bloco 2 claro="DESLIGAR LED    " cifrado=2b4d065ea65478b60696616244cd5070 esperado_pdf=SIM
+[A] ECB bloco 3 claro="LIGAR LED VERDE." cifrado=e0c22a6f02664f487dc9528642203dec esperado_pdf=SIM
+[A] ECB bloco3_igual_bloco1=SIM (blocos claros iguais -> cifrados iguais)
+[A] AJUDA ENVIAR | MSG <texto> | MSGRESET | MENSAGEM | AJUDA | botao BOOT = ENVIAR
+[A] AJUDA AUTOTESTE | ETAPA3 | ECB | CHAVE | BITCHAVE <0..127> | CHAVERESET
+[A] AJUDA AVALANCHE CHAVE <0..127> | AVALANCHE MSG <bit da mensagem da dupla>
+[A] PRONTO envio automatico em 3000 ms
+[A] ENVIO 1 inicio
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_ORIGINAL tamanho=21 texto="A:20231001;B:20231002"
+[A] PKCS7 acrescentados=11 bytes de valor 0x0b tamanho_final=32
+[A] MENSAGEM_PKCS7 bloco 1: 413a32303233313030313b423a323032
+[A] MENSAGEM_PKCS7 bloco 2: 33313030320b0b0b0b0b0b0b0b0b0b0b
+[A] CIFRADO_ENVIADO bloco 1: 3a3784991ab0acaa88d5fd94cb7b74ad
+[A] CIFRADO_ENVIADO bloco 2: cbea1d9e3e1f39da47111cf69064b166
+[A] QUADRO_TX aa023a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+[A] ENVIO 1 fim bytes=34 escritos=34 blocos=2 marcador=0xaa
+[A] MSG mensagem nova definida; enviando
+[A] ENVIO 2 inicio
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_ORIGINAL tamanho=36 texto="Mensagem nova da arguicao (36 bytes)"
+[A] PKCS7 acrescentados=12 bytes de valor 0x0c tamanho_final=48
+[A] MENSAGEM_PKCS7 bloco 1: 4d656e736167656d206e6f7661206461
+[A] MENSAGEM_PKCS7 bloco 2: 20617267756963616f20283336206279
+[A] MENSAGEM_PKCS7 bloco 3: 746573290c0c0c0c0c0c0c0c0c0c0c0c
+[A] CIFRADO_ENVIADO bloco 1: 9b95cf667a30c36ea8b0b0d2317d9b23
+[A] CIFRADO_ENVIADO bloco 2: 90fc2be94f680e141a5122e0381ad254
+[A] CIFRADO_ENVIADO bloco 3: cef16e18c35074eca209b36f9e617de0
+[A] QUADRO_TX aa039b95cf667a30c36ea8b0b0d2317d9b2390fc2be94f680e141a5122e0381ad254cef16e18c35074eca209b36f9e617de0
+[A] ENVIO 2 fim bytes=50 escritos=50 blocos=3 marcador=0xaa
+[A] BITCHAVE bit=0 invertido na chave desta placa
+[A] CHAVE ascii="\xb2023100120231002" hex=b2303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=1
+[A] ENVIO 3 inicio
+[A] CHAVE ascii="\xb2023100120231002" hex=b2303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=1
+[A] MENSAGEM_ORIGINAL tamanho=36 texto="Mensagem nova da arguicao (36 bytes)"
+[A] PKCS7 acrescentados=12 bytes de valor 0x0c tamanho_final=48
+[A] MENSAGEM_PKCS7 bloco 1: 4d656e736167656d206e6f7661206461
+[A] MENSAGEM_PKCS7 bloco 2: 20617267756963616f20283336206279
+[A] MENSAGEM_PKCS7 bloco 3: 746573290c0c0c0c0c0c0c0c0c0c0c0c
+[A] CIFRADO_ENVIADO bloco 1: 0c7bdc38066bd04fae391f1e56e66d04
+[A] CIFRADO_ENVIADO bloco 2: f689548dc3f33b6ecfa61968c076923c
+[A] CIFRADO_ENVIADO bloco 3: b553651f095f203183274b7704dffe8f
+[A] QUADRO_TX aa030c7bdc38066bd04fae391f1e56e66d04f689548dc3f33b6ecfa61968c076923cb553651f095f203183274b7704dffe8f
+[A] ENVIO 3 fim bytes=50 escritos=50 blocos=3 marcador=0xaa
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0

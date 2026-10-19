@@ -1,0 +1,67 @@
+{
+  "data": "2026-10-19",
+  "horario_utc_aproximado": "21:17-21:35",
+  "execucao": "física, nas duas placas reais",
+  "firmware": "aes128-ecb-v1 (Codigo/src, commit 434a01f)",
+  "dados_da_dupla": "FICTÍCIOS do enunciado (A=20231001, B=20231002); matrículas reais PENDENTES. Os registros da Etapa 3 abaixo valem como validação do procedimento, não como dados da dupla.",
+  "ligacao": "A TX2/GPIO17 -> B RX2/GPIO16; B TX2/GPIO17 -> A RX2/GPIO16; GND comum (informada pelo usuário)",
+  "uart": "UART2, 115200 bps, 8N1, quadro binário AA | n | 16n",
+  "build": {
+    "esp_a": {"resultado": "SUCCESS", "ram_bytes": 25468, "flash_bytes": 281425, "firmware_sha256": "29c8403e1fb81ad7c2607499fecff7e8a406889c75e6c16a8e55f1c2762f3855", "log": "build-aes-esp_a-2026-10-19.log"},
+    "esp_b": {"resultado": "SUCCESS", "ram_bytes": 32644, "flash_bytes": 279597, "firmware_sha256": "f87d63544a80a895d847badd5c33ccb885e8f95462a77045beacae66bd081fa2", "log": "build-aes-esp_b-2026-10-19.log"},
+    "diag_a_diag_b": "SUCCESS (compilados, não gravados)"
+  },
+  "gravacao": {
+    "B": {"porta": "/dev/ttyUSB1", "usb_location": "3-1", "mac_esptool": "d8:bc:38:fd:a8:80", "aprovacao": "approval-b136e8cd-3448-40f0-a4bc-8c0f434b3315", "hashes_verificados": true, "log": "upload-aes-esp_b-2026-10-19.log"},
+    "A": {"porta": "/dev/ttyUSB0", "usb_location": "3-3", "mac_esptool": "a8:42:e3:8f:a9:d0", "aprovacao": "approval-08961b74-fcdd-449c-b122-115b654b2e9d", "hashes_verificados": true, "log": "upload-aes-esp_a-2026-10-19.log"}
+  },
+  "autoteste_nas_placas": {
+    "A": "11/11 PASS (FIPS-197 B e C.1 cifrar/decifrar, exemplo fictício chave/PKCS#7/cifrado/decifrar, 3 blocos ECB)",
+    "B": "11/11 PASS (mesmos itens)",
+    "logs": ["aes-ensaio-a-2026-10-19.log", "aes-ensaio-b-boot-2026-10-19.log"]
+  },
+  "etapa3_com_dados_ficticios": {
+    "chave_hex": "32303233313030313230323331303032",
+    "mensagem": "A:20231001;B:20231002",
+    "mensagem_pkcs7_blocos": ["413a32303233313030313b423a323032", "33313030320b0b0b0b0b0b0b0b0b0b0b"],
+    "cifrado_blocos": ["3a3784991ab0acaa88d5fd94cb7b74ad", "cbea1d9e3e1f39da47111cf69064b166"],
+    "chave_rodada_0": "32303233313030313230323331303032",
+    "chave_rodada_1": "373411f4060421c5343413f6050423c4",
+    "bloco1_rodada1": {
+      "1_addroundkey_inicial": "730a000303030101020109710b020000",
+      "2_subbytes": "8f67637b7b7b7c7c777c01a32b776363",
+      "3_shiftrows": "8f7b01637b7c637b7777637c2b677ca3",
+      "4_mixcolumns": "ea1953366a5d4c646840427520c24a3b",
+      "5_addroundkey_chave1": "dd2d42c26c596da15c74518325c669ff"
+    },
+    "avalanche": {
+      "chave_bit0": {"bloco1": "65/128", "bloco2": "66/128", "total": "131/256 (51.17%)"},
+      "mensagem_bit0": {"bloco1": "61/128", "bloco2": "0/128", "total": "61/256 (23.83%)", "nota": "em ECB só o bloco que contém o bit muda; no bloco afetado 47.66%"}
+    },
+    "conferencia": "Cifrado igual ao do PDF; primeira palavra da chave de rodada 1 conferida manualmente; estados vêm da mesma função validada no PC com os estados da rodada 1 do FIPS-197 Apêndice B."
+  },
+  "experimento_ecb_pagina2": "3 blocos iguais aos esperados do PDF; bloco 3 = bloco 1 (A e B)",
+  "transmissoes": [
+    {"quadro_b": 1, "origem": "envio automático de A após a gravação (log de A não capturado)", "n": 2, "descartados_antes": 2202, "resultado": "mensagem da dupla recuperada", "nota": "ruído na TX2 de A durante a gravação, inclusive um falso início com n=0 rejeitado"},
+    {"quadro_b": 2, "origem": "A ENVIO 1 após EN", "n": 2, "descartados_antes": 66, "resultado": "mensagem da dupla recuperada, cifrado idêntico"},
+    {"quadro_b": 3, "origem": "A ENVIO 1 após novo boot de A", "n": 2, "descartados_antes": 80, "resultado": "mensagem da dupla recuperada, cifrado idêntico"},
+    {"quadro_b": 4, "origem": "A ENVIO 2, comando MSG (36 bytes)", "n": 3, "descartados_antes": 0, "resultado": "\"Mensagem nova da arguicao (36 bytes)\" recuperada; PKCS#7 12 x 0x0c"},
+    {"quadro_b": 5, "origem": "A ENVIO 3 após BITCHAVE 0 (chave b230...)", "n": 3, "descartados_antes": 0, "resultado": "PKCS#7 INVALIDO em B (valor_de_preenchimento_invalido); mensagem descartada"},
+    {"quadro_b": "1 (após reboot de B)", "origem": "A ENVIO 4 pelo botão BOOT, chave restaurada", "n": 3, "descartados_antes": 0, "resultado": "mensagem de 36 bytes recuperada, cifrado idêntico ao ENVIO 2"}
+  ],
+  "conferencia_openssl": "OpenSSL 3.6.5 (referência externa, fora do código entregue) reproduz o cifrado da mensagem de 36 bytes com a chave da dupla e com a chave de bit 0 invertido.",
+  "aprovacoes_de_escrita_usadas": ["approval-13369580-929f-4052-9e18-ec24d81313d9 (MSG)", "approval-41d56279-09a0-4152-bfc3-57656016cb8d (BITCHAVE 0)", "approval-53374469-086e-4ec2-9f6a-f980d14f2614 (ENVIAR)", "approval-7f801d2f-228f-476d-8b61-54c88102a5a5 (CHAVERESET)"],
+  "logs": ["aes-ensaio-a-2026-10-19.log", "aes-ensaio-b-2026-10-19.log", "aes-ensaio-b-boot-2026-10-19.log", "aes-ensaio-a-botao-2026-10-19.log"],
+  "sha256": {
+    "aes-ensaio-a-2026-10-19.log": "1355d331617f8eec2dc8b6fbfb10af6a8ecf091382accc0e60a1af63dde3e11c",
+    "aes-ensaio-b-2026-10-19.log": "ca9bb108c3ef386b787decafa9a527a0023431be4472ed2fbe1574a7087f08e3",
+    "aes-ensaio-b-boot-2026-10-19.log": "4d31a041023b1d1e235b587de7e236f9dbed4f43d595a0f19058c235bc8421cc",
+    "aes-ensaio-a-botao-2026-10-19.log": "fece61c3a00a8b8bf911b7cfa9d112ac8022597c35bdf41af50b154d2a989641",
+    "upload-aes-esp_a-2026-10-19.log": "1dec1f1f0317005c0ff30570eaaf02e7e0032f1df71e3d9994c4f7b5d2e75b34",
+    "upload-aes-esp_b-2026-10-19.log": "ff19be8ffff6a1a651422f1a4ed884c8bd060e7981fc58192fbd2ec5798e9096",
+    "build-aes-esp_a-2026-10-19.log": "add9ba32e29670eaf7081dfccddb7ab1327e90953ffec11eab4a69e683251f78",
+    "build-aes-esp_b-2026-10-19.log": "ffd5d41a8c57d11017be24f9efdf74f523c76899efbb339c847c688404aa28d5",
+    "testes-host-2026-10-19.log": "cecd027be39984632901827a944524d99f55fb01ffacb0fb1a4584414fa0e8cc"
+  },
+  "limites": "Matrículas fictícias. Logs extraídos das respostas do MCP desta sessão. No primeiro par de capturas o boot de B e o primeiro envio de A ficaram fora; foram cobertos pelas capturas seguintes. Os monitores mostram registros dos firmwares, não uma captura elétrica independente da UART2. Diagnóstico PING/PONG 1.000/1.000 com a correção não foi regravado nem executado."
+}

@@ -1,0 +1,16 @@
+# Captura serial real: aes128-ecb-v1, placa A (transmissor), 2026-10-19 ~21:31-21:35 UTC; reenvio pelo botao BOOT (GPIO0)
+# MCP session d31fc9f5-4a59-41fb-a90f-e0ee423b7231; /dev/ttyUSB0; USB location 3-3; 115200 baud. Sem reboot de A nesta captura.
+# Linhas extraidas sem alteracao das respostas serial_session_read (cursor 0; total 13).
+[A] BOTAO_BOOT pressionado
+[A] ENVIO 4 inicio
+[A] CHAVE ascii="2023100120231002" hex=32303233313030313230323331303032 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_ORIGINAL tamanho=36 texto="Mensagem nova da arguicao (36 bytes)"
+[A] PKCS7 acrescentados=12 bytes de valor 0x0c tamanho_final=48
+[A] MENSAGEM_PKCS7 bloco 1: 4d656e736167656d206e6f7661206461
+[A] MENSAGEM_PKCS7 bloco 2: 20617267756963616f20283336206279
+[A] MENSAGEM_PKCS7 bloco 3: 746573290c0c0c0c0c0c0c0c0c0c0c0c
+[A] CIFRADO_ENVIADO bloco 1: 9b95cf667a30c36ea8b0b0d2317d9b23
+[A] CIFRADO_ENVIADO bloco 2: 90fc2be94f680e141a5122e0381ad254
+[A] CIFRADO_ENVIADO bloco 3: cef16e18c35074eca209b36f9e617de0
+[A] QUADRO_TX aa039b95cf667a30c36ea8b0b0d2317d9b2390fc2be94f680e141a5122e0381ad254cef16e18c35074eca209b36f9e617de0
+[A] ENVIO 4 fim bytes=50 escritos=50 blocos=3 marcador=0xaa
