@@ -1,0 +1,54 @@
+{
+  "origem": "AES_Trabalho.pdf, páginas 1 e 2",
+  "status": "Transcrito do enunciado; ainda não executado contra a implementação.",
+  "convencao": "Bytes em ordem de entrada/saída; campos com sufixo _hex são hexadecimais.",
+  "aes128_bloco_sem_padding": [
+    {
+      "nome": "FIPS-197 Apêndice B",
+      "chave_hex": "2b7e151628aed2a6abf7158809cf4f3c",
+      "texto_claro_hex": "3243f6a8885a308d313198a2e0370734",
+      "cifrado_esperado_hex": "3925841d02dc09fbdc118597196a0b32"
+    },
+    {
+      "nome": "FIPS-197 Apêndice C.1",
+      "chave_hex": "000102030405060708090a0b0c0d0e0f",
+      "texto_claro_hex": "00112233445566778899aabbccddeeff",
+      "cifrado_esperado_hex": "69c4e0d86a7b0430d8cdb78070b4c55a"
+    }
+  ],
+  "exemplo_matriculas_ficticias": {
+    "matricula_a": "20231001",
+    "matricula_b": "20231002",
+    "chave_ascii": "2023100120231002",
+    "chave_hex": "32303233313030313230323331303032",
+    "mensagem_ascii": "A:20231001;B:20231002",
+    "mensagem_com_pkcs7_blocos_hex": [
+      "413a32303233313030313b423a323032",
+      "33313030320b0b0b0b0b0b0b0b0b0b0b"
+    ],
+    "cifrados_esperados_blocos_hex": [
+      "3a3784991ab0acaa88d5fd94cb7b74ad",
+      "cbea1d9e3e1f39da47111cf69064b166"
+    ],
+    "marcador_hex": "aa",
+    "numero_blocos": 2,
+    "tamanho_quadro_bytes": 34
+  },
+  "experimento_ecb_blocos_sem_padding": {
+    "chave_hex": "32303233313030313230323331303032",
+    "blocos": [
+      {
+        "texto_claro_ascii": "LIGAR LED VERDE.",
+        "cifrado_esperado_hex": "e0c22a6f02664f487dc9528642203dec"
+      },
+      {
+        "texto_claro_ascii": "DESLIGAR LED    ",
+        "cifrado_esperado_hex": "2b4d065ea65478b60696616244cd5070"
+      },
+      {
+        "texto_claro_ascii": "LIGAR LED VERDE.",
+        "cifrado_esperado_hex": "e0c22a6f02664f487dc9528642203dec"
+      }
+    ]
+  }
+}
