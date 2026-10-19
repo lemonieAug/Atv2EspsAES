@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "platformio": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "Codigo/ferramentas/claude/launch-platformio-mcp.mjs"
+      ],
+      "env": {
+        "PIO_MCP_NO_BROWSER": "true"
+      }
+    }
+  }
+}

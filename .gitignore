@@ -1,0 +1,16 @@
+# Builds e estado local do PlatformIO/MCP
+.pio/
+.pio-mcp-workspace/
+__pycache__/
+
+# Ferramentas e configuração locais
+.tools/claude-code/
+.claude/settings.local.json
+.vscode/
+
+# Correção local do painel do PlatformIO MCP (não versionada por decisão do usuário)
+Codigo/ferramentas/painel-operador/
+
+# Sistema operacional/editores
+.DS_Store
+*.swp
