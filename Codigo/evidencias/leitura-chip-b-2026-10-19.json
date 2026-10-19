@@ -1,0 +1,22 @@
+{
+  "executado_em": "2026-10-19T00:30:10Z",
+  "placa": "B",
+  "porta": "/dev/ttyUSB0",
+  "usb_location": "3-1",
+  "operacao": "MCP partition_table com readDevice=true; esptool.py leu 4096 bytes em 0x8000",
+  "leitura_fisica": "PASS",
+  "comparacao_com_layout_esp_b": "FAIL: device_table_mismatch",
+  "modelo_real": "ESP32-D0WD-V3",
+  "revisao": "v3.1",
+  "frequencia_cpu_mhz": 240,
+  "cristal_mhz": 40,
+  "tamanho_lido_bytes": 4096,
+  "particoes_observadas": ["phy_init", "otadata", "nvs", "at_customize", "ota_0", "ota_1"],
+  "explicacao": "B contém um layout de firmware preexistente diferente do artefato PlatformIO; a leitura e a identificação do chip foram concluídas.",
+  "log": "leitura-chip-b-pass.log",
+  "aprovacoes_consumidas": [
+    "approval-1af81db4-914f-4e81-93c4-fcd69e633f02",
+    "approval-b055af50-21e3-43c9-bb77-9643fadb8833"
+  ],
+  "firmware_gravado": false
+}

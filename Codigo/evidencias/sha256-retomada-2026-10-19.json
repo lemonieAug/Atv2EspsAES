@@ -1,0 +1,27 @@
+{
+  "data_utc": "2026-10-19",
+  "algoritmo": "SHA-256",
+  "arquivos": {
+    "README.md": "d6cb1edd0cd25c4f5c15a4269b8e0db82be086992fce0a75e333958eaa82329c",
+    "CLAUDE.md": "98fdcbcb0e7785ac61a3c65376e60f1383c8f6602f268b2515c041bf4a5dad26",
+    "platformio.ini": "803d71b13755c4530bbf70a07ae93cb518808872d3732a6643fe083538961267",
+    "TAREFAS.md": "35eff7f30d1f850e7d273377e18c323371cb5a1a3db207af0dd39a6aff8f1807",
+    "Codigo/src/main.cpp": "721167e7271be066f85fabf9ca8e6825d281beef55232b95c5871f67bb85fab5",
+    "Codigo/README.md": "aa1d091edf42bfe578f815185698251765d395ae08faf2b21e512a7746d3d39a",
+    "Codigo/evidencias/README.md": "0f7de7f5a5a1bed1bebb07210ecc39b924723d2163b1931e27b48fa495824e3d",
+    "Relatorio/validacao-laboratorio.md": "75039e86aea636cc14665fe2a43acc824a185aff76e6af20dfa0db7126807d45",
+    "Codigo/evidencias/uart-loopback-a-fail-2026-10-19.log": "187a08e501904291be2b27c49272da0ab16145c8d11a113325dfa461059d43c6",
+    "Codigo/evidencias/uart-loopback-a-fail-2-2026-10-19.log": "48e487f26f0b8693dffc71823949a83a36cb35aba05a47593f246961287f384a",
+    "Codigo/evidencias/uart-loopback-a-pass-2026-10-19.log": "5b26c39cd2a69790b5c1662ffef2158ae0d3e3e25cd0985e34b509c47d38a19c",
+    "Codigo/evidencias/uart-pingpong-a-2026-10-19.log": "ddbd92dab820dad3bf28f2362d5a3c0ba226aa40f9cf7d9fe383134fe1fc7b82",
+    "Codigo/evidencias/uart-pingpong-b-2026-10-19.log": "9c39492a86ddcc132f468316b845ca66830f283049dcde14897c6b90ba99d4e7",
+    "Codigo/evidencias/uart-loopback-a-fail-2026-10-19.json": "8116cfb789b64c494c17447d9864aa87f991f4d96b9b04dc714d15d6e5ff074a",
+    "Codigo/evidencias/uart-loopback-a-fail-2-2026-10-19.json": "3b0c987cd9ef54a3b47ec2d8d2bfa9c2fa5f9afabe396222645ee44b908afb9f",
+    "Codigo/evidencias/uart-loopback-a-pass-2026-10-19.json": "74b503da89ab6b6cc11c44ff42509b07ee507fdaeefeb8476c2a7680540d1ac3",
+    "Codigo/evidencias/uart-pingpong-2026-10-19.json": "813b14c21abe6531c34ebc38cfa03e1273dd429b77492e368e544ac4c6497634",
+    "Codigo/evidencias/upload-uart-esp_a-2026-10-19.json": "06bbd85f9675eee60a52caff261f1373711ceb19e9e83754d7a3cda9e287df99",
+    "Codigo/evidencias/upload-uart-esp_b-2026-10-19.json": "83c87e19ec33424fb21a75f67e7f16f05431c500898b071e3c90fa5c1f97d396",
+    "Codigo/evidencias/build-esp_a-7.1.3-pass.log": "0c7d91cdf0c7559cff5ca58f9da22d3eedcc567a1bf3fc266e97bfd183dc0f15",
+    "Codigo/evidencias/build-esp_b-7.1.3-pass.log": "a62aa6d6be06188da19ffb66384881684b61b57650d6581ab9b5523e0d2da25b"
+  }
+}

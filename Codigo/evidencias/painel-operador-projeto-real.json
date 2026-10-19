@@ -1,0 +1,14 @@
+{
+  "resultado": "PASS",
+  "observado_em": "2026-10-19T00:19:00Z",
+  "ambiente": "painel local de operador na porta 8081, armazenamento real compartilhado com o processo MCP na porta 8080",
+  "sessao": {
+    "role": "operator",
+    "user": "augusto"
+  },
+  "pedidos_pendentes_visiveis": 3,
+  "pedido_de_leitura_a_visivel": true,
+  "pedido_de_leitura_a": "approval-c9ab63b7-24ce-493f-8262-62922a099dc9",
+  "acao": "Somente login e consultas GET; nenhuma aprovação foi alterada",
+  "ticket_ou_cookie_persistido": false
+}

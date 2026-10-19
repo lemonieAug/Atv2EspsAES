@@ -1,0 +1,60 @@
+{
+  "alvo": {
+    "success": true,
+    "status": "completed",
+    "summary": "Resolved esp_a on /dev/ttyUSB1.",
+    "data": {
+      "success": true,
+      "status": "resolved",
+      "confidence": "exact",
+      "projectDir": "/data/Facul/Cripto/Atv2EspsAES",
+      "environment": "esp_a",
+      "board": "esp32dev",
+      "port": "/dev/ttyUSB1",
+      "device": {
+        "port": "/dev/ttyUSB1",
+        "description": "USB Serial",
+        "hwid": "USB VID:PID=1A86:7523 LOCATION=3-3",
+        "detectedBoard": "uno"
+      },
+      "binding": {
+        "projectDir": "/data/Facul/Cripto/Atv2EspsAES",
+        "environment": "esp_a",
+        "board": "esp32dev",
+        "port": "/dev/ttyUSB1",
+        "deviceFingerprint": "2adf32a3bc7a4bae918386daaf45b934ed74983bd4e91cf779732dc56592ad46",
+        "createdAt": "2026-10-18T23:53:51.394Z",
+        "expiresAt": "2026-10-18T23:58:51.394Z",
+        "digest": "abd6187752035298fdb94eb9d15a38f71127a2a2f3e14f659e653926b3272d5c"
+      },
+      "candidates": [],
+      "summary": "Resolved esp_a on /dev/ttyUSB1.",
+      "nextSteps": [
+        "Use this target binding before it expires for flash or monitoring."
+      ]
+    },
+    "nextSteps": [
+      "Use this target binding before it expires for flash or monitoring."
+    ],
+    "observedAt": "2026-10-18T23:53:51.394Z"
+  },
+  "consulta": {
+    "success": false,
+    "status": "blocked",
+    "summary": "upload_firmware requires explicit approval by policy.\n\nContext: {\n  \"policyDecision\": {\n    \"status\": \"requires_approval\",\n    \"reason\": \"upload_firmware requires explicit approval by policy.\",\n    \"action\": \"upload_firmware\",\n    \"riskLevel\": \"high\",\n    \"approvalId\": \"approval-c9ab63b7-24ce-493f-8262-62922a099dc9\",\n    \"timestamp\": \"2026-10-18T23:53:51.439Z\"\n  }\n}",
+    "data": {
+      "code": "APPROVAL_REQUIRED"
+    },
+    "policyDecision": {
+      "status": "requires_approval",
+      "reason": "upload_firmware requires explicit approval by policy.",
+      "action": "upload_firmware",
+      "riskLevel": "high",
+      "approvalId": "approval-c9ab63b7-24ce-493f-8262-62922a099dc9",
+      "timestamp": "2026-10-18T23:53:51.439Z"
+    },
+    "observedAt": "2026-10-18T23:53:51.440Z"
+  },
+  "approvalId": "approval-c9ab63b7-24ce-493f-8262-62922a099dc9",
+  "observacao": "Leitura nao executada; pedido pendente de aprovacao de hardware no MCP. Nao houve gravacao."
+}

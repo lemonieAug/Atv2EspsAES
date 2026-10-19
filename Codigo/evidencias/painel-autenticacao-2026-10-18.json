@@ -1,0 +1,171 @@
+{
+  "network": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-DE-4pUMU.css",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-CvYWrGjG.js",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 401
+    },
+    {
+      "path": "/api/hardware",
+      "status": 401
+    },
+    {
+      "path": "/pio_agent.png",
+      "status": 200
+    },
+    {
+      "path": "/api/workspaces",
+      "status": 401
+    },
+    {
+      "path": "/socket.io/",
+      "status": 101
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/pio_agent.png",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 400
+    },
+    {
+      "path": "/auth/launch",
+      "status": 303
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-DE-4pUMU.css",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-CvYWrGjG.js",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 101
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/api/workspaces",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/pio_agent.png",
+      "status": 200
+    },
+    {
+      "path": "/api/workspaces",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/api/workspaces",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/socket.io/",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/pio_agent.png",
+      "status": 200
+    },
+    {
+      "path": "/api/hardware",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    },
+    {
+      "path": "/api/commands",
+      "status": 200
+    }
+  ],
+  "console_errors": [
+    "Firefox can’t establish a connection to the server at [WebSocket URL omitida]"
+  ],
+  "direct_base_page": "PIO AGENT\nAccess denied: this dashboard session is invalid or has expired.",
+  "page": {
+    "path": "/",
+    "title": "PIO Agent",
+    "text": "PIO AGENT\nPLATFORMIO CONTROL PLANE\nAtv2EspsAES\nAUTO-TRACK\nCODEX SESSION\nSERVER: ONLINE\nAGENT TASK STREAM\nNEW TASK\nSHOW ACTIVE ONLY\nAll Sources\nAgent\nDashboard\nGet Dashboard Url\nGet Dashboard Url\nGet Dashboard Url\nGet Dashboard Url\nGet Lock Status\nGet Monitor Status\nList Devices\nGet Dashboard Url\nGet Approval Request\nGet Dashboard Url\nGet Approval Request\nPartition Table\nAgent Resolve Target\nList Devices\nLegacy Execution\nAgent Resolve Target\nList Devices\nGet Lock Status\nList Devices\nList Task History\nCheck Task Status\nCheck Task Status\nBuild Project\nBUILD LOG\nLegacy Execution\nBuild Project\nBUILD LOG\nLegacy Execution\nGet Policy Status\nList Devices\nGet Lock Status\nGet Monitor Status\nNO TABS OPEN. SELECT A TRACE FROM THE COMMAND FEED.\nACTIVE PORTS:\nttyS31\nttyS30\nttyS29\nttyS28\nttyS27\nttyS26\nttyS25\nttyS24\nttyS23\nttyS22\nttyS21\nttyS20\nttyS19\nttyS18\nttyS17\nttyS16\nttyS15\nttyS14\nttyS13\nttyS12\nttyS11\nttyS10\nttyS9\nttyS8\nttyS7\nttyS6\nttyS5\nttyS4\nttyS3\nttyS2\nttyS1\nttyS0\nttyUSB0\nttyUSB1"
+  },
+  "screenshot": "painel-sessao-limpa.png",
+  "origem": "Teste real em Zen 1.23b/Gecko 157 com perfil temporario isolado; sem aprovacao ou operacao de hardware."
+}

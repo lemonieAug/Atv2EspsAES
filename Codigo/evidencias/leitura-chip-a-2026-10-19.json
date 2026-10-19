@@ -1,0 +1,19 @@
+{
+  "executado_em": "2026-10-19T00:24:41Z",
+  "placa": "A",
+  "porta": "/dev/ttyUSB1",
+  "usb_location": "3-3",
+  "operacao": "partition_table com readDevice=true; esptool.py read_flash 0x8000 0x1000 para obter identificação do chip",
+  "resultado": "FAIL",
+  "codigo_mcp": "FLASH_READ_FAILED",
+  "log": "leitura-chip-a-falha-sync.log",
+  "observacao": "Download mode successfully detected, but getting no sync reply: The serial TX path seems to be down.",
+  "permissoes_serial_antes": "leitura e escrita disponíveis",
+  "modelo_real": "PENDENTE",
+  "flash_lida": false,
+  "firmware_gravado": false,
+  "aprovacoes_consumidas": [
+    "approval-d9062328-fb16-4d32-abb5-be4aa2d13acb",
+    "approval-3aea07f4-a374-4351-8aaf-c132f82f6222"
+  ]
+}

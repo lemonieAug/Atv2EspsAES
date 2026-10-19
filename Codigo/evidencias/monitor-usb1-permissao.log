@@ -1,0 +1,3 @@
+--- forcing DTR inactive
+--- forcing RTS inactive
+[31mUserSideException: [Errno 13] could not open port /dev/ttyUSB1: [Errno 13] Permission denied: '/dev/ttyUSB1'[0m

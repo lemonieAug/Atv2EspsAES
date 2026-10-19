@@ -1,0 +1,19 @@
+{
+  "resultado": "PASS",
+  "placa": "B",
+  "chip": "ESP32-D0WD-V3 v3.1",
+  "modulo": "ESP32-WROOM-32 (marcação informada pelo usuário)",
+  "porta": "/dev/ttyUSB0",
+  "usb_location": "3-1",
+  "ambiente": "esp_b",
+  "ferramenta": "PlatformIO MCP run_target upload",
+  "firmware_bin_sha256_antes": "a061d8b37f095a39c1e6348738ddf832276c88893bfc40d68c1da2ebb53a6067",
+  "duracao_s": 19.0,
+  "flash_programa_bytes": 297233,
+  "ram_estatica_bytes": 21676,
+  "esptool_hash_verificado": true,
+  "saida_mcp": "SUCCESS; bootloader, partições, boot_app0 e firmware escritos; hard reset via RTS",
+  "log": "upload-esp_b-pass.log",
+  "aprovacao_consumida": "approval-b245ec20-b8d1-4fbc-bbbd-152d44f7fa42",
+  "uart_ping_pong_validado": false
+}

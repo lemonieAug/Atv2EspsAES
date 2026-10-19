@@ -1,0 +1,30 @@
+{
+  "data": "2026-10-19",
+  "horario_utc_aproximado": "20:40-20:42",
+  "execucao": "física, nas duas placas reais",
+  "resultado": "PASS do enlace físico nos dois sentidos; status do firmware FAIL por 1 PONG perdido (seq 1)",
+  "status_impresso_pelo_firmware": "FAIL",
+  "firmware": "uart-only-v1 (sem criptografia)",
+  "ligacao": "A TX2/GPIO17 -> B RX2/GPIO16; B TX2/GPIO17 -> A RX2/GPIO16; GND comum (informada pelo usuário)",
+  "uart": "UART2, 115200 bps, 8N1",
+  "placas": {
+    "A": {"porta": "/dev/ttyUSB0", "usb_location": "3-3", "session_id": "29a96d02-54ea-4de9-83a9-5e53b48509a6", "boot": "BOOT role=A firmware=uart-only-v1 chip=ESP32-D0WD-V3 revision=3 efuse_mac=d0a98fe342a8", "linhas": 2016, "log": "uart-pingpong-a-2026-10-19.log"},
+    "B": {"porta": "/dev/ttyUSB1", "usb_location": "3-1", "session_id": "29f9f252-4643-4ef2-9954-597111d19970", "boot": "BOOT role=B firmware=uart-only-v1 chip=ESP32-D0WD-V3 revision=3 efuse_mac=80a8fd38bcd8", "linhas": 1013, "log": "uart-pingpong-b-2026-10-19.log"}
+  },
+  "identidade": "Monitor aberto por porta explícita, sem binding de agent_resolve_target. A identidade foi conferida pela USB location e pelo efuse_mac do boot, que é o MAC do esptool com bytes invertidos: A d0a98fe342a8 = a8:42:e3:8f:a9:d0 (leitura-chip-a-pass.log, upload-esp_a-pass.log); B 80a8fd38bcd8 = d8:bc:38:fd:a8:80 (leitura-chip-b-pass.log, upload-esp_b-pass.log).",
+  "captura_completa_desde_boot": true,
+  "run_id": "5f7a5b57",
+  "sentido_A_para_B": {"pings_enviados_por_A": 1000, "pings_validos_recebidos_por_B": 1000, "sequencias_em_ordem": true, "rx_error_em_B": 0},
+  "sentido_B_para_A": {"pongs_enviados_por_B": 1000, "pongs_validos_recebidos_por_A": 999, "pong_nao_contado": [1], "rx_error_em_A_durante_o_run": 0},
+  "correlacao": "Todo PONG recebido por A tem PING correspondente registrado em B com o mesmo run_id e sequência; B registrou a resposta ao PING 1, que A não contou.",
+  "explicacao_seq1": "Observado: B registrou TX do PONG 1; A não registrou recebimento da sequência 1; A teve RX_ERROR antes de RUN. Hipótese a partir de main.cpp: discardLine pode permanecer ativo e descartar a primeira linha completa no LF. Não verificada por instrumentação.",
+  "summary_firmware": "SUMMARY role=A id=5f7a5b57 status=FAIL sent=1000 received=999 lost=1 errors=0 unexpected=0 rtt_min_us=5503 rtt_mean_us=5554.28 rtt_max_us=6583 duration_ms=10247",
+  "rtt_us": {"min": 5503, "media": 5554.28, "mediana": 5556, "max": 6583, "amostras": 999, "nota": "RTT no relógio de A: ida, processamento e log em B, volta. Não é latência unidirecional."},
+  "duracao_ms": 10247,
+  "sha256": {
+    "uart-pingpong-a-2026-10-19.log": "ddbd92dab820dad3bf28f2362d5a3c0ba226aa40f9cf7d9fe383134fe1fc7b82",
+    "uart-pingpong-b-2026-10-19.log": "9c39492a86ddcc132f468316b845ca66830f283049dcde14897c6b90ba99d4e7"
+  },
+  "origem_log": "linhas devolvidas pelo MCP serial_session_read nesta sessão, extraídas sem alteração; contagens e correlação feitas por script sobre os logs",
+  "limites": "Só A inicia a troca; B apenas responde. Ensaio em texto, sem AES. O critério estrito do firmware (1000/1000 sem perdas) não foi atingido por causa da seq 1."
+}

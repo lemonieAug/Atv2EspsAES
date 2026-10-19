@@ -1,0 +1,110 @@
+{
+  "checks": [
+    {
+      "test": "operator_login",
+      "status": "PASS",
+      "observed": {
+        "http": 200
+      }
+    },
+    {
+      "test": "operator_session_role",
+      "status": "PASS",
+      "observed": {
+        "role": "operator",
+        "user": "augusto",
+        "expiresAt": "2026-10-19T08:13:24.604Z"
+      }
+    },
+    {
+      "test": "operator_nonexistent_approval",
+      "status": "PASS",
+      "observed": {
+        "http": 404,
+        "body": "{\"error\":\"Approval not found: diagnostic-no-such-approval\"}"
+      }
+    },
+    {
+      "test": "operator_missing_csrf_marker_denied",
+      "status": "PASS",
+      "observed": {
+        "http": 403
+      }
+    },
+    {
+      "test": "operator_foreign_origin_denied",
+      "status": "PASS",
+      "observed": {
+        "http": 500
+      }
+    },
+    {
+      "test": "operator_anonymous_denied",
+      "status": "PASS",
+      "observed": {
+        "http": 401
+      }
+    },
+    {
+      "test": "operator_ticket_single_use",
+      "status": "PASS",
+      "observed": {
+        "http": 401
+      }
+    },
+    {
+      "test": "viewer_login",
+      "status": "PASS",
+      "observed": {
+        "http": 200
+      }
+    },
+    {
+      "test": "viewer_session_role",
+      "status": "PASS",
+      "observed": {
+        "role": "viewer",
+        "user": "augusto",
+        "expiresAt": "2026-10-19T08:13:24.633Z"
+      }
+    },
+    {
+      "test": "viewer_nonexistent_approval",
+      "status": "PASS",
+      "observed": {
+        "http": 403,
+        "body": "{\"code\":\"OPERATOR_APPROVAL_REQUIRED\",\"error\":\"Enroll this browser with the local dashboard --operator command, or use the local approve/deny CLI.\"}"
+      }
+    },
+    {
+      "test": "viewer_missing_csrf_marker_denied",
+      "status": "PASS",
+      "observed": {
+        "http": 403
+      }
+    },
+    {
+      "test": "viewer_foreign_origin_denied",
+      "status": "PASS",
+      "observed": {
+        "http": 500
+      }
+    },
+    {
+      "test": "viewer_anonymous_denied",
+      "status": "PASS",
+      "observed": {
+        "http": 401
+      }
+    },
+    {
+      "test": "viewer_ticket_single_use",
+      "status": "PASS",
+      "observed": {
+        "http": 401
+      }
+    }
+  ],
+  "status": "PASS",
+  "note": "Pedidos inexistentes apenas; nenhuma aprovacao real foi alterada; armazenamento de teste isolado."
+}

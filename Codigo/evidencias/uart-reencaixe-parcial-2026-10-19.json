@@ -1,0 +1,20 @@
+{
+  "resultado": "PENDENTE: ensaio interrompido para diagnóstico de loopback",
+  "run_id": "1eb5d484",
+  "configuracao": "mesmo firmware UART de A/B após reencaixar os fios; nomes Linux invertidos: A USB0/3-3, B USB1/3-1",
+  "monitor_a": {
+    "linhas_capturadas": 420,
+    "tx_ping_capturados": 205,
+    "timeouts_capturados": 204,
+    "pong_valido_capturado": 0,
+    "erros_linha_capturados": 10,
+    "ultimo_ping_capturado": "PING A 1eb5d484 394",
+    "arquivo": "uart-reencaixe-a-captura.json"
+  },
+  "monitor_b": {
+    "linhas_capturadas": 0,
+    "bytes_recebidos": 0,
+    "duracao_s": 58.9
+  },
+  "limite": "Monitor A anexado após o começo da sequência; o segundo ensaio não chegou ao resumo de 1.000 pacotes antes de ser interrompido para isolar o hardware."
+}

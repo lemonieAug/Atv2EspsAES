@@ -1,0 +1,11 @@
+{
+  "resultado": "PASS",
+  "ambiente": "runtime corrigido na porta 8312, armazenamento isolado em /tmp/pio-operator-auth-test-gwuie9l0/data",
+  "pedido_ficticio": "approval-00000000-0000-4000-8000-000000000001",
+  "acao": "POST /api/safety/approvals/:id/approve com sessão de operador, Origin local e X-Pio-Dashboard-Approval: 1",
+  "http": 200,
+  "success": true,
+  "estado_observado": "approved",
+  "pedidos_reais_alterados": false,
+  "segredos_persistidos": false
+}

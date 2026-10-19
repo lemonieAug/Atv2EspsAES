@@ -1,0 +1,7 @@
+Using tool-esptoolpy@2.41100.260830 package
+esptool.py v4.11.0
+Serial port /dev/ttyUSB1
+Connecting......................................
+
+A fatal error occurred: Failed to connect to Espressif device: Download mode successfully detected, but getting no sync reply: The serial TX path seems to be down.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html

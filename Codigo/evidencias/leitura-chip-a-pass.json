@@ -1,0 +1,20 @@
+{
+  "executado_em": "2026-10-19T00:29:05Z",
+  "placa": "A",
+  "porta": "/dev/ttyUSB1",
+  "usb_location": "3-3",
+  "operacao": "MCP partition_table com readDevice=true; esptool.py leu 4096 bytes em 0x8000",
+  "resultado": "PASS",
+  "modelo_real": "ESP32-D0WD-V3",
+  "revisao": "v3.0",
+  "frequencia_cpu_mhz": 240,
+  "cristal_mhz": 40,
+  "tamanho_lido_bytes": 4096,
+  "tabela_particoes": "6 partições; sem diferenças entre o dispositivo e o artefato esp_a",
+  "log": "leitura-chip-a-pass.log",
+  "aprovacoes_consumidas": [
+    "approval-59d76106-25ef-497f-92ff-2b489edad436",
+    "approval-1f669783-624e-4063-b85f-f3e8f3c3bdf0"
+  ],
+  "firmware_gravado": false
+}

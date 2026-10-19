@@ -1,0 +1,26 @@
+{
+  "Codigo/evidencias/build-esp_a-7.1.3-pass.log": {
+    "sha256": "0c7d91cdf0c7559cff5ca58f9da22d3eedcc567a1bf3fc266e97bfd183dc0f15",
+    "bytes": 4886
+  },
+  ".pio/build/esp_a/firmware.bin": {
+    "sha256": "7df114a8822e81fc5a6ffc1b3983bbea566f7336db1d553333700c8db716d21e",
+    "bytes": 271824
+  },
+  ".pio/build/esp_a/firmware.elf": {
+    "sha256": "64c044f54a12484b376e49d49bc8aadc625ea42a1a493143e9fb7be2583e0cdd",
+    "bytes": 6117652
+  },
+  "Codigo/evidencias/build-esp_b-7.1.3-pass.log": {
+    "sha256": "a62aa6d6be06188da19ffb66384881684b61b57650d6581ab9b5523e0d2da25b",
+    "bytes": 4886
+  },
+  ".pio/build/esp_b/firmware.bin": {
+    "sha256": "a061d8b37f095a39c1e6348738ddf832276c88893bfc40d68c1da2ebb53a6067",
+    "bytes": 297600
+  },
+  ".pio/build/esp_b/firmware.elf": {
+    "sha256": "e2260f341216ff0b135118a505bccf5e67617b635510df2b2f56c3458cdecbaf",
+    "bytes": 6376416
+  }
+}

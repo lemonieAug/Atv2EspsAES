@@ -1,0 +1,34 @@
+{
+  "resultado": "FAIL",
+  "firmware": "uart-only-v1",
+  "ambientes": ["esp_a", "esp_b"],
+  "configuracao": "UART2 115200 baud 8N1, A RX16/TX17, B RX16/TX17",
+  "run_id": "8052bb0e",
+  "resumo_emitido_por_a": {
+    "sent": 1000,
+    "received": 0,
+    "lost": 1000,
+    "errors": 60,
+    "unexpected": 0,
+    "rtt_min_us": 0,
+    "rtt_mean_us": 0.0,
+    "rtt_max_us": 0,
+    "duration_ms": 255995
+  },
+  "monitor_a": {
+    "porta": "/dev/ttyUSB1",
+    "arquivo": "uart-primeira-sequencia-a-parcial.log",
+    "linhas_salvas": 922,
+    "limite": "monitor anexado após o início da sequência; o resumo do firmware cobre os 1.000 pacotes"
+  },
+  "monitor_b": {
+    "porta": "/dev/ttyUSB0",
+    "arquivo": "uart-primeira-sequencia-b-parcial.log",
+    "linhas_salvas": 17,
+    "boot_uart_ready": true,
+    "ping_valido_observado": 0,
+    "erros_de_linha_salvos": 3
+  },
+  "conclusao": "Enlace bidirecional ainda não validado; conferir cruzamento TX17/RX16 e GND comum antes de repetir.",
+  "aes_implementado": false
+}

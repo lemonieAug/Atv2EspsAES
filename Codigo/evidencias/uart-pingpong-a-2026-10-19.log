@@ -1,0 +1,2020 @@
+# Captura serial real: PING/PONG entre placas, monitor de A (2026-10-19 ~20:40-20:42 UTC)
+# MCP session 29a96d02-54ea-4de9-83a9-5e53b48509a6; /dev/ttyUSB0; localização USB 3-3; 115200 baud
+# Ligação: A TX2/17 -> B RX2/16, B TX2/17 -> A RX2/16, GND comum. Captura COMPLETA desde o boot (EN), sequência 5f7a5b57.
+# Linhas extraídas sem alteração das respostas serial_session_read (cursores 0, 26, 27, 1592; total 2016).
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+BOOT role=A firmware=uart-only-v1 chip=ESP32-D0WD-V3 revision=3 cores=2 flash_bytes=4194304 psram_bytes=0 efuse_mac=d0a98fe342a8
+UART_READY role=A rx=16 tx=17 baud=115200 format=8N1 crypto=none
+Comando USB RUN inicia uma sequencia em A quando ociosa.
+RX_ERROR role=A invalid_or_oversize_line
+RUN role=A id=5f7a5b57 packets=1000 timeout_us=250000
+TX role=A text="PING A 5f7a5b57 1"
+TIMEOUT role=A id=5f7a5b57 seq=1
+TX role=A text="PING A 5f7a5b57 2"
+RX role=A text="PONG B 5f7a5b57 2" rtt_us=5519
+TX role=A text="PING A 5f7a5b57 3"
+RX role=A text="PONG B 5f7a5b57 3" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 4"
+RX role=A text="PONG B 5f7a5b57 4" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 5"
+RX role=A text="PONG B 5f7a5b57 5" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 6"
+RX role=A text="PONG B 5f7a5b57 6" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 7"
+RX role=A text="PONG B 5f7a5b57 7" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 8"
+RX role=A text="PONG B 5f7a5b57 8" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 9"
+RX role=A text="PONG B 5f7a5b57 9" rtt_us=5503
+TX role=A text="PING A 5f7a5b57 10"
+RX role=A text="PONG B 5f7a5b57 10" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 11"
+RX role=A text="PONG B 5f7a5b57 11" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 12"
+RX role=A text="PONG B 5f7a5b57 12" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 13"
+RX role=A text="PONG B 5f7a5b57 13" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 14"
+RX role=A text="PONG B 5f7a5b57 14" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 15"
+RX role=A text="PONG B 5f7a5b57 15" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 16"
+RX role=A text="PONG B 5f7a5b57 16" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 17"
+RX role=A text="PONG B 5f7a5b57 17" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 18"
+RX role=A text="PONG B 5f7a5b57 18" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 19"
+RX role=A text="PONG B 5f7a5b57 19" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 20"
+RX role=A text="PONG B 5f7a5b57 20" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 21"
+RX role=A text="PONG B 5f7a5b57 21" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 22"
+RX role=A text="PONG B 5f7a5b57 22" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 23"
+RX role=A text="PONG B 5f7a5b57 23" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 24"
+RX role=A text="PONG B 5f7a5b57 24" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 25"
+RX role=A text="PONG B 5f7a5b57 25" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 26"
+RX role=A text="PONG B 5f7a5b57 26" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 27"
+RX role=A text="PONG B 5f7a5b57 27" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 28"
+RX role=A text="PONG B 5f7a5b57 28" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 29"
+RX role=A text="PONG B 5f7a5b57 29" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 30"
+RX role=A text="PONG B 5f7a5b57 30" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 31"
+RX role=A text="PONG B 5f7a5b57 31" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 32"
+RX role=A text="PONG B 5f7a5b57 32" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 33"
+RX role=A text="PONG B 5f7a5b57 33" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 34"
+RX role=A text="PONG B 5f7a5b57 34" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 35"
+RX role=A text="PONG B 5f7a5b57 35" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 36"
+RX role=A text="PONG B 5f7a5b57 36" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 37"
+RX role=A text="PONG B 5f7a5b57 37" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 38"
+RX role=A text="PONG B 5f7a5b57 38" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 39"
+RX role=A text="PONG B 5f7a5b57 39" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 40"
+RX role=A text="PONG B 5f7a5b57 40" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 41"
+RX role=A text="PONG B 5f7a5b57 41" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 42"
+RX role=A text="PONG B 5f7a5b57 42" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 43"
+RX role=A text="PONG B 5f7a5b57 43" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 44"
+RX role=A text="PONG B 5f7a5b57 44" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 45"
+RX role=A text="PONG B 5f7a5b57 45" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 46"
+RX role=A text="PONG B 5f7a5b57 46" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 47"
+RX role=A text="PONG B 5f7a5b57 47" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 48"
+RX role=A text="PONG B 5f7a5b57 48" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 49"
+RX role=A text="PONG B 5f7a5b57 49" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 50"
+RX role=A text="PONG B 5f7a5b57 50" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 51"
+RX role=A text="PONG B 5f7a5b57 51" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 52"
+RX role=A text="PONG B 5f7a5b57 52" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 53"
+RX role=A text="PONG B 5f7a5b57 53" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 54"
+RX role=A text="PONG B 5f7a5b57 54" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 55"
+RX role=A text="PONG B 5f7a5b57 55" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 56"
+RX role=A text="PONG B 5f7a5b57 56" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 57"
+RX role=A text="PONG B 5f7a5b57 57" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 58"
+RX role=A text="PONG B 5f7a5b57 58" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 59"
+RX role=A text="PONG B 5f7a5b57 59" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 60"
+RX role=A text="PONG B 5f7a5b57 60" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 61"
+RX role=A text="PONG B 5f7a5b57 61" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 62"
+RX role=A text="PONG B 5f7a5b57 62" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 63"
+RX role=A text="PONG B 5f7a5b57 63" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 64"
+RX role=A text="PONG B 5f7a5b57 64" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 65"
+RX role=A text="PONG B 5f7a5b57 65" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 66"
+RX role=A text="PONG B 5f7a5b57 66" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 67"
+RX role=A text="PONG B 5f7a5b57 67" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 68"
+RX role=A text="PONG B 5f7a5b57 68" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 69"
+RX role=A text="PONG B 5f7a5b57 69" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 70"
+RX role=A text="PONG B 5f7a5b57 70" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 71"
+RX role=A text="PONG B 5f7a5b57 71" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 72"
+RX role=A text="PONG B 5f7a5b57 72" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 73"
+RX role=A text="PONG B 5f7a5b57 73" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 74"
+RX role=A text="PONG B 5f7a5b57 74" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 75"
+RX role=A text="PONG B 5f7a5b57 75" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 76"
+RX role=A text="PONG B 5f7a5b57 76" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 77"
+RX role=A text="PONG B 5f7a5b57 77" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 78"
+RX role=A text="PONG B 5f7a5b57 78" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 79"
+RX role=A text="PONG B 5f7a5b57 79" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 80"
+RX role=A text="PONG B 5f7a5b57 80" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 81"
+RX role=A text="PONG B 5f7a5b57 81" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 82"
+RX role=A text="PONG B 5f7a5b57 82" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 83"
+RX role=A text="PONG B 5f7a5b57 83" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 84"
+RX role=A text="PONG B 5f7a5b57 84" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 85"
+RX role=A text="PONG B 5f7a5b57 85" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 86"
+RX role=A text="PONG B 5f7a5b57 86" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 87"
+RX role=A text="PONG B 5f7a5b57 87" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 88"
+RX role=A text="PONG B 5f7a5b57 88" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 89"
+RX role=A text="PONG B 5f7a5b57 89" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 90"
+RX role=A text="PONG B 5f7a5b57 90" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 91"
+RX role=A text="PONG B 5f7a5b57 91" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 92"
+RX role=A text="PONG B 5f7a5b57 92" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 93"
+RX role=A text="PONG B 5f7a5b57 93" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 94"
+RX role=A text="PONG B 5f7a5b57 94" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 95"
+RX role=A text="PONG B 5f7a5b57 95" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 96"
+RX role=A text="PONG B 5f7a5b57 96" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 97"
+RX role=A text="PONG B 5f7a5b57 97" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 98"
+RX role=A text="PONG B 5f7a5b57 98" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 99"
+RX role=A text="PONG B 5f7a5b57 99" rtt_us=5530
+TX role=A text="PING A 5f7a5b57 100"
+RX role=A text="PONG B 5f7a5b57 100" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 101"
+RX role=A text="PONG B 5f7a5b57 101" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 102"
+RX role=A text="PONG B 5f7a5b57 102" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 103"
+RX role=A text="PONG B 5f7a5b57 103" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 104"
+RX role=A text="PONG B 5f7a5b57 104" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 105"
+RX role=A text="PONG B 5f7a5b57 105" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 106"
+RX role=A text="PONG B 5f7a5b57 106" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 107"
+RX role=A text="PONG B 5f7a5b57 107" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 108"
+RX role=A text="PONG B 5f7a5b57 108" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 109"
+RX role=A text="PONG B 5f7a5b57 109" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 110"
+RX role=A text="PONG B 5f7a5b57 110" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 111"
+RX role=A text="PONG B 5f7a5b57 111" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 112"
+RX role=A text="PONG B 5f7a5b57 112" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 113"
+RX role=A text="PONG B 5f7a5b57 113" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 114"
+RX role=A text="PONG B 5f7a5b57 114" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 115"
+RX role=A text="PONG B 5f7a5b57 115" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 116"
+RX role=A text="PONG B 5f7a5b57 116" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 117"
+RX role=A text="PONG B 5f7a5b57 117" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 118"
+RX role=A text="PONG B 5f7a5b57 118" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 119"
+RX role=A text="PONG B 5f7a5b57 119" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 120"
+RX role=A text="PONG B 5f7a5b57 120" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 121"
+RX role=A text="PONG B 5f7a5b57 121" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 122"
+RX role=A text="PONG B 5f7a5b57 122" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 123"
+RX role=A text="PONG B 5f7a5b57 123" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 124"
+RX role=A text="PONG B 5f7a5b57 124" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 125"
+RX role=A text="PONG B 5f7a5b57 125" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 126"
+RX role=A text="PONG B 5f7a5b57 126" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 127"
+RX role=A text="PONG B 5f7a5b57 127" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 128"
+RX role=A text="PONG B 5f7a5b57 128" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 129"
+RX role=A text="PONG B 5f7a5b57 129" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 130"
+RX role=A text="PONG B 5f7a5b57 130" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 131"
+RX role=A text="PONG B 5f7a5b57 131" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 132"
+RX role=A text="PONG B 5f7a5b57 132" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 133"
+RX role=A text="PONG B 5f7a5b57 133" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 134"
+RX role=A text="PONG B 5f7a5b57 134" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 135"
+RX role=A text="PONG B 5f7a5b57 135" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 136"
+RX role=A text="PONG B 5f7a5b57 136" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 137"
+RX role=A text="PONG B 5f7a5b57 137" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 138"
+RX role=A text="PONG B 5f7a5b57 138" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 139"
+RX role=A text="PONG B 5f7a5b57 139" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 140"
+RX role=A text="PONG B 5f7a5b57 140" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 141"
+RX role=A text="PONG B 5f7a5b57 141" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 142"
+RX role=A text="PONG B 5f7a5b57 142" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 143"
+RX role=A text="PONG B 5f7a5b57 143" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 144"
+RX role=A text="PONG B 5f7a5b57 144" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 145"
+RX role=A text="PONG B 5f7a5b57 145" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 146"
+RX role=A text="PONG B 5f7a5b57 146" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 147"
+RX role=A text="PONG B 5f7a5b57 147" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 148"
+RX role=A text="PONG B 5f7a5b57 148" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 149"
+RX role=A text="PONG B 5f7a5b57 149" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 150"
+RX role=A text="PONG B 5f7a5b57 150" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 151"
+RX role=A text="PONG B 5f7a5b57 151" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 152"
+RX role=A text="PONG B 5f7a5b57 152" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 153"
+RX role=A text="PONG B 5f7a5b57 153" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 154"
+RX role=A text="PONG B 5f7a5b57 154" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 155"
+RX role=A text="PONG B 5f7a5b57 155" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 156"
+RX role=A text="PONG B 5f7a5b57 156" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 157"
+RX role=A text="PONG B 5f7a5b57 157" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 158"
+RX role=A text="PONG B 5f7a5b57 158" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 159"
+RX role=A text="PONG B 5f7a5b57 159" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 160"
+RX role=A text="PONG B 5f7a5b57 160" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 161"
+RX role=A text="PONG B 5f7a5b57 161" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 162"
+RX role=A text="PONG B 5f7a5b57 162" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 163"
+RX role=A text="PONG B 5f7a5b57 163" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 164"
+RX role=A text="PONG B 5f7a5b57 164" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 165"
+RX role=A text="PONG B 5f7a5b57 165" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 166"
+RX role=A text="PONG B 5f7a5b57 166" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 167"
+RX role=A text="PONG B 5f7a5b57 167" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 168"
+RX role=A text="PONG B 5f7a5b57 168" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 169"
+RX role=A text="PONG B 5f7a5b57 169" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 170"
+RX role=A text="PONG B 5f7a5b57 170" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 171"
+RX role=A text="PONG B 5f7a5b57 171" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 172"
+RX role=A text="PONG B 5f7a5b57 172" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 173"
+RX role=A text="PONG B 5f7a5b57 173" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 174"
+RX role=A text="PONG B 5f7a5b57 174" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 175"
+RX role=A text="PONG B 5f7a5b57 175" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 176"
+RX role=A text="PONG B 5f7a5b57 176" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 177"
+RX role=A text="PONG B 5f7a5b57 177" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 178"
+RX role=A text="PONG B 5f7a5b57 178" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 179"
+RX role=A text="PONG B 5f7a5b57 179" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 180"
+RX role=A text="PONG B 5f7a5b57 180" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 181"
+RX role=A text="PONG B 5f7a5b57 181" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 182"
+RX role=A text="PONG B 5f7a5b57 182" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 183"
+RX role=A text="PONG B 5f7a5b57 183" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 184"
+RX role=A text="PONG B 5f7a5b57 184" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 185"
+RX role=A text="PONG B 5f7a5b57 185" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 186"
+RX role=A text="PONG B 5f7a5b57 186" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 187"
+RX role=A text="PONG B 5f7a5b57 187" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 188"
+RX role=A text="PONG B 5f7a5b57 188" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 189"
+RX role=A text="PONG B 5f7a5b57 189" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 190"
+RX role=A text="PONG B 5f7a5b57 190" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 191"
+RX role=A text="PONG B 5f7a5b57 191" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 192"
+RX role=A text="PONG B 5f7a5b57 192" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 193"
+RX role=A text="PONG B 5f7a5b57 193" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 194"
+RX role=A text="PONG B 5f7a5b57 194" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 195"
+RX role=A text="PONG B 5f7a5b57 195" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 196"
+RX role=A text="PONG B 5f7a5b57 196" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 197"
+RX role=A text="PONG B 5f7a5b57 197" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 198"
+RX role=A text="PONG B 5f7a5b57 198" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 199"
+RX role=A text="PONG B 5f7a5b57 199" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 200"
+RX role=A text="PONG B 5f7a5b57 200" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 201"
+RX role=A text="PONG B 5f7a5b57 201" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 202"
+RX role=A text="PONG B 5f7a5b57 202" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 203"
+RX role=A text="PONG B 5f7a5b57 203" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 204"
+RX role=A text="PONG B 5f7a5b57 204" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 205"
+RX role=A text="PONG B 5f7a5b57 205" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 206"
+RX role=A text="PONG B 5f7a5b57 206" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 207"
+RX role=A text="PONG B 5f7a5b57 207" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 208"
+RX role=A text="PONG B 5f7a5b57 208" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 209"
+RX role=A text="PONG B 5f7a5b57 209" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 210"
+RX role=A text="PONG B 5f7a5b57 210" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 211"
+RX role=A text="PONG B 5f7a5b57 211" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 212"
+RX role=A text="PONG B 5f7a5b57 212" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 213"
+RX role=A text="PONG B 5f7a5b57 213" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 214"
+RX role=A text="PONG B 5f7a5b57 214" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 215"
+RX role=A text="PONG B 5f7a5b57 215" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 216"
+RX role=A text="PONG B 5f7a5b57 216" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 217"
+RX role=A text="PONG B 5f7a5b57 217" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 218"
+RX role=A text="PONG B 5f7a5b57 218" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 219"
+RX role=A text="PONG B 5f7a5b57 219" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 220"
+RX role=A text="PONG B 5f7a5b57 220" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 221"
+RX role=A text="PONG B 5f7a5b57 221" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 222"
+RX role=A text="PONG B 5f7a5b57 222" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 223"
+RX role=A text="PONG B 5f7a5b57 223" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 224"
+RX role=A text="PONG B 5f7a5b57 224" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 225"
+RX role=A text="PONG B 5f7a5b57 225" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 226"
+RX role=A text="PONG B 5f7a5b57 226" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 227"
+RX role=A text="PONG B 5f7a5b57 227" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 228"
+RX role=A text="PONG B 5f7a5b57 228" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 229"
+RX role=A text="PONG B 5f7a5b57 229" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 230"
+RX role=A text="PONG B 5f7a5b57 230" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 231"
+RX role=A text="PONG B 5f7a5b57 231" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 232"
+RX role=A text="PONG B 5f7a5b57 232" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 233"
+RX role=A text="PONG B 5f7a5b57 233" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 234"
+RX role=A text="PONG B 5f7a5b57 234" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 235"
+RX role=A text="PONG B 5f7a5b57 235" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 236"
+RX role=A text="PONG B 5f7a5b57 236" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 237"
+RX role=A text="PONG B 5f7a5b57 237" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 238"
+RX role=A text="PONG B 5f7a5b57 238" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 239"
+RX role=A text="PONG B 5f7a5b57 239" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 240"
+RX role=A text="PONG B 5f7a5b57 240" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 241"
+RX role=A text="PONG B 5f7a5b57 241" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 242"
+RX role=A text="PONG B 5f7a5b57 242" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 243"
+RX role=A text="PONG B 5f7a5b57 243" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 244"
+RX role=A text="PONG B 5f7a5b57 244" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 245"
+RX role=A text="PONG B 5f7a5b57 245" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 246"
+RX role=A text="PONG B 5f7a5b57 246" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 247"
+RX role=A text="PONG B 5f7a5b57 247" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 248"
+RX role=A text="PONG B 5f7a5b57 248" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 249"
+RX role=A text="PONG B 5f7a5b57 249" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 250"
+RX role=A text="PONG B 5f7a5b57 250" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 251"
+RX role=A text="PONG B 5f7a5b57 251" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 252"
+RX role=A text="PONG B 5f7a5b57 252" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 253"
+RX role=A text="PONG B 5f7a5b57 253" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 254"
+RX role=A text="PONG B 5f7a5b57 254" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 255"
+RX role=A text="PONG B 5f7a5b57 255" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 256"
+RX role=A text="PONG B 5f7a5b57 256" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 257"
+RX role=A text="PONG B 5f7a5b57 257" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 258"
+RX role=A text="PONG B 5f7a5b57 258" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 259"
+RX role=A text="PONG B 5f7a5b57 259" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 260"
+RX role=A text="PONG B 5f7a5b57 260" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 261"
+RX role=A text="PONG B 5f7a5b57 261" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 262"
+RX role=A text="PONG B 5f7a5b57 262" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 263"
+RX role=A text="PONG B 5f7a5b57 263" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 264"
+RX role=A text="PONG B 5f7a5b57 264" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 265"
+RX role=A text="PONG B 5f7a5b57 265" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 266"
+RX role=A text="PONG B 5f7a5b57 266" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 267"
+RX role=A text="PONG B 5f7a5b57 267" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 268"
+RX role=A text="PONG B 5f7a5b57 268" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 269"
+RX role=A text="PONG B 5f7a5b57 269" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 270"
+RX role=A text="PONG B 5f7a5b57 270" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 271"
+RX role=A text="PONG B 5f7a5b57 271" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 272"
+RX role=A text="PONG B 5f7a5b57 272" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 273"
+RX role=A text="PONG B 5f7a5b57 273" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 274"
+RX role=A text="PONG B 5f7a5b57 274" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 275"
+RX role=A text="PONG B 5f7a5b57 275" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 276"
+RX role=A text="PONG B 5f7a5b57 276" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 277"
+RX role=A text="PONG B 5f7a5b57 277" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 278"
+RX role=A text="PONG B 5f7a5b57 278" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 279"
+RX role=A text="PONG B 5f7a5b57 279" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 280"
+RX role=A text="PONG B 5f7a5b57 280" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 281"
+RX role=A text="PONG B 5f7a5b57 281" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 282"
+RX role=A text="PONG B 5f7a5b57 282" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 283"
+RX role=A text="PONG B 5f7a5b57 283" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 284"
+RX role=A text="PONG B 5f7a5b57 284" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 285"
+RX role=A text="PONG B 5f7a5b57 285" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 286"
+RX role=A text="PONG B 5f7a5b57 286" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 287"
+RX role=A text="PONG B 5f7a5b57 287" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 288"
+RX role=A text="PONG B 5f7a5b57 288" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 289"
+RX role=A text="PONG B 5f7a5b57 289" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 290"
+RX role=A text="PONG B 5f7a5b57 290" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 291"
+RX role=A text="PONG B 5f7a5b57 291" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 292"
+RX role=A text="PONG B 5f7a5b57 292" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 293"
+RX role=A text="PONG B 5f7a5b57 293" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 294"
+RX role=A text="PONG B 5f7a5b57 294" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 295"
+RX role=A text="PONG B 5f7a5b57 295" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 296"
+RX role=A text="PONG B 5f7a5b57 296" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 297"
+RX role=A text="PONG B 5f7a5b57 297" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 298"
+RX role=A text="PONG B 5f7a5b57 298" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 299"
+RX role=A text="PONG B 5f7a5b57 299" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 300"
+RX role=A text="PONG B 5f7a5b57 300" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 301"
+RX role=A text="PONG B 5f7a5b57 301" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 302"
+RX role=A text="PONG B 5f7a5b57 302" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 303"
+RX role=A text="PONG B 5f7a5b57 303" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 304"
+RX role=A text="PONG B 5f7a5b57 304" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 305"
+RX role=A text="PONG B 5f7a5b57 305" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 306"
+RX role=A text="PONG B 5f7a5b57 306" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 307"
+RX role=A text="PONG B 5f7a5b57 307" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 308"
+RX role=A text="PONG B 5f7a5b57 308" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 309"
+RX role=A text="PONG B 5f7a5b57 309" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 310"
+RX role=A text="PONG B 5f7a5b57 310" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 311"
+RX role=A text="PONG B 5f7a5b57 311" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 312"
+RX role=A text="PONG B 5f7a5b57 312" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 313"
+RX role=A text="PONG B 5f7a5b57 313" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 314"
+RX role=A text="PONG B 5f7a5b57 314" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 315"
+RX role=A text="PONG B 5f7a5b57 315" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 316"
+RX role=A text="PONG B 5f7a5b57 316" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 317"
+RX role=A text="PONG B 5f7a5b57 317" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 318"
+RX role=A text="PONG B 5f7a5b57 318" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 319"
+RX role=A text="PONG B 5f7a5b57 319" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 320"
+RX role=A text="PONG B 5f7a5b57 320" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 321"
+RX role=A text="PONG B 5f7a5b57 321" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 322"
+RX role=A text="PONG B 5f7a5b57 322" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 323"
+RX role=A text="PONG B 5f7a5b57 323" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 324"
+RX role=A text="PONG B 5f7a5b57 324" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 325"
+RX role=A text="PONG B 5f7a5b57 325" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 326"
+RX role=A text="PONG B 5f7a5b57 326" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 327"
+RX role=A text="PONG B 5f7a5b57 327" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 328"
+RX role=A text="PONG B 5f7a5b57 328" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 329"
+RX role=A text="PONG B 5f7a5b57 329" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 330"
+RX role=A text="PONG B 5f7a5b57 330" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 331"
+RX role=A text="PONG B 5f7a5b57 331" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 332"
+RX role=A text="PONG B 5f7a5b57 332" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 333"
+RX role=A text="PONG B 5f7a5b57 333" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 334"
+RX role=A text="PONG B 5f7a5b57 334" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 335"
+RX role=A text="PONG B 5f7a5b57 335" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 336"
+RX role=A text="PONG B 5f7a5b57 336" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 337"
+RX role=A text="PONG B 5f7a5b57 337" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 338"
+RX role=A text="PONG B 5f7a5b57 338" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 339"
+RX role=A text="PONG B 5f7a5b57 339" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 340"
+RX role=A text="PONG B 5f7a5b57 340" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 341"
+RX role=A text="PONG B 5f7a5b57 341" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 342"
+RX role=A text="PONG B 5f7a5b57 342" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 343"
+RX role=A text="PONG B 5f7a5b57 343" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 344"
+RX role=A text="PONG B 5f7a5b57 344" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 345"
+RX role=A text="PONG B 5f7a5b57 345" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 346"
+RX role=A text="PONG B 5f7a5b57 346" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 347"
+RX role=A text="PONG B 5f7a5b57 347" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 348"
+RX role=A text="PONG B 5f7a5b57 348" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 349"
+RX role=A text="PONG B 5f7a5b57 349" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 350"
+RX role=A text="PONG B 5f7a5b57 350" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 351"
+RX role=A text="PONG B 5f7a5b57 351" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 352"
+RX role=A text="PONG B 5f7a5b57 352" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 353"
+RX role=A text="PONG B 5f7a5b57 353" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 354"
+RX role=A text="PONG B 5f7a5b57 354" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 355"
+RX role=A text="PONG B 5f7a5b57 355" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 356"
+RX role=A text="PONG B 5f7a5b57 356" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 357"
+RX role=A text="PONG B 5f7a5b57 357" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 358"
+RX role=A text="PONG B 5f7a5b57 358" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 359"
+RX role=A text="PONG B 5f7a5b57 359" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 360"
+RX role=A text="PONG B 5f7a5b57 360" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 361"
+RX role=A text="PONG B 5f7a5b57 361" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 362"
+RX role=A text="PONG B 5f7a5b57 362" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 363"
+RX role=A text="PONG B 5f7a5b57 363" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 364"
+RX role=A text="PONG B 5f7a5b57 364" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 365"
+RX role=A text="PONG B 5f7a5b57 365" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 366"
+RX role=A text="PONG B 5f7a5b57 366" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 367"
+RX role=A text="PONG B 5f7a5b57 367" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 368"
+RX role=A text="PONG B 5f7a5b57 368" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 369"
+RX role=A text="PONG B 5f7a5b57 369" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 370"
+RX role=A text="PONG B 5f7a5b57 370" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 371"
+RX role=A text="PONG B 5f7a5b57 371" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 372"
+RX role=A text="PONG B 5f7a5b57 372" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 373"
+RX role=A text="PONG B 5f7a5b57 373" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 374"
+RX role=A text="PONG B 5f7a5b57 374" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 375"
+RX role=A text="PONG B 5f7a5b57 375" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 376"
+RX role=A text="PONG B 5f7a5b57 376" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 377"
+RX role=A text="PONG B 5f7a5b57 377" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 378"
+RX role=A text="PONG B 5f7a5b57 378" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 379"
+RX role=A text="PONG B 5f7a5b57 379" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 380"
+RX role=A text="PONG B 5f7a5b57 380" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 381"
+RX role=A text="PONG B 5f7a5b57 381" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 382"
+RX role=A text="PONG B 5f7a5b57 382" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 383"
+RX role=A text="PONG B 5f7a5b57 383" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 384"
+RX role=A text="PONG B 5f7a5b57 384" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 385"
+RX role=A text="PONG B 5f7a5b57 385" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 386"
+RX role=A text="PONG B 5f7a5b57 386" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 387"
+RX role=A text="PONG B 5f7a5b57 387" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 388"
+RX role=A text="PONG B 5f7a5b57 388" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 389"
+RX role=A text="PONG B 5f7a5b57 389" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 390"
+RX role=A text="PONG B 5f7a5b57 390" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 391"
+RX role=A text="PONG B 5f7a5b57 391" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 392"
+RX role=A text="PONG B 5f7a5b57 392" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 393"
+RX role=A text="PONG B 5f7a5b57 393" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 394"
+RX role=A text="PONG B 5f7a5b57 394" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 395"
+RX role=A text="PONG B 5f7a5b57 395" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 396"
+RX role=A text="PONG B 5f7a5b57 396" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 397"
+RX role=A text="PONG B 5f7a5b57 397" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 398"
+RX role=A text="PONG B 5f7a5b57 398" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 399"
+RX role=A text="PONG B 5f7a5b57 399" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 400"
+RX role=A text="PONG B 5f7a5b57 400" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 401"
+RX role=A text="PONG B 5f7a5b57 401" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 402"
+RX role=A text="PONG B 5f7a5b57 402" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 403"
+RX role=A text="PONG B 5f7a5b57 403" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 404"
+RX role=A text="PONG B 5f7a5b57 404" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 405"
+RX role=A text="PONG B 5f7a5b57 405" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 406"
+RX role=A text="PONG B 5f7a5b57 406" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 407"
+RX role=A text="PONG B 5f7a5b57 407" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 408"
+RX role=A text="PONG B 5f7a5b57 408" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 409"
+RX role=A text="PONG B 5f7a5b57 409" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 410"
+RX role=A text="PONG B 5f7a5b57 410" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 411"
+RX role=A text="PONG B 5f7a5b57 411" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 412"
+RX role=A text="PONG B 5f7a5b57 412" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 413"
+RX role=A text="PONG B 5f7a5b57 413" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 414"
+RX role=A text="PONG B 5f7a5b57 414" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 415"
+RX role=A text="PONG B 5f7a5b57 415" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 416"
+RX role=A text="PONG B 5f7a5b57 416" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 417"
+RX role=A text="PONG B 5f7a5b57 417" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 418"
+RX role=A text="PONG B 5f7a5b57 418" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 419"
+RX role=A text="PONG B 5f7a5b57 419" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 420"
+RX role=A text="PONG B 5f7a5b57 420" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 421"
+RX role=A text="PONG B 5f7a5b57 421" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 422"
+RX role=A text="PONG B 5f7a5b57 422" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 423"
+RX role=A text="PONG B 5f7a5b57 423" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 424"
+RX role=A text="PONG B 5f7a5b57 424" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 425"
+RX role=A text="PONG B 5f7a5b57 425" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 426"
+RX role=A text="PONG B 5f7a5b57 426" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 427"
+RX role=A text="PONG B 5f7a5b57 427" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 428"
+RX role=A text="PONG B 5f7a5b57 428" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 429"
+RX role=A text="PONG B 5f7a5b57 429" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 430"
+RX role=A text="PONG B 5f7a5b57 430" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 431"
+RX role=A text="PONG B 5f7a5b57 431" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 432"
+RX role=A text="PONG B 5f7a5b57 432" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 433"
+RX role=A text="PONG B 5f7a5b57 433" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 434"
+RX role=A text="PONG B 5f7a5b57 434" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 435"
+RX role=A text="PONG B 5f7a5b57 435" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 436"
+RX role=A text="PONG B 5f7a5b57 436" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 437"
+RX role=A text="PONG B 5f7a5b57 437" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 438"
+RX role=A text="PONG B 5f7a5b57 438" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 439"
+RX role=A text="PONG B 5f7a5b57 439" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 440"
+RX role=A text="PONG B 5f7a5b57 440" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 441"
+RX role=A text="PONG B 5f7a5b57 441" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 442"
+RX role=A text="PONG B 5f7a5b57 442" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 443"
+RX role=A text="PONG B 5f7a5b57 443" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 444"
+RX role=A text="PONG B 5f7a5b57 444" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 445"
+RX role=A text="PONG B 5f7a5b57 445" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 446"
+RX role=A text="PONG B 5f7a5b57 446" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 447"
+RX role=A text="PONG B 5f7a5b57 447" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 448"
+RX role=A text="PONG B 5f7a5b57 448" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 449"
+RX role=A text="PONG B 5f7a5b57 449" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 450"
+RX role=A text="PONG B 5f7a5b57 450" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 451"
+RX role=A text="PONG B 5f7a5b57 451" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 452"
+RX role=A text="PONG B 5f7a5b57 452" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 453"
+RX role=A text="PONG B 5f7a5b57 453" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 454"
+RX role=A text="PONG B 5f7a5b57 454" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 455"
+RX role=A text="PONG B 5f7a5b57 455" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 456"
+RX role=A text="PONG B 5f7a5b57 456" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 457"
+RX role=A text="PONG B 5f7a5b57 457" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 458"
+RX role=A text="PONG B 5f7a5b57 458" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 459"
+RX role=A text="PONG B 5f7a5b57 459" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 460"
+RX role=A text="PONG B 5f7a5b57 460" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 461"
+RX role=A text="PONG B 5f7a5b57 461" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 462"
+RX role=A text="PONG B 5f7a5b57 462" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 463"
+RX role=A text="PONG B 5f7a5b57 463" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 464"
+RX role=A text="PONG B 5f7a5b57 464" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 465"
+RX role=A text="PONG B 5f7a5b57 465" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 466"
+RX role=A text="PONG B 5f7a5b57 466" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 467"
+RX role=A text="PONG B 5f7a5b57 467" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 468"
+RX role=A text="PONG B 5f7a5b57 468" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 469"
+RX role=A text="PONG B 5f7a5b57 469" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 470"
+RX role=A text="PONG B 5f7a5b57 470" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 471"
+RX role=A text="PONG B 5f7a5b57 471" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 472"
+RX role=A text="PONG B 5f7a5b57 472" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 473"
+RX role=A text="PONG B 5f7a5b57 473" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 474"
+RX role=A text="PONG B 5f7a5b57 474" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 475"
+RX role=A text="PONG B 5f7a5b57 475" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 476"
+RX role=A text="PONG B 5f7a5b57 476" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 477"
+RX role=A text="PONG B 5f7a5b57 477" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 478"
+RX role=A text="PONG B 5f7a5b57 478" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 479"
+RX role=A text="PONG B 5f7a5b57 479" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 480"
+RX role=A text="PONG B 5f7a5b57 480" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 481"
+RX role=A text="PONG B 5f7a5b57 481" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 482"
+RX role=A text="PONG B 5f7a5b57 482" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 483"
+RX role=A text="PONG B 5f7a5b57 483" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 484"
+RX role=A text="PONG B 5f7a5b57 484" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 485"
+RX role=A text="PONG B 5f7a5b57 485" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 486"
+RX role=A text="PONG B 5f7a5b57 486" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 487"
+RX role=A text="PONG B 5f7a5b57 487" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 488"
+RX role=A text="PONG B 5f7a5b57 488" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 489"
+RX role=A text="PONG B 5f7a5b57 489" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 490"
+RX role=A text="PONG B 5f7a5b57 490" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 491"
+RX role=A text="PONG B 5f7a5b57 491" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 492"
+RX role=A text="PONG B 5f7a5b57 492" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 493"
+RX role=A text="PONG B 5f7a5b57 493" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 494"
+RX role=A text="PONG B 5f7a5b57 494" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 495"
+RX role=A text="PONG B 5f7a5b57 495" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 496"
+RX role=A text="PONG B 5f7a5b57 496" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 497"
+RX role=A text="PONG B 5f7a5b57 497" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 498"
+RX role=A text="PONG B 5f7a5b57 498" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 499"
+RX role=A text="PONG B 5f7a5b57 499" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 500"
+RX role=A text="PONG B 5f7a5b57 500" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 501"
+RX role=A text="PONG B 5f7a5b57 501" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 502"
+RX role=A text="PONG B 5f7a5b57 502" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 503"
+RX role=A text="PONG B 5f7a5b57 503" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 504"
+RX role=A text="PONG B 5f7a5b57 504" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 505"
+RX role=A text="PONG B 5f7a5b57 505" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 506"
+RX role=A text="PONG B 5f7a5b57 506" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 507"
+RX role=A text="PONG B 5f7a5b57 507" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 508"
+RX role=A text="PONG B 5f7a5b57 508" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 509"
+RX role=A text="PONG B 5f7a5b57 509" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 510"
+RX role=A text="PONG B 5f7a5b57 510" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 511"
+RX role=A text="PONG B 5f7a5b57 511" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 512"
+RX role=A text="PONG B 5f7a5b57 512" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 513"
+RX role=A text="PONG B 5f7a5b57 513" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 514"
+RX role=A text="PONG B 5f7a5b57 514" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 515"
+RX role=A text="PONG B 5f7a5b57 515" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 516"
+RX role=A text="PONG B 5f7a5b57 516" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 517"
+RX role=A text="PONG B 5f7a5b57 517" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 518"
+RX role=A text="PONG B 5f7a5b57 518" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 519"
+RX role=A text="PONG B 5f7a5b57 519" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 520"
+RX role=A text="PONG B 5f7a5b57 520" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 521"
+RX role=A text="PONG B 5f7a5b57 521" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 522"
+RX role=A text="PONG B 5f7a5b57 522" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 523"
+RX role=A text="PONG B 5f7a5b57 523" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 524"
+RX role=A text="PONG B 5f7a5b57 524" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 525"
+RX role=A text="PONG B 5f7a5b57 525" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 526"
+RX role=A text="PONG B 5f7a5b57 526" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 527"
+RX role=A text="PONG B 5f7a5b57 527" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 528"
+RX role=A text="PONG B 5f7a5b57 528" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 529"
+RX role=A text="PONG B 5f7a5b57 529" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 530"
+RX role=A text="PONG B 5f7a5b57 530" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 531"
+RX role=A text="PONG B 5f7a5b57 531" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 532"
+RX role=A text="PONG B 5f7a5b57 532" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 533"
+RX role=A text="PONG B 5f7a5b57 533" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 534"
+RX role=A text="PONG B 5f7a5b57 534" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 535"
+RX role=A text="PONG B 5f7a5b57 535" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 536"
+RX role=A text="PONG B 5f7a5b57 536" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 537"
+RX role=A text="PONG B 5f7a5b57 537" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 538"
+RX role=A text="PONG B 5f7a5b57 538" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 539"
+RX role=A text="PONG B 5f7a5b57 539" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 540"
+RX role=A text="PONG B 5f7a5b57 540" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 541"
+RX role=A text="PONG B 5f7a5b57 541" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 542"
+RX role=A text="PONG B 5f7a5b57 542" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 543"
+RX role=A text="PONG B 5f7a5b57 543" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 544"
+RX role=A text="PONG B 5f7a5b57 544" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 545"
+RX role=A text="PONG B 5f7a5b57 545" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 546"
+RX role=A text="PONG B 5f7a5b57 546" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 547"
+RX role=A text="PONG B 5f7a5b57 547" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 548"
+RX role=A text="PONG B 5f7a5b57 548" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 549"
+RX role=A text="PONG B 5f7a5b57 549" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 550"
+RX role=A text="PONG B 5f7a5b57 550" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 551"
+RX role=A text="PONG B 5f7a5b57 551" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 552"
+RX role=A text="PONG B 5f7a5b57 552" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 553"
+RX role=A text="PONG B 5f7a5b57 553" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 554"
+RX role=A text="PONG B 5f7a5b57 554" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 555"
+RX role=A text="PONG B 5f7a5b57 555" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 556"
+RX role=A text="PONG B 5f7a5b57 556" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 557"
+RX role=A text="PONG B 5f7a5b57 557" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 558"
+RX role=A text="PONG B 5f7a5b57 558" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 559"
+RX role=A text="PONG B 5f7a5b57 559" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 560"
+RX role=A text="PONG B 5f7a5b57 560" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 561"
+RX role=A text="PONG B 5f7a5b57 561" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 562"
+RX role=A text="PONG B 5f7a5b57 562" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 563"
+RX role=A text="PONG B 5f7a5b57 563" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 564"
+RX role=A text="PONG B 5f7a5b57 564" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 565"
+RX role=A text="PONG B 5f7a5b57 565" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 566"
+RX role=A text="PONG B 5f7a5b57 566" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 567"
+RX role=A text="PONG B 5f7a5b57 567" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 568"
+RX role=A text="PONG B 5f7a5b57 568" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 569"
+RX role=A text="PONG B 5f7a5b57 569" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 570"
+RX role=A text="PONG B 5f7a5b57 570" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 571"
+RX role=A text="PONG B 5f7a5b57 571" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 572"
+RX role=A text="PONG B 5f7a5b57 572" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 573"
+RX role=A text="PONG B 5f7a5b57 573" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 574"
+RX role=A text="PONG B 5f7a5b57 574" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 575"
+RX role=A text="PONG B 5f7a5b57 575" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 576"
+RX role=A text="PONG B 5f7a5b57 576" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 577"
+RX role=A text="PONG B 5f7a5b57 577" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 578"
+RX role=A text="PONG B 5f7a5b57 578" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 579"
+RX role=A text="PONG B 5f7a5b57 579" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 580"
+RX role=A text="PONG B 5f7a5b57 580" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 581"
+RX role=A text="PONG B 5f7a5b57 581" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 582"
+RX role=A text="PONG B 5f7a5b57 582" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 583"
+RX role=A text="PONG B 5f7a5b57 583" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 584"
+RX role=A text="PONG B 5f7a5b57 584" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 585"
+RX role=A text="PONG B 5f7a5b57 585" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 586"
+RX role=A text="PONG B 5f7a5b57 586" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 587"
+RX role=A text="PONG B 5f7a5b57 587" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 588"
+RX role=A text="PONG B 5f7a5b57 588" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 589"
+RX role=A text="PONG B 5f7a5b57 589" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 590"
+RX role=A text="PONG B 5f7a5b57 590" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 591"
+RX role=A text="PONG B 5f7a5b57 591" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 592"
+RX role=A text="PONG B 5f7a5b57 592" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 593"
+RX role=A text="PONG B 5f7a5b57 593" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 594"
+RX role=A text="PONG B 5f7a5b57 594" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 595"
+RX role=A text="PONG B 5f7a5b57 595" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 596"
+RX role=A text="PONG B 5f7a5b57 596" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 597"
+RX role=A text="PONG B 5f7a5b57 597" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 598"
+RX role=A text="PONG B 5f7a5b57 598" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 599"
+RX role=A text="PONG B 5f7a5b57 599" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 600"
+RX role=A text="PONG B 5f7a5b57 600" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 601"
+RX role=A text="PONG B 5f7a5b57 601" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 602"
+RX role=A text="PONG B 5f7a5b57 602" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 603"
+RX role=A text="PONG B 5f7a5b57 603" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 604"
+RX role=A text="PONG B 5f7a5b57 604" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 605"
+RX role=A text="PONG B 5f7a5b57 605" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 606"
+RX role=A text="PONG B 5f7a5b57 606" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 607"
+RX role=A text="PONG B 5f7a5b57 607" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 608"
+RX role=A text="PONG B 5f7a5b57 608" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 609"
+RX role=A text="PONG B 5f7a5b57 609" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 610"
+RX role=A text="PONG B 5f7a5b57 610" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 611"
+RX role=A text="PONG B 5f7a5b57 611" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 612"
+RX role=A text="PONG B 5f7a5b57 612" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 613"
+RX role=A text="PONG B 5f7a5b57 613" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 614"
+RX role=A text="PONG B 5f7a5b57 614" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 615"
+RX role=A text="PONG B 5f7a5b57 615" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 616"
+RX role=A text="PONG B 5f7a5b57 616" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 617"
+RX role=A text="PONG B 5f7a5b57 617" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 618"
+RX role=A text="PONG B 5f7a5b57 618" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 619"
+RX role=A text="PONG B 5f7a5b57 619" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 620"
+RX role=A text="PONG B 5f7a5b57 620" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 621"
+RX role=A text="PONG B 5f7a5b57 621" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 622"
+RX role=A text="PONG B 5f7a5b57 622" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 623"
+RX role=A text="PONG B 5f7a5b57 623" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 624"
+RX role=A text="PONG B 5f7a5b57 624" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 625"
+RX role=A text="PONG B 5f7a5b57 625" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 626"
+RX role=A text="PONG B 5f7a5b57 626" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 627"
+RX role=A text="PONG B 5f7a5b57 627" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 628"
+RX role=A text="PONG B 5f7a5b57 628" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 629"
+RX role=A text="PONG B 5f7a5b57 629" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 630"
+RX role=A text="PONG B 5f7a5b57 630" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 631"
+RX role=A text="PONG B 5f7a5b57 631" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 632"
+RX role=A text="PONG B 5f7a5b57 632" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 633"
+RX role=A text="PONG B 5f7a5b57 633" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 634"
+RX role=A text="PONG B 5f7a5b57 634" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 635"
+RX role=A text="PONG B 5f7a5b57 635" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 636"
+RX role=A text="PONG B 5f7a5b57 636" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 637"
+RX role=A text="PONG B 5f7a5b57 637" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 638"
+RX role=A text="PONG B 5f7a5b57 638" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 639"
+RX role=A text="PONG B 5f7a5b57 639" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 640"
+RX role=A text="PONG B 5f7a5b57 640" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 641"
+RX role=A text="PONG B 5f7a5b57 641" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 642"
+RX role=A text="PONG B 5f7a5b57 642" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 643"
+RX role=A text="PONG B 5f7a5b57 643" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 644"
+RX role=A text="PONG B 5f7a5b57 644" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 645"
+RX role=A text="PONG B 5f7a5b57 645" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 646"
+RX role=A text="PONG B 5f7a5b57 646" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 647"
+RX role=A text="PONG B 5f7a5b57 647" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 648"
+RX role=A text="PONG B 5f7a5b57 648" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 649"
+RX role=A text="PONG B 5f7a5b57 649" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 650"
+RX role=A text="PONG B 5f7a5b57 650" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 651"
+RX role=A text="PONG B 5f7a5b57 651" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 652"
+RX role=A text="PONG B 5f7a5b57 652" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 653"
+RX role=A text="PONG B 5f7a5b57 653" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 654"
+RX role=A text="PONG B 5f7a5b57 654" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 655"
+RX role=A text="PONG B 5f7a5b57 655" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 656"
+RX role=A text="PONG B 5f7a5b57 656" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 657"
+RX role=A text="PONG B 5f7a5b57 657" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 658"
+RX role=A text="PONG B 5f7a5b57 658" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 659"
+RX role=A text="PONG B 5f7a5b57 659" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 660"
+RX role=A text="PONG B 5f7a5b57 660" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 661"
+RX role=A text="PONG B 5f7a5b57 661" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 662"
+RX role=A text="PONG B 5f7a5b57 662" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 663"
+RX role=A text="PONG B 5f7a5b57 663" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 664"
+RX role=A text="PONG B 5f7a5b57 664" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 665"
+RX role=A text="PONG B 5f7a5b57 665" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 666"
+RX role=A text="PONG B 5f7a5b57 666" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 667"
+RX role=A text="PONG B 5f7a5b57 667" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 668"
+RX role=A text="PONG B 5f7a5b57 668" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 669"
+RX role=A text="PONG B 5f7a5b57 669" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 670"
+RX role=A text="PONG B 5f7a5b57 670" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 671"
+RX role=A text="PONG B 5f7a5b57 671" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 672"
+RX role=A text="PONG B 5f7a5b57 672" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 673"
+RX role=A text="PONG B 5f7a5b57 673" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 674"
+RX role=A text="PONG B 5f7a5b57 674" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 675"
+RX role=A text="PONG B 5f7a5b57 675" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 676"
+RX role=A text="PONG B 5f7a5b57 676" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 677"
+RX role=A text="PONG B 5f7a5b57 677" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 678"
+RX role=A text="PONG B 5f7a5b57 678" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 679"
+RX role=A text="PONG B 5f7a5b57 679" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 680"
+RX role=A text="PONG B 5f7a5b57 680" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 681"
+RX role=A text="PONG B 5f7a5b57 681" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 682"
+RX role=A text="PONG B 5f7a5b57 682" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 683"
+RX role=A text="PONG B 5f7a5b57 683" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 684"
+RX role=A text="PONG B 5f7a5b57 684" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 685"
+RX role=A text="PONG B 5f7a5b57 685" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 686"
+RX role=A text="PONG B 5f7a5b57 686" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 687"
+RX role=A text="PONG B 5f7a5b57 687" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 688"
+RX role=A text="PONG B 5f7a5b57 688" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 689"
+RX role=A text="PONG B 5f7a5b57 689" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 690"
+RX role=A text="PONG B 5f7a5b57 690" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 691"
+RX role=A text="PONG B 5f7a5b57 691" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 692"
+RX role=A text="PONG B 5f7a5b57 692" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 693"
+RX role=A text="PONG B 5f7a5b57 693" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 694"
+RX role=A text="PONG B 5f7a5b57 694" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 695"
+RX role=A text="PONG B 5f7a5b57 695" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 696"
+RX role=A text="PONG B 5f7a5b57 696" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 697"
+RX role=A text="PONG B 5f7a5b57 697" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 698"
+RX role=A text="PONG B 5f7a5b57 698" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 699"
+RX role=A text="PONG B 5f7a5b57 699" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 700"
+RX role=A text="PONG B 5f7a5b57 700" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 701"
+RX role=A text="PONG B 5f7a5b57 701" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 702"
+RX role=A text="PONG B 5f7a5b57 702" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 703"
+RX role=A text="PONG B 5f7a5b57 703" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 704"
+RX role=A text="PONG B 5f7a5b57 704" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 705"
+RX role=A text="PONG B 5f7a5b57 705" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 706"
+RX role=A text="PONG B 5f7a5b57 706" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 707"
+RX role=A text="PONG B 5f7a5b57 707" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 708"
+RX role=A text="PONG B 5f7a5b57 708" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 709"
+RX role=A text="PONG B 5f7a5b57 709" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 710"
+RX role=A text="PONG B 5f7a5b57 710" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 711"
+RX role=A text="PONG B 5f7a5b57 711" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 712"
+RX role=A text="PONG B 5f7a5b57 712" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 713"
+RX role=A text="PONG B 5f7a5b57 713" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 714"
+RX role=A text="PONG B 5f7a5b57 714" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 715"
+RX role=A text="PONG B 5f7a5b57 715" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 716"
+RX role=A text="PONG B 5f7a5b57 716" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 717"
+RX role=A text="PONG B 5f7a5b57 717" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 718"
+RX role=A text="PONG B 5f7a5b57 718" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 719"
+RX role=A text="PONG B 5f7a5b57 719" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 720"
+RX role=A text="PONG B 5f7a5b57 720" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 721"
+RX role=A text="PONG B 5f7a5b57 721" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 722"
+RX role=A text="PONG B 5f7a5b57 722" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 723"
+RX role=A text="PONG B 5f7a5b57 723" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 724"
+RX role=A text="PONG B 5f7a5b57 724" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 725"
+RX role=A text="PONG B 5f7a5b57 725" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 726"
+RX role=A text="PONG B 5f7a5b57 726" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 727"
+RX role=A text="PONG B 5f7a5b57 727" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 728"
+RX role=A text="PONG B 5f7a5b57 728" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 729"
+RX role=A text="PONG B 5f7a5b57 729" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 730"
+RX role=A text="PONG B 5f7a5b57 730" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 731"
+RX role=A text="PONG B 5f7a5b57 731" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 732"
+RX role=A text="PONG B 5f7a5b57 732" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 733"
+RX role=A text="PONG B 5f7a5b57 733" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 734"
+RX role=A text="PONG B 5f7a5b57 734" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 735"
+RX role=A text="PONG B 5f7a5b57 735" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 736"
+RX role=A text="PONG B 5f7a5b57 736" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 737"
+RX role=A text="PONG B 5f7a5b57 737" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 738"
+RX role=A text="PONG B 5f7a5b57 738" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 739"
+RX role=A text="PONG B 5f7a5b57 739" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 740"
+RX role=A text="PONG B 5f7a5b57 740" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 741"
+RX role=A text="PONG B 5f7a5b57 741" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 742"
+RX role=A text="PONG B 5f7a5b57 742" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 743"
+RX role=A text="PONG B 5f7a5b57 743" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 744"
+RX role=A text="PONG B 5f7a5b57 744" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 745"
+RX role=A text="PONG B 5f7a5b57 745" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 746"
+RX role=A text="PONG B 5f7a5b57 746" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 747"
+RX role=A text="PONG B 5f7a5b57 747" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 748"
+RX role=A text="PONG B 5f7a5b57 748" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 749"
+RX role=A text="PONG B 5f7a5b57 749" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 750"
+RX role=A text="PONG B 5f7a5b57 750" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 751"
+RX role=A text="PONG B 5f7a5b57 751" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 752"
+RX role=A text="PONG B 5f7a5b57 752" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 753"
+RX role=A text="PONG B 5f7a5b57 753" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 754"
+RX role=A text="PONG B 5f7a5b57 754" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 755"
+RX role=A text="PONG B 5f7a5b57 755" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 756"
+RX role=A text="PONG B 5f7a5b57 756" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 757"
+RX role=A text="PONG B 5f7a5b57 757" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 758"
+RX role=A text="PONG B 5f7a5b57 758" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 759"
+RX role=A text="PONG B 5f7a5b57 759" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 760"
+RX role=A text="PONG B 5f7a5b57 760" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 761"
+RX role=A text="PONG B 5f7a5b57 761" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 762"
+RX role=A text="PONG B 5f7a5b57 762" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 763"
+RX role=A text="PONG B 5f7a5b57 763" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 764"
+RX role=A text="PONG B 5f7a5b57 764" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 765"
+RX role=A text="PONG B 5f7a5b57 765" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 766"
+RX role=A text="PONG B 5f7a5b57 766" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 767"
+RX role=A text="PONG B 5f7a5b57 767" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 768"
+RX role=A text="PONG B 5f7a5b57 768" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 769"
+RX role=A text="PONG B 5f7a5b57 769" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 770"
+RX role=A text="PONG B 5f7a5b57 770" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 771"
+RX role=A text="PONG B 5f7a5b57 771" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 772"
+RX role=A text="PONG B 5f7a5b57 772" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 773"
+RX role=A text="PONG B 5f7a5b57 773" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 774"
+RX role=A text="PONG B 5f7a5b57 774" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 775"
+RX role=A text="PONG B 5f7a5b57 775" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 776"
+RX role=A text="PONG B 5f7a5b57 776" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 777"
+RX role=A text="PONG B 5f7a5b57 777" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 778"
+RX role=A text="PONG B 5f7a5b57 778" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 779"
+RX role=A text="PONG B 5f7a5b57 779" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 780"
+RX role=A text="PONG B 5f7a5b57 780" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 781"
+RX role=A text="PONG B 5f7a5b57 781" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 782"
+RX role=A text="PONG B 5f7a5b57 782" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 783"
+RX role=A text="PONG B 5f7a5b57 783" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 784"
+RX role=A text="PONG B 5f7a5b57 784" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 785"
+RX role=A text="PONG B 5f7a5b57 785" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 786"
+RX role=A text="PONG B 5f7a5b57 786" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 787"
+RX role=A text="PONG B 5f7a5b57 787" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 788"
+RX role=A text="PONG B 5f7a5b57 788" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 789"
+RX role=A text="PONG B 5f7a5b57 789" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 790"
+RX role=A text="PONG B 5f7a5b57 790" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 791"
+RX role=A text="PONG B 5f7a5b57 791" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 792"
+RX role=A text="PONG B 5f7a5b57 792" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 793"
+RX role=A text="PONG B 5f7a5b57 793" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 794"
+RX role=A text="PONG B 5f7a5b57 794" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 795"
+RX role=A text="PONG B 5f7a5b57 795" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 796"
+RX role=A text="PONG B 5f7a5b57 796" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 797"
+RX role=A text="PONG B 5f7a5b57 797" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 798"
+RX role=A text="PONG B 5f7a5b57 798" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 799"
+RX role=A text="PONG B 5f7a5b57 799" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 800"
+RX role=A text="PONG B 5f7a5b57 800" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 801"
+RX role=A text="PONG B 5f7a5b57 801" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 802"
+RX role=A text="PONG B 5f7a5b57 802" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 803"
+RX role=A text="PONG B 5f7a5b57 803" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 804"
+RX role=A text="PONG B 5f7a5b57 804" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 805"
+RX role=A text="PONG B 5f7a5b57 805" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 806"
+RX role=A text="PONG B 5f7a5b57 806" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 807"
+RX role=A text="PONG B 5f7a5b57 807" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 808"
+RX role=A text="PONG B 5f7a5b57 808" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 809"
+RX role=A text="PONG B 5f7a5b57 809" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 810"
+RX role=A text="PONG B 5f7a5b57 810" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 811"
+RX role=A text="PONG B 5f7a5b57 811" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 812"
+RX role=A text="PONG B 5f7a5b57 812" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 813"
+RX role=A text="PONG B 5f7a5b57 813" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 814"
+RX role=A text="PONG B 5f7a5b57 814" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 815"
+RX role=A text="PONG B 5f7a5b57 815" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 816"
+RX role=A text="PONG B 5f7a5b57 816" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 817"
+RX role=A text="PONG B 5f7a5b57 817" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 818"
+RX role=A text="PONG B 5f7a5b57 818" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 819"
+RX role=A text="PONG B 5f7a5b57 819" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 820"
+RX role=A text="PONG B 5f7a5b57 820" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 821"
+RX role=A text="PONG B 5f7a5b57 821" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 822"
+RX role=A text="PONG B 5f7a5b57 822" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 823"
+RX role=A text="PONG B 5f7a5b57 823" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 824"
+RX role=A text="PONG B 5f7a5b57 824" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 825"
+RX role=A text="PONG B 5f7a5b57 825" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 826"
+RX role=A text="PONG B 5f7a5b57 826" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 827"
+RX role=A text="PONG B 5f7a5b57 827" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 828"
+RX role=A text="PONG B 5f7a5b57 828" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 829"
+RX role=A text="PONG B 5f7a5b57 829" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 830"
+RX role=A text="PONG B 5f7a5b57 830" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 831"
+RX role=A text="PONG B 5f7a5b57 831" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 832"
+RX role=A text="PONG B 5f7a5b57 832" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 833"
+RX role=A text="PONG B 5f7a5b57 833" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 834"
+RX role=A text="PONG B 5f7a5b57 834" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 835"
+RX role=A text="PONG B 5f7a5b57 835" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 836"
+RX role=A text="PONG B 5f7a5b57 836" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 837"
+RX role=A text="PONG B 5f7a5b57 837" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 838"
+RX role=A text="PONG B 5f7a5b57 838" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 839"
+RX role=A text="PONG B 5f7a5b57 839" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 840"
+RX role=A text="PONG B 5f7a5b57 840" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 841"
+RX role=A text="PONG B 5f7a5b57 841" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 842"
+RX role=A text="PONG B 5f7a5b57 842" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 843"
+RX role=A text="PONG B 5f7a5b57 843" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 844"
+RX role=A text="PONG B 5f7a5b57 844" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 845"
+RX role=A text="PONG B 5f7a5b57 845" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 846"
+RX role=A text="PONG B 5f7a5b57 846" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 847"
+RX role=A text="PONG B 5f7a5b57 847" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 848"
+RX role=A text="PONG B 5f7a5b57 848" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 849"
+RX role=A text="PONG B 5f7a5b57 849" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 850"
+RX role=A text="PONG B 5f7a5b57 850" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 851"
+RX role=A text="PONG B 5f7a5b57 851" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 852"
+RX role=A text="PONG B 5f7a5b57 852" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 853"
+RX role=A text="PONG B 5f7a5b57 853" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 854"
+RX role=A text="PONG B 5f7a5b57 854" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 855"
+RX role=A text="PONG B 5f7a5b57 855" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 856"
+RX role=A text="PONG B 5f7a5b57 856" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 857"
+RX role=A text="PONG B 5f7a5b57 857" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 858"
+RX role=A text="PONG B 5f7a5b57 858" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 859"
+RX role=A text="PONG B 5f7a5b57 859" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 860"
+RX role=A text="PONG B 5f7a5b57 860" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 861"
+RX role=A text="PONG B 5f7a5b57 861" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 862"
+RX role=A text="PONG B 5f7a5b57 862" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 863"
+RX role=A text="PONG B 5f7a5b57 863" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 864"
+RX role=A text="PONG B 5f7a5b57 864" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 865"
+RX role=A text="PONG B 5f7a5b57 865" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 866"
+RX role=A text="PONG B 5f7a5b57 866" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 867"
+RX role=A text="PONG B 5f7a5b57 867" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 868"
+RX role=A text="PONG B 5f7a5b57 868" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 869"
+RX role=A text="PONG B 5f7a5b57 869" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 870"
+RX role=A text="PONG B 5f7a5b57 870" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 871"
+RX role=A text="PONG B 5f7a5b57 871" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 872"
+RX role=A text="PONG B 5f7a5b57 872" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 873"
+RX role=A text="PONG B 5f7a5b57 873" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 874"
+RX role=A text="PONG B 5f7a5b57 874" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 875"
+RX role=A text="PONG B 5f7a5b57 875" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 876"
+RX role=A text="PONG B 5f7a5b57 876" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 877"
+RX role=A text="PONG B 5f7a5b57 877" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 878"
+RX role=A text="PONG B 5f7a5b57 878" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 879"
+RX role=A text="PONG B 5f7a5b57 879" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 880"
+RX role=A text="PONG B 5f7a5b57 880" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 881"
+RX role=A text="PONG B 5f7a5b57 881" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 882"
+RX role=A text="PONG B 5f7a5b57 882" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 883"
+RX role=A text="PONG B 5f7a5b57 883" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 884"
+RX role=A text="PONG B 5f7a5b57 884" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 885"
+RX role=A text="PONG B 5f7a5b57 885" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 886"
+RX role=A text="PONG B 5f7a5b57 886" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 887"
+RX role=A text="PONG B 5f7a5b57 887" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 888"
+RX role=A text="PONG B 5f7a5b57 888" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 889"
+RX role=A text="PONG B 5f7a5b57 889" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 890"
+RX role=A text="PONG B 5f7a5b57 890" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 891"
+RX role=A text="PONG B 5f7a5b57 891" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 892"
+RX role=A text="PONG B 5f7a5b57 892" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 893"
+RX role=A text="PONG B 5f7a5b57 893" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 894"
+RX role=A text="PONG B 5f7a5b57 894" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 895"
+RX role=A text="PONG B 5f7a5b57 895" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 896"
+RX role=A text="PONG B 5f7a5b57 896" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 897"
+RX role=A text="PONG B 5f7a5b57 897" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 898"
+RX role=A text="PONG B 5f7a5b57 898" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 899"
+RX role=A text="PONG B 5f7a5b57 899" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 900"
+RX role=A text="PONG B 5f7a5b57 900" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 901"
+RX role=A text="PONG B 5f7a5b57 901" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 902"
+RX role=A text="PONG B 5f7a5b57 902" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 903"
+RX role=A text="PONG B 5f7a5b57 903" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 904"
+RX role=A text="PONG B 5f7a5b57 904" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 905"
+RX role=A text="PONG B 5f7a5b57 905" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 906"
+RX role=A text="PONG B 5f7a5b57 906" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 907"
+RX role=A text="PONG B 5f7a5b57 907" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 908"
+RX role=A text="PONG B 5f7a5b57 908" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 909"
+RX role=A text="PONG B 5f7a5b57 909" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 910"
+RX role=A text="PONG B 5f7a5b57 910" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 911"
+RX role=A text="PONG B 5f7a5b57 911" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 912"
+RX role=A text="PONG B 5f7a5b57 912" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 913"
+RX role=A text="PONG B 5f7a5b57 913" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 914"
+RX role=A text="PONG B 5f7a5b57 914" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 915"
+RX role=A text="PONG B 5f7a5b57 915" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 916"
+RX role=A text="PONG B 5f7a5b57 916" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 917"
+RX role=A text="PONG B 5f7a5b57 917" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 918"
+RX role=A text="PONG B 5f7a5b57 918" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 919"
+RX role=A text="PONG B 5f7a5b57 919" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 920"
+RX role=A text="PONG B 5f7a5b57 920" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 921"
+RX role=A text="PONG B 5f7a5b57 921" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 922"
+RX role=A text="PONG B 5f7a5b57 922" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 923"
+RX role=A text="PONG B 5f7a5b57 923" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 924"
+RX role=A text="PONG B 5f7a5b57 924" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 925"
+RX role=A text="PONG B 5f7a5b57 925" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 926"
+RX role=A text="PONG B 5f7a5b57 926" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 927"
+RX role=A text="PONG B 5f7a5b57 927" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 928"
+RX role=A text="PONG B 5f7a5b57 928" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 929"
+RX role=A text="PONG B 5f7a5b57 929" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 930"
+RX role=A text="PONG B 5f7a5b57 930" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 931"
+RX role=A text="PONG B 5f7a5b57 931" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 932"
+RX role=A text="PONG B 5f7a5b57 932" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 933"
+RX role=A text="PONG B 5f7a5b57 933" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 934"
+RX role=A text="PONG B 5f7a5b57 934" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 935"
+RX role=A text="PONG B 5f7a5b57 935" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 936"
+RX role=A text="PONG B 5f7a5b57 936" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 937"
+RX role=A text="PONG B 5f7a5b57 937" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 938"
+RX role=A text="PONG B 5f7a5b57 938" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 939"
+RX role=A text="PONG B 5f7a5b57 939" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 940"
+RX role=A text="PONG B 5f7a5b57 940" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 941"
+RX role=A text="PONG B 5f7a5b57 941" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 942"
+RX role=A text="PONG B 5f7a5b57 942" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 943"
+RX role=A text="PONG B 5f7a5b57 943" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 944"
+RX role=A text="PONG B 5f7a5b57 944" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 945"
+RX role=A text="PONG B 5f7a5b57 945" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 946"
+RX role=A text="PONG B 5f7a5b57 946" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 947"
+RX role=A text="PONG B 5f7a5b57 947" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 948"
+RX role=A text="PONG B 5f7a5b57 948" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 949"
+RX role=A text="PONG B 5f7a5b57 949" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 950"
+RX role=A text="PONG B 5f7a5b57 950" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 951"
+RX role=A text="PONG B 5f7a5b57 951" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 952"
+RX role=A text="PONG B 5f7a5b57 952" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 953"
+RX role=A text="PONG B 5f7a5b57 953" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 954"
+RX role=A text="PONG B 5f7a5b57 954" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 955"
+RX role=A text="PONG B 5f7a5b57 955" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 956"
+RX role=A text="PONG B 5f7a5b57 956" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 957"
+RX role=A text="PONG B 5f7a5b57 957" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 958"
+RX role=A text="PONG B 5f7a5b57 958" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 959"
+RX role=A text="PONG B 5f7a5b57 959" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 960"
+RX role=A text="PONG B 5f7a5b57 960" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 961"
+RX role=A text="PONG B 5f7a5b57 961" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 962"
+RX role=A text="PONG B 5f7a5b57 962" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 963"
+RX role=A text="PONG B 5f7a5b57 963" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 964"
+RX role=A text="PONG B 5f7a5b57 964" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 965"
+RX role=A text="PONG B 5f7a5b57 965" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 966"
+RX role=A text="PONG B 5f7a5b57 966" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 967"
+RX role=A text="PONG B 5f7a5b57 967" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 968"
+RX role=A text="PONG B 5f7a5b57 968" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 969"
+RX role=A text="PONG B 5f7a5b57 969" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 970"
+RX role=A text="PONG B 5f7a5b57 970" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 971"
+RX role=A text="PONG B 5f7a5b57 971" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 972"
+RX role=A text="PONG B 5f7a5b57 972" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 973"
+RX role=A text="PONG B 5f7a5b57 973" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 974"
+RX role=A text="PONG B 5f7a5b57 974" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 975"
+RX role=A text="PONG B 5f7a5b57 975" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 976"
+RX role=A text="PONG B 5f7a5b57 976" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 977"
+RX role=A text="PONG B 5f7a5b57 977" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 978"
+RX role=A text="PONG B 5f7a5b57 978" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 979"
+RX role=A text="PONG B 5f7a5b57 979" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 980"
+RX role=A text="PONG B 5f7a5b57 980" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 981"
+RX role=A text="PONG B 5f7a5b57 981" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 982"
+RX role=A text="PONG B 5f7a5b57 982" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 983"
+RX role=A text="PONG B 5f7a5b57 983" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 984"
+RX role=A text="PONG B 5f7a5b57 984" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 985"
+RX role=A text="PONG B 5f7a5b57 985" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 986"
+RX role=A text="PONG B 5f7a5b57 986" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 987"
+RX role=A text="PONG B 5f7a5b57 987" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 988"
+RX role=A text="PONG B 5f7a5b57 988" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 989"
+RX role=A text="PONG B 5f7a5b57 989" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 990"
+RX role=A text="PONG B 5f7a5b57 990" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 991"
+RX role=A text="PONG B 5f7a5b57 991" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 992"
+RX role=A text="PONG B 5f7a5b57 992" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 993"
+RX role=A text="PONG B 5f7a5b57 993" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 994"
+RX role=A text="PONG B 5f7a5b57 994" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 995"
+RX role=A text="PONG B 5f7a5b57 995" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 996"
+RX role=A text="PONG B 5f7a5b57 996" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 997"
+RX role=A text="PONG B 5f7a5b57 997" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 998"
+RX role=A text="PONG B 5f7a5b57 998" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 999"
+RX role=A text="PONG B 5f7a5b57 999" rtt_us=5556
+TX role=A text="PING A 5f7a5b57 1000"
+RX role=A text="PONG B 5f7a5b57 1000" rtt_us=6583
+SUMMARY role=A id=5f7a5b57 status=FAIL sent=1000 received=999 lost=1 errors=0 unexpected=0 rtt_min_us=5503 rtt_mean_us=5554.28 rtt_max_us=6583 duration_ms=10247

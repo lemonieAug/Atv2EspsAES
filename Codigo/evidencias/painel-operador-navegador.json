@@ -1,0 +1,13 @@
+{
+  "ambiente": "Zen 1.23b/Gecko 157, modo headless, perfil temporário isolado, servidor de teste na porta 8310",
+  "dados": "armazenamento de teste isolado; nenhum pedido real alterado",
+  "resultado": "PASS",
+  "observacoes": [
+    "Abertura da página raiz sem sessão: APIs responderam HTTP 401 e o painel exibiu acesso negado.",
+    "Entrada com ticket local de operador: /auth/launch respondeu HTTP 303; /api/session e APIs do painel responderam HTTP 200.",
+    "A interface exibiu ADMINISTRADOR · augusto e SERVER: ONLINE.",
+    "Nenhum erro de console foi capturado na sessão autenticada."
+  ],
+  "imagem": "painel-administrador-augusto.png",
+  "segredos_persistidos": false
+}

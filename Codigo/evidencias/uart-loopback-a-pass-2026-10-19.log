@@ -1,0 +1,3019 @@
+# Captura serial real: loopback local da placa A com jumper TX2/GPIO17 -> RX2/GPIO16 (2026-10-19 ~01:25-01:30 UTC)
+# MCP session 90d3ab94-4212-42ef-9edb-af2e03c71990; porta /dev/ttyUSB0; localização USB 3-3; 115200 baud
+# Captura COMPLETA desde o boot (EN pressionado pelo usuário); sequência automática 16c6d40f.
+# Linhas extraídas sem alteração das respostas serial_session_read (cursores 0, 27, 1696, 1697; total 3015).
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+BOOT role=A firmware=uart-only-v1 chip=ESP32-D0WD-V3 revision=3 cores=2 flash_bytes=4194304 psram_bytes=0 efuse_mac=d0a98fe342a8
+UART_READY role=A rx=16 tx=17 baud=115200 format=8N1 crypto=none
+Comando USB RUN inicia uma sequencia em A quando ociosa.
+RX_ERROR role=A invalid_or_oversize_line
+RUN role=A id=16c6d40f packets=1000 timeout_us=250000
+TX role=A text="PING A 16c6d40f 1"
+TIMEOUT role=A id=16c6d40f seq=1
+TX role=A text="PING A 16c6d40f 2"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 2"
+TIMEOUT role=A id=16c6d40f seq=2
+TX role=A text="PING A 16c6d40f 3"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 3"
+TIMEOUT role=A id=16c6d40f seq=3
+TX role=A text="PING A 16c6d40f 4"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 4"
+TIMEOUT role=A id=16c6d40f seq=4
+TX role=A text="PING A 16c6d40f 5"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 5"
+TIMEOUT role=A id=16c6d40f seq=5
+TX role=A text="PING A 16c6d40f 6"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 6"
+TIMEOUT role=A id=16c6d40f seq=6
+TX role=A text="PING A 16c6d40f 7"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 7"
+TIMEOUT role=A id=16c6d40f seq=7
+TX role=A text="PING A 16c6d40f 8"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 8"
+TIMEOUT role=A id=16c6d40f seq=8
+TX role=A text="PING A 16c6d40f 9"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 9"
+TIMEOUT role=A id=16c6d40f seq=9
+TX role=A text="PING A 16c6d40f 10"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 10"
+TIMEOUT role=A id=16c6d40f seq=10
+TX role=A text="PING A 16c6d40f 11"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 11"
+TIMEOUT role=A id=16c6d40f seq=11
+TX role=A text="PING A 16c6d40f 12"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 12"
+TIMEOUT role=A id=16c6d40f seq=12
+TX role=A text="PING A 16c6d40f 13"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 13"
+TIMEOUT role=A id=16c6d40f seq=13
+TX role=A text="PING A 16c6d40f 14"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 14"
+TIMEOUT role=A id=16c6d40f seq=14
+TX role=A text="PING A 16c6d40f 15"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 15"
+TIMEOUT role=A id=16c6d40f seq=15
+TX role=A text="PING A 16c6d40f 16"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 16"
+TIMEOUT role=A id=16c6d40f seq=16
+TX role=A text="PING A 16c6d40f 17"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 17"
+TIMEOUT role=A id=16c6d40f seq=17
+TX role=A text="PING A 16c6d40f 18"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 18"
+TIMEOUT role=A id=16c6d40f seq=18
+TX role=A text="PING A 16c6d40f 19"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 19"
+TIMEOUT role=A id=16c6d40f seq=19
+TX role=A text="PING A 16c6d40f 20"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 20"
+TIMEOUT role=A id=16c6d40f seq=20
+TX role=A text="PING A 16c6d40f 21"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 21"
+TIMEOUT role=A id=16c6d40f seq=21
+TX role=A text="PING A 16c6d40f 22"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 22"
+TIMEOUT role=A id=16c6d40f seq=22
+TX role=A text="PING A 16c6d40f 23"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 23"
+TIMEOUT role=A id=16c6d40f seq=23
+TX role=A text="PING A 16c6d40f 24"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 24"
+TIMEOUT role=A id=16c6d40f seq=24
+TX role=A text="PING A 16c6d40f 25"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 25"
+TIMEOUT role=A id=16c6d40f seq=25
+TX role=A text="PING A 16c6d40f 26"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 26"
+TIMEOUT role=A id=16c6d40f seq=26
+TX role=A text="PING A 16c6d40f 27"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 27"
+TIMEOUT role=A id=16c6d40f seq=27
+TX role=A text="PING A 16c6d40f 28"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 28"
+TIMEOUT role=A id=16c6d40f seq=28
+TX role=A text="PING A 16c6d40f 29"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 29"
+TIMEOUT role=A id=16c6d40f seq=29
+TX role=A text="PING A 16c6d40f 30"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 30"
+TIMEOUT role=A id=16c6d40f seq=30
+TX role=A text="PING A 16c6d40f 31"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 31"
+TIMEOUT role=A id=16c6d40f seq=31
+TX role=A text="PING A 16c6d40f 32"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 32"
+TIMEOUT role=A id=16c6d40f seq=32
+TX role=A text="PING A 16c6d40f 33"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 33"
+TIMEOUT role=A id=16c6d40f seq=33
+TX role=A text="PING A 16c6d40f 34"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 34"
+TIMEOUT role=A id=16c6d40f seq=34
+TX role=A text="PING A 16c6d40f 35"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 35"
+TIMEOUT role=A id=16c6d40f seq=35
+TX role=A text="PING A 16c6d40f 36"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 36"
+TIMEOUT role=A id=16c6d40f seq=36
+TX role=A text="PING A 16c6d40f 37"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 37"
+TIMEOUT role=A id=16c6d40f seq=37
+TX role=A text="PING A 16c6d40f 38"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 38"
+TIMEOUT role=A id=16c6d40f seq=38
+TX role=A text="PING A 16c6d40f 39"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 39"
+TIMEOUT role=A id=16c6d40f seq=39
+TX role=A text="PING A 16c6d40f 40"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 40"
+TIMEOUT role=A id=16c6d40f seq=40
+TX role=A text="PING A 16c6d40f 41"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 41"
+TIMEOUT role=A id=16c6d40f seq=41
+TX role=A text="PING A 16c6d40f 42"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 42"
+TIMEOUT role=A id=16c6d40f seq=42
+TX role=A text="PING A 16c6d40f 43"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 43"
+TIMEOUT role=A id=16c6d40f seq=43
+TX role=A text="PING A 16c6d40f 44"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 44"
+TIMEOUT role=A id=16c6d40f seq=44
+TX role=A text="PING A 16c6d40f 45"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 45"
+TIMEOUT role=A id=16c6d40f seq=45
+TX role=A text="PING A 16c6d40f 46"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 46"
+TIMEOUT role=A id=16c6d40f seq=46
+TX role=A text="PING A 16c6d40f 47"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 47"
+TIMEOUT role=A id=16c6d40f seq=47
+TX role=A text="PING A 16c6d40f 48"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 48"
+TIMEOUT role=A id=16c6d40f seq=48
+TX role=A text="PING A 16c6d40f 49"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 49"
+TIMEOUT role=A id=16c6d40f seq=49
+TX role=A text="PING A 16c6d40f 50"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 50"
+TIMEOUT role=A id=16c6d40f seq=50
+TX role=A text="PING A 16c6d40f 51"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 51"
+TIMEOUT role=A id=16c6d40f seq=51
+TX role=A text="PING A 16c6d40f 52"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 52"
+TIMEOUT role=A id=16c6d40f seq=52
+TX role=A text="PING A 16c6d40f 53"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 53"
+TIMEOUT role=A id=16c6d40f seq=53
+TX role=A text="PING A 16c6d40f 54"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 54"
+TIMEOUT role=A id=16c6d40f seq=54
+TX role=A text="PING A 16c6d40f 55"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 55"
+TIMEOUT role=A id=16c6d40f seq=55
+TX role=A text="PING A 16c6d40f 56"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 56"
+TIMEOUT role=A id=16c6d40f seq=56
+TX role=A text="PING A 16c6d40f 57"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 57"
+TIMEOUT role=A id=16c6d40f seq=57
+TX role=A text="PING A 16c6d40f 58"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 58"
+TIMEOUT role=A id=16c6d40f seq=58
+TX role=A text="PING A 16c6d40f 59"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 59"
+TIMEOUT role=A id=16c6d40f seq=59
+TX role=A text="PING A 16c6d40f 60"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 60"
+TIMEOUT role=A id=16c6d40f seq=60
+TX role=A text="PING A 16c6d40f 61"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 61"
+TIMEOUT role=A id=16c6d40f seq=61
+TX role=A text="PING A 16c6d40f 62"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 62"
+TIMEOUT role=A id=16c6d40f seq=62
+TX role=A text="PING A 16c6d40f 63"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 63"
+TIMEOUT role=A id=16c6d40f seq=63
+TX role=A text="PING A 16c6d40f 64"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 64"
+TIMEOUT role=A id=16c6d40f seq=64
+TX role=A text="PING A 16c6d40f 65"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 65"
+TIMEOUT role=A id=16c6d40f seq=65
+TX role=A text="PING A 16c6d40f 66"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 66"
+TIMEOUT role=A id=16c6d40f seq=66
+TX role=A text="PING A 16c6d40f 67"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 67"
+TIMEOUT role=A id=16c6d40f seq=67
+TX role=A text="PING A 16c6d40f 68"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 68"
+TIMEOUT role=A id=16c6d40f seq=68
+TX role=A text="PING A 16c6d40f 69"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 69"
+TIMEOUT role=A id=16c6d40f seq=69
+TX role=A text="PING A 16c6d40f 70"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 70"
+TIMEOUT role=A id=16c6d40f seq=70
+TX role=A text="PING A 16c6d40f 71"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 71"
+TIMEOUT role=A id=16c6d40f seq=71
+TX role=A text="PING A 16c6d40f 72"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 72"
+TIMEOUT role=A id=16c6d40f seq=72
+TX role=A text="PING A 16c6d40f 73"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 73"
+TIMEOUT role=A id=16c6d40f seq=73
+TX role=A text="PING A 16c6d40f 74"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 74"
+TIMEOUT role=A id=16c6d40f seq=74
+TX role=A text="PING A 16c6d40f 75"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 75"
+TIMEOUT role=A id=16c6d40f seq=75
+TX role=A text="PING A 16c6d40f 76"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 76"
+TIMEOUT role=A id=16c6d40f seq=76
+TX role=A text="PING A 16c6d40f 77"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 77"
+TIMEOUT role=A id=16c6d40f seq=77
+TX role=A text="PING A 16c6d40f 78"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 78"
+TIMEOUT role=A id=16c6d40f seq=78
+TX role=A text="PING A 16c6d40f 79"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 79"
+TIMEOUT role=A id=16c6d40f seq=79
+TX role=A text="PING A 16c6d40f 80"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 80"
+TIMEOUT role=A id=16c6d40f seq=80
+TX role=A text="PING A 16c6d40f 81"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 81"
+TIMEOUT role=A id=16c6d40f seq=81
+TX role=A text="PING A 16c6d40f 82"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 82"
+TIMEOUT role=A id=16c6d40f seq=82
+TX role=A text="PING A 16c6d40f 83"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 83"
+TIMEOUT role=A id=16c6d40f seq=83
+TX role=A text="PING A 16c6d40f 84"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 84"
+TIMEOUT role=A id=16c6d40f seq=84
+TX role=A text="PING A 16c6d40f 85"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 85"
+TIMEOUT role=A id=16c6d40f seq=85
+TX role=A text="PING A 16c6d40f 86"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 86"
+TIMEOUT role=A id=16c6d40f seq=86
+TX role=A text="PING A 16c6d40f 87"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 87"
+TIMEOUT role=A id=16c6d40f seq=87
+TX role=A text="PING A 16c6d40f 88"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 88"
+TIMEOUT role=A id=16c6d40f seq=88
+TX role=A text="PING A 16c6d40f 89"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 89"
+TIMEOUT role=A id=16c6d40f seq=89
+TX role=A text="PING A 16c6d40f 90"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 90"
+TIMEOUT role=A id=16c6d40f seq=90
+TX role=A text="PING A 16c6d40f 91"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 91"
+TIMEOUT role=A id=16c6d40f seq=91
+TX role=A text="PING A 16c6d40f 92"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 92"
+TIMEOUT role=A id=16c6d40f seq=92
+TX role=A text="PING A 16c6d40f 93"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 93"
+TIMEOUT role=A id=16c6d40f seq=93
+TX role=A text="PING A 16c6d40f 94"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 94"
+TIMEOUT role=A id=16c6d40f seq=94
+TX role=A text="PING A 16c6d40f 95"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 95"
+TIMEOUT role=A id=16c6d40f seq=95
+TX role=A text="PING A 16c6d40f 96"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 96"
+TIMEOUT role=A id=16c6d40f seq=96
+TX role=A text="PING A 16c6d40f 97"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 97"
+TIMEOUT role=A id=16c6d40f seq=97
+TX role=A text="PING A 16c6d40f 98"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 98"
+TIMEOUT role=A id=16c6d40f seq=98
+TX role=A text="PING A 16c6d40f 99"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 99"
+TIMEOUT role=A id=16c6d40f seq=99
+TX role=A text="PING A 16c6d40f 100"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 100"
+TIMEOUT role=A id=16c6d40f seq=100
+TX role=A text="PING A 16c6d40f 101"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 101"
+TIMEOUT role=A id=16c6d40f seq=101
+TX role=A text="PING A 16c6d40f 102"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 102"
+TIMEOUT role=A id=16c6d40f seq=102
+TX role=A text="PING A 16c6d40f 103"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 103"
+TIMEOUT role=A id=16c6d40f seq=103
+TX role=A text="PING A 16c6d40f 104"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 104"
+TIMEOUT role=A id=16c6d40f seq=104
+TX role=A text="PING A 16c6d40f 105"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 105"
+TIMEOUT role=A id=16c6d40f seq=105
+TX role=A text="PING A 16c6d40f 106"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 106"
+TIMEOUT role=A id=16c6d40f seq=106
+TX role=A text="PING A 16c6d40f 107"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 107"
+TIMEOUT role=A id=16c6d40f seq=107
+TX role=A text="PING A 16c6d40f 108"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 108"
+TIMEOUT role=A id=16c6d40f seq=108
+TX role=A text="PING A 16c6d40f 109"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 109"
+TIMEOUT role=A id=16c6d40f seq=109
+TX role=A text="PING A 16c6d40f 110"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 110"
+TIMEOUT role=A id=16c6d40f seq=110
+TX role=A text="PING A 16c6d40f 111"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 111"
+TIMEOUT role=A id=16c6d40f seq=111
+TX role=A text="PING A 16c6d40f 112"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 112"
+TIMEOUT role=A id=16c6d40f seq=112
+TX role=A text="PING A 16c6d40f 113"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 113"
+TIMEOUT role=A id=16c6d40f seq=113
+TX role=A text="PING A 16c6d40f 114"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 114"
+TIMEOUT role=A id=16c6d40f seq=114
+TX role=A text="PING A 16c6d40f 115"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 115"
+TIMEOUT role=A id=16c6d40f seq=115
+TX role=A text="PING A 16c6d40f 116"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 116"
+TIMEOUT role=A id=16c6d40f seq=116
+TX role=A text="PING A 16c6d40f 117"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 117"
+TIMEOUT role=A id=16c6d40f seq=117
+TX role=A text="PING A 16c6d40f 118"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 118"
+TIMEOUT role=A id=16c6d40f seq=118
+TX role=A text="PING A 16c6d40f 119"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 119"
+TIMEOUT role=A id=16c6d40f seq=119
+TX role=A text="PING A 16c6d40f 120"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 120"
+TIMEOUT role=A id=16c6d40f seq=120
+TX role=A text="PING A 16c6d40f 121"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 121"
+TIMEOUT role=A id=16c6d40f seq=121
+TX role=A text="PING A 16c6d40f 122"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 122"
+TIMEOUT role=A id=16c6d40f seq=122
+TX role=A text="PING A 16c6d40f 123"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 123"
+TIMEOUT role=A id=16c6d40f seq=123
+TX role=A text="PING A 16c6d40f 124"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 124"
+TIMEOUT role=A id=16c6d40f seq=124
+TX role=A text="PING A 16c6d40f 125"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 125"
+TIMEOUT role=A id=16c6d40f seq=125
+TX role=A text="PING A 16c6d40f 126"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 126"
+TIMEOUT role=A id=16c6d40f seq=126
+TX role=A text="PING A 16c6d40f 127"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 127"
+TIMEOUT role=A id=16c6d40f seq=127
+TX role=A text="PING A 16c6d40f 128"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 128"
+TIMEOUT role=A id=16c6d40f seq=128
+TX role=A text="PING A 16c6d40f 129"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 129"
+TIMEOUT role=A id=16c6d40f seq=129
+TX role=A text="PING A 16c6d40f 130"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 130"
+TIMEOUT role=A id=16c6d40f seq=130
+TX role=A text="PING A 16c6d40f 131"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 131"
+TIMEOUT role=A id=16c6d40f seq=131
+TX role=A text="PING A 16c6d40f 132"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 132"
+TIMEOUT role=A id=16c6d40f seq=132
+TX role=A text="PING A 16c6d40f 133"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 133"
+TIMEOUT role=A id=16c6d40f seq=133
+TX role=A text="PING A 16c6d40f 134"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 134"
+TIMEOUT role=A id=16c6d40f seq=134
+TX role=A text="PING A 16c6d40f 135"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 135"
+TIMEOUT role=A id=16c6d40f seq=135
+TX role=A text="PING A 16c6d40f 136"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 136"
+TIMEOUT role=A id=16c6d40f seq=136
+TX role=A text="PING A 16c6d40f 137"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 137"
+TIMEOUT role=A id=16c6d40f seq=137
+TX role=A text="PING A 16c6d40f 138"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 138"
+TIMEOUT role=A id=16c6d40f seq=138
+TX role=A text="PING A 16c6d40f 139"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 139"
+TIMEOUT role=A id=16c6d40f seq=139
+TX role=A text="PING A 16c6d40f 140"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 140"
+TIMEOUT role=A id=16c6d40f seq=140
+TX role=A text="PING A 16c6d40f 141"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 141"
+TIMEOUT role=A id=16c6d40f seq=141
+TX role=A text="PING A 16c6d40f 142"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 142"
+TIMEOUT role=A id=16c6d40f seq=142
+TX role=A text="PING A 16c6d40f 143"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 143"
+TIMEOUT role=A id=16c6d40f seq=143
+TX role=A text="PING A 16c6d40f 144"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 144"
+TIMEOUT role=A id=16c6d40f seq=144
+TX role=A text="PING A 16c6d40f 145"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 145"
+TIMEOUT role=A id=16c6d40f seq=145
+TX role=A text="PING A 16c6d40f 146"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 146"
+TIMEOUT role=A id=16c6d40f seq=146
+TX role=A text="PING A 16c6d40f 147"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 147"
+TIMEOUT role=A id=16c6d40f seq=147
+TX role=A text="PING A 16c6d40f 148"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 148"
+TIMEOUT role=A id=16c6d40f seq=148
+TX role=A text="PING A 16c6d40f 149"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 149"
+TIMEOUT role=A id=16c6d40f seq=149
+TX role=A text="PING A 16c6d40f 150"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 150"
+TIMEOUT role=A id=16c6d40f seq=150
+TX role=A text="PING A 16c6d40f 151"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 151"
+TIMEOUT role=A id=16c6d40f seq=151
+TX role=A text="PING A 16c6d40f 152"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 152"
+TIMEOUT role=A id=16c6d40f seq=152
+TX role=A text="PING A 16c6d40f 153"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 153"
+TIMEOUT role=A id=16c6d40f seq=153
+TX role=A text="PING A 16c6d40f 154"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 154"
+TIMEOUT role=A id=16c6d40f seq=154
+TX role=A text="PING A 16c6d40f 155"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 155"
+TIMEOUT role=A id=16c6d40f seq=155
+TX role=A text="PING A 16c6d40f 156"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 156"
+TIMEOUT role=A id=16c6d40f seq=156
+TX role=A text="PING A 16c6d40f 157"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 157"
+TIMEOUT role=A id=16c6d40f seq=157
+TX role=A text="PING A 16c6d40f 158"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 158"
+TIMEOUT role=A id=16c6d40f seq=158
+TX role=A text="PING A 16c6d40f 159"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 159"
+TIMEOUT role=A id=16c6d40f seq=159
+TX role=A text="PING A 16c6d40f 160"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 160"
+TIMEOUT role=A id=16c6d40f seq=160
+TX role=A text="PING A 16c6d40f 161"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 161"
+TIMEOUT role=A id=16c6d40f seq=161
+TX role=A text="PING A 16c6d40f 162"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 162"
+TIMEOUT role=A id=16c6d40f seq=162
+TX role=A text="PING A 16c6d40f 163"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 163"
+TIMEOUT role=A id=16c6d40f seq=163
+TX role=A text="PING A 16c6d40f 164"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 164"
+TIMEOUT role=A id=16c6d40f seq=164
+TX role=A text="PING A 16c6d40f 165"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 165"
+TIMEOUT role=A id=16c6d40f seq=165
+TX role=A text="PING A 16c6d40f 166"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 166"
+TIMEOUT role=A id=16c6d40f seq=166
+TX role=A text="PING A 16c6d40f 167"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 167"
+TIMEOUT role=A id=16c6d40f seq=167
+TX role=A text="PING A 16c6d40f 168"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 168"
+TIMEOUT role=A id=16c6d40f seq=168
+TX role=A text="PING A 16c6d40f 169"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 169"
+TIMEOUT role=A id=16c6d40f seq=169
+TX role=A text="PING A 16c6d40f 170"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 170"
+TIMEOUT role=A id=16c6d40f seq=170
+TX role=A text="PING A 16c6d40f 171"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 171"
+TIMEOUT role=A id=16c6d40f seq=171
+TX role=A text="PING A 16c6d40f 172"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 172"
+TIMEOUT role=A id=16c6d40f seq=172
+TX role=A text="PING A 16c6d40f 173"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 173"
+TIMEOUT role=A id=16c6d40f seq=173
+TX role=A text="PING A 16c6d40f 174"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 174"
+TIMEOUT role=A id=16c6d40f seq=174
+TX role=A text="PING A 16c6d40f 175"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 175"
+TIMEOUT role=A id=16c6d40f seq=175
+TX role=A text="PING A 16c6d40f 176"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 176"
+TIMEOUT role=A id=16c6d40f seq=176
+TX role=A text="PING A 16c6d40f 177"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 177"
+TIMEOUT role=A id=16c6d40f seq=177
+TX role=A text="PING A 16c6d40f 178"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 178"
+TIMEOUT role=A id=16c6d40f seq=178
+TX role=A text="PING A 16c6d40f 179"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 179"
+TIMEOUT role=A id=16c6d40f seq=179
+TX role=A text="PING A 16c6d40f 180"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 180"
+TIMEOUT role=A id=16c6d40f seq=180
+TX role=A text="PING A 16c6d40f 181"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 181"
+TIMEOUT role=A id=16c6d40f seq=181
+TX role=A text="PING A 16c6d40f 182"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 182"
+TIMEOUT role=A id=16c6d40f seq=182
+TX role=A text="PING A 16c6d40f 183"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 183"
+TIMEOUT role=A id=16c6d40f seq=183
+TX role=A text="PING A 16c6d40f 184"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 184"
+TIMEOUT role=A id=16c6d40f seq=184
+TX role=A text="PING A 16c6d40f 185"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 185"
+TIMEOUT role=A id=16c6d40f seq=185
+TX role=A text="PING A 16c6d40f 186"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 186"
+TIMEOUT role=A id=16c6d40f seq=186
+TX role=A text="PING A 16c6d40f 187"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 187"
+TIMEOUT role=A id=16c6d40f seq=187
+TX role=A text="PING A 16c6d40f 188"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 188"
+TIMEOUT role=A id=16c6d40f seq=188
+TX role=A text="PING A 16c6d40f 189"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 189"
+TIMEOUT role=A id=16c6d40f seq=189
+TX role=A text="PING A 16c6d40f 190"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 190"
+TIMEOUT role=A id=16c6d40f seq=190
+TX role=A text="PING A 16c6d40f 191"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 191"
+TIMEOUT role=A id=16c6d40f seq=191
+TX role=A text="PING A 16c6d40f 192"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 192"
+TIMEOUT role=A id=16c6d40f seq=192
+TX role=A text="PING A 16c6d40f 193"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 193"
+TIMEOUT role=A id=16c6d40f seq=193
+TX role=A text="PING A 16c6d40f 194"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 194"
+TIMEOUT role=A id=16c6d40f seq=194
+TX role=A text="PING A 16c6d40f 195"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 195"
+TIMEOUT role=A id=16c6d40f seq=195
+TX role=A text="PING A 16c6d40f 196"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 196"
+TIMEOUT role=A id=16c6d40f seq=196
+TX role=A text="PING A 16c6d40f 197"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 197"
+TIMEOUT role=A id=16c6d40f seq=197
+TX role=A text="PING A 16c6d40f 198"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 198"
+TIMEOUT role=A id=16c6d40f seq=198
+TX role=A text="PING A 16c6d40f 199"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 199"
+TIMEOUT role=A id=16c6d40f seq=199
+TX role=A text="PING A 16c6d40f 200"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 200"
+TIMEOUT role=A id=16c6d40f seq=200
+TX role=A text="PING A 16c6d40f 201"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 201"
+TIMEOUT role=A id=16c6d40f seq=201
+TX role=A text="PING A 16c6d40f 202"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 202"
+TIMEOUT role=A id=16c6d40f seq=202
+TX role=A text="PING A 16c6d40f 203"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 203"
+TIMEOUT role=A id=16c6d40f seq=203
+TX role=A text="PING A 16c6d40f 204"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 204"
+TIMEOUT role=A id=16c6d40f seq=204
+TX role=A text="PING A 16c6d40f 205"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 205"
+TIMEOUT role=A id=16c6d40f seq=205
+TX role=A text="PING A 16c6d40f 206"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 206"
+TIMEOUT role=A id=16c6d40f seq=206
+TX role=A text="PING A 16c6d40f 207"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 207"
+TIMEOUT role=A id=16c6d40f seq=207
+TX role=A text="PING A 16c6d40f 208"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 208"
+TIMEOUT role=A id=16c6d40f seq=208
+TX role=A text="PING A 16c6d40f 209"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 209"
+TIMEOUT role=A id=16c6d40f seq=209
+TX role=A text="PING A 16c6d40f 210"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 210"
+TIMEOUT role=A id=16c6d40f seq=210
+TX role=A text="PING A 16c6d40f 211"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 211"
+TIMEOUT role=A id=16c6d40f seq=211
+TX role=A text="PING A 16c6d40f 212"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 212"
+TIMEOUT role=A id=16c6d40f seq=212
+TX role=A text="PING A 16c6d40f 213"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 213"
+TIMEOUT role=A id=16c6d40f seq=213
+TX role=A text="PING A 16c6d40f 214"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 214"
+TIMEOUT role=A id=16c6d40f seq=214
+TX role=A text="PING A 16c6d40f 215"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 215"
+TIMEOUT role=A id=16c6d40f seq=215
+TX role=A text="PING A 16c6d40f 216"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 216"
+TIMEOUT role=A id=16c6d40f seq=216
+TX role=A text="PING A 16c6d40f 217"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 217"
+TIMEOUT role=A id=16c6d40f seq=217
+TX role=A text="PING A 16c6d40f 218"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 218"
+TIMEOUT role=A id=16c6d40f seq=218
+TX role=A text="PING A 16c6d40f 219"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 219"
+TIMEOUT role=A id=16c6d40f seq=219
+TX role=A text="PING A 16c6d40f 220"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 220"
+TIMEOUT role=A id=16c6d40f seq=220
+TX role=A text="PING A 16c6d40f 221"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 221"
+TIMEOUT role=A id=16c6d40f seq=221
+TX role=A text="PING A 16c6d40f 222"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 222"
+TIMEOUT role=A id=16c6d40f seq=222
+TX role=A text="PING A 16c6d40f 223"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 223"
+TIMEOUT role=A id=16c6d40f seq=223
+TX role=A text="PING A 16c6d40f 224"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 224"
+TIMEOUT role=A id=16c6d40f seq=224
+TX role=A text="PING A 16c6d40f 225"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 225"
+TIMEOUT role=A id=16c6d40f seq=225
+TX role=A text="PING A 16c6d40f 226"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 226"
+TIMEOUT role=A id=16c6d40f seq=226
+TX role=A text="PING A 16c6d40f 227"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 227"
+TIMEOUT role=A id=16c6d40f seq=227
+TX role=A text="PING A 16c6d40f 228"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 228"
+TIMEOUT role=A id=16c6d40f seq=228
+TX role=A text="PING A 16c6d40f 229"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 229"
+TIMEOUT role=A id=16c6d40f seq=229
+TX role=A text="PING A 16c6d40f 230"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 230"
+TIMEOUT role=A id=16c6d40f seq=230
+TX role=A text="PING A 16c6d40f 231"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 231"
+TIMEOUT role=A id=16c6d40f seq=231
+TX role=A text="PING A 16c6d40f 232"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 232"
+TIMEOUT role=A id=16c6d40f seq=232
+TX role=A text="PING A 16c6d40f 233"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 233"
+TIMEOUT role=A id=16c6d40f seq=233
+TX role=A text="PING A 16c6d40f 234"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 234"
+TIMEOUT role=A id=16c6d40f seq=234
+TX role=A text="PING A 16c6d40f 235"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 235"
+TIMEOUT role=A id=16c6d40f seq=235
+TX role=A text="PING A 16c6d40f 236"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 236"
+TIMEOUT role=A id=16c6d40f seq=236
+TX role=A text="PING A 16c6d40f 237"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 237"
+TIMEOUT role=A id=16c6d40f seq=237
+TX role=A text="PING A 16c6d40f 238"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 238"
+TIMEOUT role=A id=16c6d40f seq=238
+TX role=A text="PING A 16c6d40f 239"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 239"
+TIMEOUT role=A id=16c6d40f seq=239
+TX role=A text="PING A 16c6d40f 240"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 240"
+TIMEOUT role=A id=16c6d40f seq=240
+TX role=A text="PING A 16c6d40f 241"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 241"
+TIMEOUT role=A id=16c6d40f seq=241
+TX role=A text="PING A 16c6d40f 242"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 242"
+TIMEOUT role=A id=16c6d40f seq=242
+TX role=A text="PING A 16c6d40f 243"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 243"
+TIMEOUT role=A id=16c6d40f seq=243
+TX role=A text="PING A 16c6d40f 244"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 244"
+TIMEOUT role=A id=16c6d40f seq=244
+TX role=A text="PING A 16c6d40f 245"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 245"
+TIMEOUT role=A id=16c6d40f seq=245
+TX role=A text="PING A 16c6d40f 246"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 246"
+TIMEOUT role=A id=16c6d40f seq=246
+TX role=A text="PING A 16c6d40f 247"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 247"
+TIMEOUT role=A id=16c6d40f seq=247
+TX role=A text="PING A 16c6d40f 248"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 248"
+TIMEOUT role=A id=16c6d40f seq=248
+TX role=A text="PING A 16c6d40f 249"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 249"
+TIMEOUT role=A id=16c6d40f seq=249
+TX role=A text="PING A 16c6d40f 250"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 250"
+TIMEOUT role=A id=16c6d40f seq=250
+TX role=A text="PING A 16c6d40f 251"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 251"
+TIMEOUT role=A id=16c6d40f seq=251
+TX role=A text="PING A 16c6d40f 252"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 252"
+TIMEOUT role=A id=16c6d40f seq=252
+TX role=A text="PING A 16c6d40f 253"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 253"
+TIMEOUT role=A id=16c6d40f seq=253
+TX role=A text="PING A 16c6d40f 254"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 254"
+TIMEOUT role=A id=16c6d40f seq=254
+TX role=A text="PING A 16c6d40f 255"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 255"
+TIMEOUT role=A id=16c6d40f seq=255
+TX role=A text="PING A 16c6d40f 256"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 256"
+TIMEOUT role=A id=16c6d40f seq=256
+TX role=A text="PING A 16c6d40f 257"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 257"
+TIMEOUT role=A id=16c6d40f seq=257
+TX role=A text="PING A 16c6d40f 258"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 258"
+TIMEOUT role=A id=16c6d40f seq=258
+TX role=A text="PING A 16c6d40f 259"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 259"
+TIMEOUT role=A id=16c6d40f seq=259
+TX role=A text="PING A 16c6d40f 260"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 260"
+TIMEOUT role=A id=16c6d40f seq=260
+TX role=A text="PING A 16c6d40f 261"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 261"
+TIMEOUT role=A id=16c6d40f seq=261
+TX role=A text="PING A 16c6d40f 262"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 262"
+TIMEOUT role=A id=16c6d40f seq=262
+TX role=A text="PING A 16c6d40f 263"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 263"
+TIMEOUT role=A id=16c6d40f seq=263
+TX role=A text="PING A 16c6d40f 264"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 264"
+TIMEOUT role=A id=16c6d40f seq=264
+TX role=A text="PING A 16c6d40f 265"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 265"
+TIMEOUT role=A id=16c6d40f seq=265
+TX role=A text="PING A 16c6d40f 266"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 266"
+TIMEOUT role=A id=16c6d40f seq=266
+TX role=A text="PING A 16c6d40f 267"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 267"
+TIMEOUT role=A id=16c6d40f seq=267
+TX role=A text="PING A 16c6d40f 268"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 268"
+TIMEOUT role=A id=16c6d40f seq=268
+TX role=A text="PING A 16c6d40f 269"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 269"
+TIMEOUT role=A id=16c6d40f seq=269
+TX role=A text="PING A 16c6d40f 270"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 270"
+TIMEOUT role=A id=16c6d40f seq=270
+TX role=A text="PING A 16c6d40f 271"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 271"
+TIMEOUT role=A id=16c6d40f seq=271
+TX role=A text="PING A 16c6d40f 272"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 272"
+TIMEOUT role=A id=16c6d40f seq=272
+TX role=A text="PING A 16c6d40f 273"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 273"
+TIMEOUT role=A id=16c6d40f seq=273
+TX role=A text="PING A 16c6d40f 274"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 274"
+TIMEOUT role=A id=16c6d40f seq=274
+TX role=A text="PING A 16c6d40f 275"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 275"
+TIMEOUT role=A id=16c6d40f seq=275
+TX role=A text="PING A 16c6d40f 276"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 276"
+TIMEOUT role=A id=16c6d40f seq=276
+TX role=A text="PING A 16c6d40f 277"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 277"
+TIMEOUT role=A id=16c6d40f seq=277
+TX role=A text="PING A 16c6d40f 278"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 278"
+TIMEOUT role=A id=16c6d40f seq=278
+TX role=A text="PING A 16c6d40f 279"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 279"
+TIMEOUT role=A id=16c6d40f seq=279
+TX role=A text="PING A 16c6d40f 280"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 280"
+TIMEOUT role=A id=16c6d40f seq=280
+TX role=A text="PING A 16c6d40f 281"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 281"
+TIMEOUT role=A id=16c6d40f seq=281
+TX role=A text="PING A 16c6d40f 282"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 282"
+TIMEOUT role=A id=16c6d40f seq=282
+TX role=A text="PING A 16c6d40f 283"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 283"
+TIMEOUT role=A id=16c6d40f seq=283
+TX role=A text="PING A 16c6d40f 284"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 284"
+TIMEOUT role=A id=16c6d40f seq=284
+TX role=A text="PING A 16c6d40f 285"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 285"
+TIMEOUT role=A id=16c6d40f seq=285
+TX role=A text="PING A 16c6d40f 286"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 286"
+TIMEOUT role=A id=16c6d40f seq=286
+TX role=A text="PING A 16c6d40f 287"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 287"
+TIMEOUT role=A id=16c6d40f seq=287
+TX role=A text="PING A 16c6d40f 288"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 288"
+TIMEOUT role=A id=16c6d40f seq=288
+TX role=A text="PING A 16c6d40f 289"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 289"
+TIMEOUT role=A id=16c6d40f seq=289
+TX role=A text="PING A 16c6d40f 290"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 290"
+TIMEOUT role=A id=16c6d40f seq=290
+TX role=A text="PING A 16c6d40f 291"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 291"
+TIMEOUT role=A id=16c6d40f seq=291
+TX role=A text="PING A 16c6d40f 292"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 292"
+TIMEOUT role=A id=16c6d40f seq=292
+TX role=A text="PING A 16c6d40f 293"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 293"
+TIMEOUT role=A id=16c6d40f seq=293
+TX role=A text="PING A 16c6d40f 294"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 294"
+TIMEOUT role=A id=16c6d40f seq=294
+TX role=A text="PING A 16c6d40f 295"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 295"
+TIMEOUT role=A id=16c6d40f seq=295
+TX role=A text="PING A 16c6d40f 296"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 296"
+TIMEOUT role=A id=16c6d40f seq=296
+TX role=A text="PING A 16c6d40f 297"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 297"
+TIMEOUT role=A id=16c6d40f seq=297
+TX role=A text="PING A 16c6d40f 298"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 298"
+TIMEOUT role=A id=16c6d40f seq=298
+TX role=A text="PING A 16c6d40f 299"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 299"
+TIMEOUT role=A id=16c6d40f seq=299
+TX role=A text="PING A 16c6d40f 300"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 300"
+TIMEOUT role=A id=16c6d40f seq=300
+TX role=A text="PING A 16c6d40f 301"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 301"
+TIMEOUT role=A id=16c6d40f seq=301
+TX role=A text="PING A 16c6d40f 302"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 302"
+TIMEOUT role=A id=16c6d40f seq=302
+TX role=A text="PING A 16c6d40f 303"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 303"
+TIMEOUT role=A id=16c6d40f seq=303
+TX role=A text="PING A 16c6d40f 304"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 304"
+TIMEOUT role=A id=16c6d40f seq=304
+TX role=A text="PING A 16c6d40f 305"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 305"
+TIMEOUT role=A id=16c6d40f seq=305
+TX role=A text="PING A 16c6d40f 306"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 306"
+TIMEOUT role=A id=16c6d40f seq=306
+TX role=A text="PING A 16c6d40f 307"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 307"
+TIMEOUT role=A id=16c6d40f seq=307
+TX role=A text="PING A 16c6d40f 308"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 308"
+TIMEOUT role=A id=16c6d40f seq=308
+TX role=A text="PING A 16c6d40f 309"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 309"
+TIMEOUT role=A id=16c6d40f seq=309
+TX role=A text="PING A 16c6d40f 310"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 310"
+TIMEOUT role=A id=16c6d40f seq=310
+TX role=A text="PING A 16c6d40f 311"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 311"
+TIMEOUT role=A id=16c6d40f seq=311
+TX role=A text="PING A 16c6d40f 312"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 312"
+TIMEOUT role=A id=16c6d40f seq=312
+TX role=A text="PING A 16c6d40f 313"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 313"
+TIMEOUT role=A id=16c6d40f seq=313
+TX role=A text="PING A 16c6d40f 314"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 314"
+TIMEOUT role=A id=16c6d40f seq=314
+TX role=A text="PING A 16c6d40f 315"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 315"
+TIMEOUT role=A id=16c6d40f seq=315
+TX role=A text="PING A 16c6d40f 316"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 316"
+TIMEOUT role=A id=16c6d40f seq=316
+TX role=A text="PING A 16c6d40f 317"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 317"
+TIMEOUT role=A id=16c6d40f seq=317
+TX role=A text="PING A 16c6d40f 318"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 318"
+TIMEOUT role=A id=16c6d40f seq=318
+TX role=A text="PING A 16c6d40f 319"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 319"
+TIMEOUT role=A id=16c6d40f seq=319
+TX role=A text="PING A 16c6d40f 320"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 320"
+TIMEOUT role=A id=16c6d40f seq=320
+TX role=A text="PING A 16c6d40f 321"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 321"
+TIMEOUT role=A id=16c6d40f seq=321
+TX role=A text="PING A 16c6d40f 322"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 322"
+TIMEOUT role=A id=16c6d40f seq=322
+TX role=A text="PING A 16c6d40f 323"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 323"
+TIMEOUT role=A id=16c6d40f seq=323
+TX role=A text="PING A 16c6d40f 324"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 324"
+TIMEOUT role=A id=16c6d40f seq=324
+TX role=A text="PING A 16c6d40f 325"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 325"
+TIMEOUT role=A id=16c6d40f seq=325
+TX role=A text="PING A 16c6d40f 326"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 326"
+TIMEOUT role=A id=16c6d40f seq=326
+TX role=A text="PING A 16c6d40f 327"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 327"
+TIMEOUT role=A id=16c6d40f seq=327
+TX role=A text="PING A 16c6d40f 328"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 328"
+TIMEOUT role=A id=16c6d40f seq=328
+TX role=A text="PING A 16c6d40f 329"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 329"
+TIMEOUT role=A id=16c6d40f seq=329
+TX role=A text="PING A 16c6d40f 330"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 330"
+TIMEOUT role=A id=16c6d40f seq=330
+TX role=A text="PING A 16c6d40f 331"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 331"
+TIMEOUT role=A id=16c6d40f seq=331
+TX role=A text="PING A 16c6d40f 332"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 332"
+TIMEOUT role=A id=16c6d40f seq=332
+TX role=A text="PING A 16c6d40f 333"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 333"
+TIMEOUT role=A id=16c6d40f seq=333
+TX role=A text="PING A 16c6d40f 334"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 334"
+TIMEOUT role=A id=16c6d40f seq=334
+TX role=A text="PING A 16c6d40f 335"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 335"
+TIMEOUT role=A id=16c6d40f seq=335
+TX role=A text="PING A 16c6d40f 336"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 336"
+TIMEOUT role=A id=16c6d40f seq=336
+TX role=A text="PING A 16c6d40f 337"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 337"
+TIMEOUT role=A id=16c6d40f seq=337
+TX role=A text="PING A 16c6d40f 338"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 338"
+TIMEOUT role=A id=16c6d40f seq=338
+TX role=A text="PING A 16c6d40f 339"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 339"
+TIMEOUT role=A id=16c6d40f seq=339
+TX role=A text="PING A 16c6d40f 340"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 340"
+TIMEOUT role=A id=16c6d40f seq=340
+TX role=A text="PING A 16c6d40f 341"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 341"
+TIMEOUT role=A id=16c6d40f seq=341
+TX role=A text="PING A 16c6d40f 342"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 342"
+TIMEOUT role=A id=16c6d40f seq=342
+TX role=A text="PING A 16c6d40f 343"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 343"
+TIMEOUT role=A id=16c6d40f seq=343
+TX role=A text="PING A 16c6d40f 344"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 344"
+TIMEOUT role=A id=16c6d40f seq=344
+TX role=A text="PING A 16c6d40f 345"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 345"
+TIMEOUT role=A id=16c6d40f seq=345
+TX role=A text="PING A 16c6d40f 346"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 346"
+TIMEOUT role=A id=16c6d40f seq=346
+TX role=A text="PING A 16c6d40f 347"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 347"
+TIMEOUT role=A id=16c6d40f seq=347
+TX role=A text="PING A 16c6d40f 348"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 348"
+TIMEOUT role=A id=16c6d40f seq=348
+TX role=A text="PING A 16c6d40f 349"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 349"
+TIMEOUT role=A id=16c6d40f seq=349
+TX role=A text="PING A 16c6d40f 350"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 350"
+TIMEOUT role=A id=16c6d40f seq=350
+TX role=A text="PING A 16c6d40f 351"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 351"
+TIMEOUT role=A id=16c6d40f seq=351
+TX role=A text="PING A 16c6d40f 352"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 352"
+TIMEOUT role=A id=16c6d40f seq=352
+TX role=A text="PING A 16c6d40f 353"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 353"
+TIMEOUT role=A id=16c6d40f seq=353
+TX role=A text="PING A 16c6d40f 354"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 354"
+TIMEOUT role=A id=16c6d40f seq=354
+TX role=A text="PING A 16c6d40f 355"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 355"
+TIMEOUT role=A id=16c6d40f seq=355
+TX role=A text="PING A 16c6d40f 356"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 356"
+TIMEOUT role=A id=16c6d40f seq=356
+TX role=A text="PING A 16c6d40f 357"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 357"
+TIMEOUT role=A id=16c6d40f seq=357
+TX role=A text="PING A 16c6d40f 358"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 358"
+TIMEOUT role=A id=16c6d40f seq=358
+TX role=A text="PING A 16c6d40f 359"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 359"
+TIMEOUT role=A id=16c6d40f seq=359
+TX role=A text="PING A 16c6d40f 360"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 360"
+TIMEOUT role=A id=16c6d40f seq=360
+TX role=A text="PING A 16c6d40f 361"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 361"
+TIMEOUT role=A id=16c6d40f seq=361
+TX role=A text="PING A 16c6d40f 362"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 362"
+TIMEOUT role=A id=16c6d40f seq=362
+TX role=A text="PING A 16c6d40f 363"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 363"
+TIMEOUT role=A id=16c6d40f seq=363
+TX role=A text="PING A 16c6d40f 364"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 364"
+TIMEOUT role=A id=16c6d40f seq=364
+TX role=A text="PING A 16c6d40f 365"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 365"
+TIMEOUT role=A id=16c6d40f seq=365
+TX role=A text="PING A 16c6d40f 366"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 366"
+TIMEOUT role=A id=16c6d40f seq=366
+TX role=A text="PING A 16c6d40f 367"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 367"
+TIMEOUT role=A id=16c6d40f seq=367
+TX role=A text="PING A 16c6d40f 368"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 368"
+TIMEOUT role=A id=16c6d40f seq=368
+TX role=A text="PING A 16c6d40f 369"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 369"
+TIMEOUT role=A id=16c6d40f seq=369
+TX role=A text="PING A 16c6d40f 370"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 370"
+TIMEOUT role=A id=16c6d40f seq=370
+TX role=A text="PING A 16c6d40f 371"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 371"
+TIMEOUT role=A id=16c6d40f seq=371
+TX role=A text="PING A 16c6d40f 372"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 372"
+TIMEOUT role=A id=16c6d40f seq=372
+TX role=A text="PING A 16c6d40f 373"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 373"
+TIMEOUT role=A id=16c6d40f seq=373
+TX role=A text="PING A 16c6d40f 374"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 374"
+TIMEOUT role=A id=16c6d40f seq=374
+TX role=A text="PING A 16c6d40f 375"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 375"
+TIMEOUT role=A id=16c6d40f seq=375
+TX role=A text="PING A 16c6d40f 376"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 376"
+TIMEOUT role=A id=16c6d40f seq=376
+TX role=A text="PING A 16c6d40f 377"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 377"
+TIMEOUT role=A id=16c6d40f seq=377
+TX role=A text="PING A 16c6d40f 378"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 378"
+TIMEOUT role=A id=16c6d40f seq=378
+TX role=A text="PING A 16c6d40f 379"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 379"
+TIMEOUT role=A id=16c6d40f seq=379
+TX role=A text="PING A 16c6d40f 380"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 380"
+TIMEOUT role=A id=16c6d40f seq=380
+TX role=A text="PING A 16c6d40f 381"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 381"
+TIMEOUT role=A id=16c6d40f seq=381
+TX role=A text="PING A 16c6d40f 382"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 382"
+TIMEOUT role=A id=16c6d40f seq=382
+TX role=A text="PING A 16c6d40f 383"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 383"
+TIMEOUT role=A id=16c6d40f seq=383
+TX role=A text="PING A 16c6d40f 384"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 384"
+TIMEOUT role=A id=16c6d40f seq=384
+TX role=A text="PING A 16c6d40f 385"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 385"
+TIMEOUT role=A id=16c6d40f seq=385
+TX role=A text="PING A 16c6d40f 386"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 386"
+TIMEOUT role=A id=16c6d40f seq=386
+TX role=A text="PING A 16c6d40f 387"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 387"
+TIMEOUT role=A id=16c6d40f seq=387
+TX role=A text="PING A 16c6d40f 388"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 388"
+TIMEOUT role=A id=16c6d40f seq=388
+TX role=A text="PING A 16c6d40f 389"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 389"
+TIMEOUT role=A id=16c6d40f seq=389
+TX role=A text="PING A 16c6d40f 390"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 390"
+TIMEOUT role=A id=16c6d40f seq=390
+TX role=A text="PING A 16c6d40f 391"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 391"
+TIMEOUT role=A id=16c6d40f seq=391
+TX role=A text="PING A 16c6d40f 392"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 392"
+TIMEOUT role=A id=16c6d40f seq=392
+TX role=A text="PING A 16c6d40f 393"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 393"
+TIMEOUT role=A id=16c6d40f seq=393
+TX role=A text="PING A 16c6d40f 394"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 394"
+TIMEOUT role=A id=16c6d40f seq=394
+TX role=A text="PING A 16c6d40f 395"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 395"
+TIMEOUT role=A id=16c6d40f seq=395
+TX role=A text="PING A 16c6d40f 396"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 396"
+TIMEOUT role=A id=16c6d40f seq=396
+TX role=A text="PING A 16c6d40f 397"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 397"
+TIMEOUT role=A id=16c6d40f seq=397
+TX role=A text="PING A 16c6d40f 398"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 398"
+TIMEOUT role=A id=16c6d40f seq=398
+TX role=A text="PING A 16c6d40f 399"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 399"
+TIMEOUT role=A id=16c6d40f seq=399
+TX role=A text="PING A 16c6d40f 400"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 400"
+TIMEOUT role=A id=16c6d40f seq=400
+TX role=A text="PING A 16c6d40f 401"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 401"
+TIMEOUT role=A id=16c6d40f seq=401
+TX role=A text="PING A 16c6d40f 402"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 402"
+TIMEOUT role=A id=16c6d40f seq=402
+TX role=A text="PING A 16c6d40f 403"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 403"
+TIMEOUT role=A id=16c6d40f seq=403
+TX role=A text="PING A 16c6d40f 404"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 404"
+TIMEOUT role=A id=16c6d40f seq=404
+TX role=A text="PING A 16c6d40f 405"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 405"
+TIMEOUT role=A id=16c6d40f seq=405
+TX role=A text="PING A 16c6d40f 406"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 406"
+TIMEOUT role=A id=16c6d40f seq=406
+TX role=A text="PING A 16c6d40f 407"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 407"
+TIMEOUT role=A id=16c6d40f seq=407
+TX role=A text="PING A 16c6d40f 408"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 408"
+TIMEOUT role=A id=16c6d40f seq=408
+TX role=A text="PING A 16c6d40f 409"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 409"
+TIMEOUT role=A id=16c6d40f seq=409
+TX role=A text="PING A 16c6d40f 410"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 410"
+TIMEOUT role=A id=16c6d40f seq=410
+TX role=A text="PING A 16c6d40f 411"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 411"
+TIMEOUT role=A id=16c6d40f seq=411
+TX role=A text="PING A 16c6d40f 412"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 412"
+TIMEOUT role=A id=16c6d40f seq=412
+TX role=A text="PING A 16c6d40f 413"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 413"
+TIMEOUT role=A id=16c6d40f seq=413
+TX role=A text="PING A 16c6d40f 414"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 414"
+TIMEOUT role=A id=16c6d40f seq=414
+TX role=A text="PING A 16c6d40f 415"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 415"
+TIMEOUT role=A id=16c6d40f seq=415
+TX role=A text="PING A 16c6d40f 416"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 416"
+TIMEOUT role=A id=16c6d40f seq=416
+TX role=A text="PING A 16c6d40f 417"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 417"
+TIMEOUT role=A id=16c6d40f seq=417
+TX role=A text="PING A 16c6d40f 418"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 418"
+TIMEOUT role=A id=16c6d40f seq=418
+TX role=A text="PING A 16c6d40f 419"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 419"
+TIMEOUT role=A id=16c6d40f seq=419
+TX role=A text="PING A 16c6d40f 420"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 420"
+TIMEOUT role=A id=16c6d40f seq=420
+TX role=A text="PING A 16c6d40f 421"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 421"
+TIMEOUT role=A id=16c6d40f seq=421
+TX role=A text="PING A 16c6d40f 422"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 422"
+TIMEOUT role=A id=16c6d40f seq=422
+TX role=A text="PING A 16c6d40f 423"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 423"
+TIMEOUT role=A id=16c6d40f seq=423
+TX role=A text="PING A 16c6d40f 424"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 424"
+TIMEOUT role=A id=16c6d40f seq=424
+TX role=A text="PING A 16c6d40f 425"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 425"
+TIMEOUT role=A id=16c6d40f seq=425
+TX role=A text="PING A 16c6d40f 426"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 426"
+TIMEOUT role=A id=16c6d40f seq=426
+TX role=A text="PING A 16c6d40f 427"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 427"
+TIMEOUT role=A id=16c6d40f seq=427
+TX role=A text="PING A 16c6d40f 428"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 428"
+TIMEOUT role=A id=16c6d40f seq=428
+TX role=A text="PING A 16c6d40f 429"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 429"
+TIMEOUT role=A id=16c6d40f seq=429
+TX role=A text="PING A 16c6d40f 430"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 430"
+TIMEOUT role=A id=16c6d40f seq=430
+TX role=A text="PING A 16c6d40f 431"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 431"
+TIMEOUT role=A id=16c6d40f seq=431
+TX role=A text="PING A 16c6d40f 432"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 432"
+TIMEOUT role=A id=16c6d40f seq=432
+TX role=A text="PING A 16c6d40f 433"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 433"
+TIMEOUT role=A id=16c6d40f seq=433
+TX role=A text="PING A 16c6d40f 434"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 434"
+TIMEOUT role=A id=16c6d40f seq=434
+TX role=A text="PING A 16c6d40f 435"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 435"
+TIMEOUT role=A id=16c6d40f seq=435
+TX role=A text="PING A 16c6d40f 436"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 436"
+TIMEOUT role=A id=16c6d40f seq=436
+TX role=A text="PING A 16c6d40f 437"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 437"
+TIMEOUT role=A id=16c6d40f seq=437
+TX role=A text="PING A 16c6d40f 438"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 438"
+TIMEOUT role=A id=16c6d40f seq=438
+TX role=A text="PING A 16c6d40f 439"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 439"
+TIMEOUT role=A id=16c6d40f seq=439
+TX role=A text="PING A 16c6d40f 440"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 440"
+TIMEOUT role=A id=16c6d40f seq=440
+TX role=A text="PING A 16c6d40f 441"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 441"
+TIMEOUT role=A id=16c6d40f seq=441
+TX role=A text="PING A 16c6d40f 442"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 442"
+TIMEOUT role=A id=16c6d40f seq=442
+TX role=A text="PING A 16c6d40f 443"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 443"
+TIMEOUT role=A id=16c6d40f seq=443
+TX role=A text="PING A 16c6d40f 444"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 444"
+TIMEOUT role=A id=16c6d40f seq=444
+TX role=A text="PING A 16c6d40f 445"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 445"
+TIMEOUT role=A id=16c6d40f seq=445
+TX role=A text="PING A 16c6d40f 446"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 446"
+TIMEOUT role=A id=16c6d40f seq=446
+TX role=A text="PING A 16c6d40f 447"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 447"
+TIMEOUT role=A id=16c6d40f seq=447
+TX role=A text="PING A 16c6d40f 448"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 448"
+TIMEOUT role=A id=16c6d40f seq=448
+TX role=A text="PING A 16c6d40f 449"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 449"
+TIMEOUT role=A id=16c6d40f seq=449
+TX role=A text="PING A 16c6d40f 450"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 450"
+TIMEOUT role=A id=16c6d40f seq=450
+TX role=A text="PING A 16c6d40f 451"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 451"
+TIMEOUT role=A id=16c6d40f seq=451
+TX role=A text="PING A 16c6d40f 452"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 452"
+TIMEOUT role=A id=16c6d40f seq=452
+TX role=A text="PING A 16c6d40f 453"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 453"
+TIMEOUT role=A id=16c6d40f seq=453
+TX role=A text="PING A 16c6d40f 454"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 454"
+TIMEOUT role=A id=16c6d40f seq=454
+TX role=A text="PING A 16c6d40f 455"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 455"
+TIMEOUT role=A id=16c6d40f seq=455
+TX role=A text="PING A 16c6d40f 456"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 456"
+TIMEOUT role=A id=16c6d40f seq=456
+TX role=A text="PING A 16c6d40f 457"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 457"
+TIMEOUT role=A id=16c6d40f seq=457
+TX role=A text="PING A 16c6d40f 458"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 458"
+TIMEOUT role=A id=16c6d40f seq=458
+TX role=A text="PING A 16c6d40f 459"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 459"
+TIMEOUT role=A id=16c6d40f seq=459
+TX role=A text="PING A 16c6d40f 460"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 460"
+TIMEOUT role=A id=16c6d40f seq=460
+TX role=A text="PING A 16c6d40f 461"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 461"
+TIMEOUT role=A id=16c6d40f seq=461
+TX role=A text="PING A 16c6d40f 462"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 462"
+TIMEOUT role=A id=16c6d40f seq=462
+TX role=A text="PING A 16c6d40f 463"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 463"
+TIMEOUT role=A id=16c6d40f seq=463
+TX role=A text="PING A 16c6d40f 464"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 464"
+TIMEOUT role=A id=16c6d40f seq=464
+TX role=A text="PING A 16c6d40f 465"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 465"
+TIMEOUT role=A id=16c6d40f seq=465
+TX role=A text="PING A 16c6d40f 466"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 466"
+TIMEOUT role=A id=16c6d40f seq=466
+TX role=A text="PING A 16c6d40f 467"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 467"
+TIMEOUT role=A id=16c6d40f seq=467
+TX role=A text="PING A 16c6d40f 468"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 468"
+TIMEOUT role=A id=16c6d40f seq=468
+TX role=A text="PING A 16c6d40f 469"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 469"
+TIMEOUT role=A id=16c6d40f seq=469
+TX role=A text="PING A 16c6d40f 470"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 470"
+TIMEOUT role=A id=16c6d40f seq=470
+TX role=A text="PING A 16c6d40f 471"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 471"
+TIMEOUT role=A id=16c6d40f seq=471
+TX role=A text="PING A 16c6d40f 472"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 472"
+TIMEOUT role=A id=16c6d40f seq=472
+TX role=A text="PING A 16c6d40f 473"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 473"
+TIMEOUT role=A id=16c6d40f seq=473
+TX role=A text="PING A 16c6d40f 474"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 474"
+TIMEOUT role=A id=16c6d40f seq=474
+TX role=A text="PING A 16c6d40f 475"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 475"
+TIMEOUT role=A id=16c6d40f seq=475
+TX role=A text="PING A 16c6d40f 476"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 476"
+TIMEOUT role=A id=16c6d40f seq=476
+TX role=A text="PING A 16c6d40f 477"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 477"
+TIMEOUT role=A id=16c6d40f seq=477
+TX role=A text="PING A 16c6d40f 478"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 478"
+TIMEOUT role=A id=16c6d40f seq=478
+TX role=A text="PING A 16c6d40f 479"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 479"
+TIMEOUT role=A id=16c6d40f seq=479
+TX role=A text="PING A 16c6d40f 480"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 480"
+TIMEOUT role=A id=16c6d40f seq=480
+TX role=A text="PING A 16c6d40f 481"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 481"
+TIMEOUT role=A id=16c6d40f seq=481
+TX role=A text="PING A 16c6d40f 482"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 482"
+TIMEOUT role=A id=16c6d40f seq=482
+TX role=A text="PING A 16c6d40f 483"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 483"
+TIMEOUT role=A id=16c6d40f seq=483
+TX role=A text="PING A 16c6d40f 484"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 484"
+TIMEOUT role=A id=16c6d40f seq=484
+TX role=A text="PING A 16c6d40f 485"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 485"
+TIMEOUT role=A id=16c6d40f seq=485
+TX role=A text="PING A 16c6d40f 486"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 486"
+TIMEOUT role=A id=16c6d40f seq=486
+TX role=A text="PING A 16c6d40f 487"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 487"
+TIMEOUT role=A id=16c6d40f seq=487
+TX role=A text="PING A 16c6d40f 488"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 488"
+TIMEOUT role=A id=16c6d40f seq=488
+TX role=A text="PING A 16c6d40f 489"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 489"
+TIMEOUT role=A id=16c6d40f seq=489
+TX role=A text="PING A 16c6d40f 490"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 490"
+TIMEOUT role=A id=16c6d40f seq=490
+TX role=A text="PING A 16c6d40f 491"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 491"
+TIMEOUT role=A id=16c6d40f seq=491
+TX role=A text="PING A 16c6d40f 492"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 492"
+TIMEOUT role=A id=16c6d40f seq=492
+TX role=A text="PING A 16c6d40f 493"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 493"
+TIMEOUT role=A id=16c6d40f seq=493
+TX role=A text="PING A 16c6d40f 494"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 494"
+TIMEOUT role=A id=16c6d40f seq=494
+TX role=A text="PING A 16c6d40f 495"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 495"
+TIMEOUT role=A id=16c6d40f seq=495
+TX role=A text="PING A 16c6d40f 496"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 496"
+TIMEOUT role=A id=16c6d40f seq=496
+TX role=A text="PING A 16c6d40f 497"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 497"
+TIMEOUT role=A id=16c6d40f seq=497
+TX role=A text="PING A 16c6d40f 498"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 498"
+TIMEOUT role=A id=16c6d40f seq=498
+TX role=A text="PING A 16c6d40f 499"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 499"
+TIMEOUT role=A id=16c6d40f seq=499
+TX role=A text="PING A 16c6d40f 500"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 500"
+TIMEOUT role=A id=16c6d40f seq=500
+TX role=A text="PING A 16c6d40f 501"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 501"
+TIMEOUT role=A id=16c6d40f seq=501
+TX role=A text="PING A 16c6d40f 502"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 502"
+TIMEOUT role=A id=16c6d40f seq=502
+TX role=A text="PING A 16c6d40f 503"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 503"
+TIMEOUT role=A id=16c6d40f seq=503
+TX role=A text="PING A 16c6d40f 504"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 504"
+TIMEOUT role=A id=16c6d40f seq=504
+TX role=A text="PING A 16c6d40f 505"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 505"
+TIMEOUT role=A id=16c6d40f seq=505
+TX role=A text="PING A 16c6d40f 506"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 506"
+TIMEOUT role=A id=16c6d40f seq=506
+TX role=A text="PING A 16c6d40f 507"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 507"
+TIMEOUT role=A id=16c6d40f seq=507
+TX role=A text="PING A 16c6d40f 508"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 508"
+TIMEOUT role=A id=16c6d40f seq=508
+TX role=A text="PING A 16c6d40f 509"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 509"
+TIMEOUT role=A id=16c6d40f seq=509
+TX role=A text="PING A 16c6d40f 510"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 510"
+TIMEOUT role=A id=16c6d40f seq=510
+TX role=A text="PING A 16c6d40f 511"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 511"
+TIMEOUT role=A id=16c6d40f seq=511
+TX role=A text="PING A 16c6d40f 512"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 512"
+TIMEOUT role=A id=16c6d40f seq=512
+TX role=A text="PING A 16c6d40f 513"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 513"
+TIMEOUT role=A id=16c6d40f seq=513
+TX role=A text="PING A 16c6d40f 514"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 514"
+TIMEOUT role=A id=16c6d40f seq=514
+TX role=A text="PING A 16c6d40f 515"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 515"
+TIMEOUT role=A id=16c6d40f seq=515
+TX role=A text="PING A 16c6d40f 516"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 516"
+TIMEOUT role=A id=16c6d40f seq=516
+TX role=A text="PING A 16c6d40f 517"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 517"
+TIMEOUT role=A id=16c6d40f seq=517
+TX role=A text="PING A 16c6d40f 518"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 518"
+TIMEOUT role=A id=16c6d40f seq=518
+TX role=A text="PING A 16c6d40f 519"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 519"
+TIMEOUT role=A id=16c6d40f seq=519
+TX role=A text="PING A 16c6d40f 520"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 520"
+TIMEOUT role=A id=16c6d40f seq=520
+TX role=A text="PING A 16c6d40f 521"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 521"
+TIMEOUT role=A id=16c6d40f seq=521
+TX role=A text="PING A 16c6d40f 522"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 522"
+TIMEOUT role=A id=16c6d40f seq=522
+TX role=A text="PING A 16c6d40f 523"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 523"
+TIMEOUT role=A id=16c6d40f seq=523
+TX role=A text="PING A 16c6d40f 524"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 524"
+TIMEOUT role=A id=16c6d40f seq=524
+TX role=A text="PING A 16c6d40f 525"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 525"
+TIMEOUT role=A id=16c6d40f seq=525
+TX role=A text="PING A 16c6d40f 526"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 526"
+TIMEOUT role=A id=16c6d40f seq=526
+TX role=A text="PING A 16c6d40f 527"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 527"
+TIMEOUT role=A id=16c6d40f seq=527
+TX role=A text="PING A 16c6d40f 528"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 528"
+TIMEOUT role=A id=16c6d40f seq=528
+TX role=A text="PING A 16c6d40f 529"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 529"
+TIMEOUT role=A id=16c6d40f seq=529
+TX role=A text="PING A 16c6d40f 530"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 530"
+TIMEOUT role=A id=16c6d40f seq=530
+TX role=A text="PING A 16c6d40f 531"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 531"
+TIMEOUT role=A id=16c6d40f seq=531
+TX role=A text="PING A 16c6d40f 532"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 532"
+TIMEOUT role=A id=16c6d40f seq=532
+TX role=A text="PING A 16c6d40f 533"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 533"
+TIMEOUT role=A id=16c6d40f seq=533
+TX role=A text="PING A 16c6d40f 534"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 534"
+TIMEOUT role=A id=16c6d40f seq=534
+TX role=A text="PING A 16c6d40f 535"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 535"
+TIMEOUT role=A id=16c6d40f seq=535
+TX role=A text="PING A 16c6d40f 536"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 536"
+TIMEOUT role=A id=16c6d40f seq=536
+TX role=A text="PING A 16c6d40f 537"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 537"
+TIMEOUT role=A id=16c6d40f seq=537
+TX role=A text="PING A 16c6d40f 538"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 538"
+TIMEOUT role=A id=16c6d40f seq=538
+TX role=A text="PING A 16c6d40f 539"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 539"
+TIMEOUT role=A id=16c6d40f seq=539
+TX role=A text="PING A 16c6d40f 540"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 540"
+TIMEOUT role=A id=16c6d40f seq=540
+TX role=A text="PING A 16c6d40f 541"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 541"
+TIMEOUT role=A id=16c6d40f seq=541
+TX role=A text="PING A 16c6d40f 542"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 542"
+TIMEOUT role=A id=16c6d40f seq=542
+TX role=A text="PING A 16c6d40f 543"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 543"
+TIMEOUT role=A id=16c6d40f seq=543
+TX role=A text="PING A 16c6d40f 544"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 544"
+TIMEOUT role=A id=16c6d40f seq=544
+TX role=A text="PING A 16c6d40f 545"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 545"
+TIMEOUT role=A id=16c6d40f seq=545
+TX role=A text="PING A 16c6d40f 546"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 546"
+TIMEOUT role=A id=16c6d40f seq=546
+TX role=A text="PING A 16c6d40f 547"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 547"
+TIMEOUT role=A id=16c6d40f seq=547
+TX role=A text="PING A 16c6d40f 548"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 548"
+TIMEOUT role=A id=16c6d40f seq=548
+TX role=A text="PING A 16c6d40f 549"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 549"
+TIMEOUT role=A id=16c6d40f seq=549
+TX role=A text="PING A 16c6d40f 550"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 550"
+TIMEOUT role=A id=16c6d40f seq=550
+TX role=A text="PING A 16c6d40f 551"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 551"
+TIMEOUT role=A id=16c6d40f seq=551
+TX role=A text="PING A 16c6d40f 552"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 552"
+TIMEOUT role=A id=16c6d40f seq=552
+TX role=A text="PING A 16c6d40f 553"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 553"
+TIMEOUT role=A id=16c6d40f seq=553
+TX role=A text="PING A 16c6d40f 554"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 554"
+TIMEOUT role=A id=16c6d40f seq=554
+TX role=A text="PING A 16c6d40f 555"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 555"
+TIMEOUT role=A id=16c6d40f seq=555
+TX role=A text="PING A 16c6d40f 556"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 556"
+TIMEOUT role=A id=16c6d40f seq=556
+TX role=A text="PING A 16c6d40f 557"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 557"
+TIMEOUT role=A id=16c6d40f seq=557
+TX role=A text="PING A 16c6d40f 558"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 558"
+TIMEOUT role=A id=16c6d40f seq=558
+TX role=A text="PING A 16c6d40f 559"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 559"
+TIMEOUT role=A id=16c6d40f seq=559
+TX role=A text="PING A 16c6d40f 560"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 560"
+TIMEOUT role=A id=16c6d40f seq=560
+TX role=A text="PING A 16c6d40f 561"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 561"
+TIMEOUT role=A id=16c6d40f seq=561
+TX role=A text="PING A 16c6d40f 562"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 562"
+TIMEOUT role=A id=16c6d40f seq=562
+TX role=A text="PING A 16c6d40f 563"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 563"
+TIMEOUT role=A id=16c6d40f seq=563
+TX role=A text="PING A 16c6d40f 564"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 564"
+TIMEOUT role=A id=16c6d40f seq=564
+TX role=A text="PING A 16c6d40f 565"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 565"
+TIMEOUT role=A id=16c6d40f seq=565
+TX role=A text="PING A 16c6d40f 566"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 566"
+TIMEOUT role=A id=16c6d40f seq=566
+TX role=A text="PING A 16c6d40f 567"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 567"
+TIMEOUT role=A id=16c6d40f seq=567
+TX role=A text="PING A 16c6d40f 568"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 568"
+TIMEOUT role=A id=16c6d40f seq=568
+TX role=A text="PING A 16c6d40f 569"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 569"
+TIMEOUT role=A id=16c6d40f seq=569
+TX role=A text="PING A 16c6d40f 570"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 570"
+TIMEOUT role=A id=16c6d40f seq=570
+TX role=A text="PING A 16c6d40f 571"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 571"
+TIMEOUT role=A id=16c6d40f seq=571
+TX role=A text="PING A 16c6d40f 572"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 572"
+TIMEOUT role=A id=16c6d40f seq=572
+TX role=A text="PING A 16c6d40f 573"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 573"
+TIMEOUT role=A id=16c6d40f seq=573
+TX role=A text="PING A 16c6d40f 574"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 574"
+TIMEOUT role=A id=16c6d40f seq=574
+TX role=A text="PING A 16c6d40f 575"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 575"
+TIMEOUT role=A id=16c6d40f seq=575
+TX role=A text="PING A 16c6d40f 576"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 576"
+TIMEOUT role=A id=16c6d40f seq=576
+TX role=A text="PING A 16c6d40f 577"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 577"
+TIMEOUT role=A id=16c6d40f seq=577
+TX role=A text="PING A 16c6d40f 578"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 578"
+TIMEOUT role=A id=16c6d40f seq=578
+TX role=A text="PING A 16c6d40f 579"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 579"
+TIMEOUT role=A id=16c6d40f seq=579
+TX role=A text="PING A 16c6d40f 580"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 580"
+TIMEOUT role=A id=16c6d40f seq=580
+TX role=A text="PING A 16c6d40f 581"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 581"
+TIMEOUT role=A id=16c6d40f seq=581
+TX role=A text="PING A 16c6d40f 582"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 582"
+TIMEOUT role=A id=16c6d40f seq=582
+TX role=A text="PING A 16c6d40f 583"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 583"
+TIMEOUT role=A id=16c6d40f seq=583
+TX role=A text="PING A 16c6d40f 584"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 584"
+TIMEOUT role=A id=16c6d40f seq=584
+TX role=A text="PING A 16c6d40f 585"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 585"
+TIMEOUT role=A id=16c6d40f seq=585
+TX role=A text="PING A 16c6d40f 586"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 586"
+TIMEOUT role=A id=16c6d40f seq=586
+TX role=A text="PING A 16c6d40f 587"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 587"
+TIMEOUT role=A id=16c6d40f seq=587
+TX role=A text="PING A 16c6d40f 588"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 588"
+TIMEOUT role=A id=16c6d40f seq=588
+TX role=A text="PING A 16c6d40f 589"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 589"
+TIMEOUT role=A id=16c6d40f seq=589
+TX role=A text="PING A 16c6d40f 590"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 590"
+TIMEOUT role=A id=16c6d40f seq=590
+TX role=A text="PING A 16c6d40f 591"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 591"
+TIMEOUT role=A id=16c6d40f seq=591
+TX role=A text="PING A 16c6d40f 592"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 592"
+TIMEOUT role=A id=16c6d40f seq=592
+TX role=A text="PING A 16c6d40f 593"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 593"
+TIMEOUT role=A id=16c6d40f seq=593
+TX role=A text="PING A 16c6d40f 594"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 594"
+TIMEOUT role=A id=16c6d40f seq=594
+TX role=A text="PING A 16c6d40f 595"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 595"
+TIMEOUT role=A id=16c6d40f seq=595
+TX role=A text="PING A 16c6d40f 596"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 596"
+TIMEOUT role=A id=16c6d40f seq=596
+TX role=A text="PING A 16c6d40f 597"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 597"
+TIMEOUT role=A id=16c6d40f seq=597
+TX role=A text="PING A 16c6d40f 598"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 598"
+TIMEOUT role=A id=16c6d40f seq=598
+TX role=A text="PING A 16c6d40f 599"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 599"
+TIMEOUT role=A id=16c6d40f seq=599
+TX role=A text="PING A 16c6d40f 600"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 600"
+TIMEOUT role=A id=16c6d40f seq=600
+TX role=A text="PING A 16c6d40f 601"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 601"
+TIMEOUT role=A id=16c6d40f seq=601
+TX role=A text="PING A 16c6d40f 602"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 602"
+TIMEOUT role=A id=16c6d40f seq=602
+TX role=A text="PING A 16c6d40f 603"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 603"
+TIMEOUT role=A id=16c6d40f seq=603
+TX role=A text="PING A 16c6d40f 604"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 604"
+TIMEOUT role=A id=16c6d40f seq=604
+TX role=A text="PING A 16c6d40f 605"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 605"
+TIMEOUT role=A id=16c6d40f seq=605
+TX role=A text="PING A 16c6d40f 606"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 606"
+TIMEOUT role=A id=16c6d40f seq=606
+TX role=A text="PING A 16c6d40f 607"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 607"
+TIMEOUT role=A id=16c6d40f seq=607
+TX role=A text="PING A 16c6d40f 608"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 608"
+TIMEOUT role=A id=16c6d40f seq=608
+TX role=A text="PING A 16c6d40f 609"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 609"
+TIMEOUT role=A id=16c6d40f seq=609
+TX role=A text="PING A 16c6d40f 610"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 610"
+TIMEOUT role=A id=16c6d40f seq=610
+TX role=A text="PING A 16c6d40f 611"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 611"
+TIMEOUT role=A id=16c6d40f seq=611
+TX role=A text="PING A 16c6d40f 612"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 612"
+TIMEOUT role=A id=16c6d40f seq=612
+TX role=A text="PING A 16c6d40f 613"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 613"
+TIMEOUT role=A id=16c6d40f seq=613
+TX role=A text="PING A 16c6d40f 614"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 614"
+TIMEOUT role=A id=16c6d40f seq=614
+TX role=A text="PING A 16c6d40f 615"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 615"
+TIMEOUT role=A id=16c6d40f seq=615
+TX role=A text="PING A 16c6d40f 616"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 616"
+TIMEOUT role=A id=16c6d40f seq=616
+TX role=A text="PING A 16c6d40f 617"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 617"
+TIMEOUT role=A id=16c6d40f seq=617
+TX role=A text="PING A 16c6d40f 618"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 618"
+TIMEOUT role=A id=16c6d40f seq=618
+TX role=A text="PING A 16c6d40f 619"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 619"
+TIMEOUT role=A id=16c6d40f seq=619
+TX role=A text="PING A 16c6d40f 620"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 620"
+TIMEOUT role=A id=16c6d40f seq=620
+TX role=A text="PING A 16c6d40f 621"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 621"
+TIMEOUT role=A id=16c6d40f seq=621
+TX role=A text="PING A 16c6d40f 622"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 622"
+TIMEOUT role=A id=16c6d40f seq=622
+TX role=A text="PING A 16c6d40f 623"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 623"
+TIMEOUT role=A id=16c6d40f seq=623
+TX role=A text="PING A 16c6d40f 624"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 624"
+TIMEOUT role=A id=16c6d40f seq=624
+TX role=A text="PING A 16c6d40f 625"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 625"
+TIMEOUT role=A id=16c6d40f seq=625
+TX role=A text="PING A 16c6d40f 626"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 626"
+TIMEOUT role=A id=16c6d40f seq=626
+TX role=A text="PING A 16c6d40f 627"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 627"
+TIMEOUT role=A id=16c6d40f seq=627
+TX role=A text="PING A 16c6d40f 628"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 628"
+TIMEOUT role=A id=16c6d40f seq=628
+TX role=A text="PING A 16c6d40f 629"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 629"
+TIMEOUT role=A id=16c6d40f seq=629
+TX role=A text="PING A 16c6d40f 630"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 630"
+TIMEOUT role=A id=16c6d40f seq=630
+TX role=A text="PING A 16c6d40f 631"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 631"
+TIMEOUT role=A id=16c6d40f seq=631
+TX role=A text="PING A 16c6d40f 632"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 632"
+TIMEOUT role=A id=16c6d40f seq=632
+TX role=A text="PING A 16c6d40f 633"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 633"
+TIMEOUT role=A id=16c6d40f seq=633
+TX role=A text="PING A 16c6d40f 634"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 634"
+TIMEOUT role=A id=16c6d40f seq=634
+TX role=A text="PING A 16c6d40f 635"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 635"
+TIMEOUT role=A id=16c6d40f seq=635
+TX role=A text="PING A 16c6d40f 636"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 636"
+TIMEOUT role=A id=16c6d40f seq=636
+TX role=A text="PING A 16c6d40f 637"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 637"
+TIMEOUT role=A id=16c6d40f seq=637
+TX role=A text="PING A 16c6d40f 638"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 638"
+TIMEOUT role=A id=16c6d40f seq=638
+TX role=A text="PING A 16c6d40f 639"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 639"
+TIMEOUT role=A id=16c6d40f seq=639
+TX role=A text="PING A 16c6d40f 640"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 640"
+TIMEOUT role=A id=16c6d40f seq=640
+TX role=A text="PING A 16c6d40f 641"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 641"
+TIMEOUT role=A id=16c6d40f seq=641
+TX role=A text="PING A 16c6d40f 642"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 642"
+TIMEOUT role=A id=16c6d40f seq=642
+TX role=A text="PING A 16c6d40f 643"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 643"
+TIMEOUT role=A id=16c6d40f seq=643
+TX role=A text="PING A 16c6d40f 644"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 644"
+TIMEOUT role=A id=16c6d40f seq=644
+TX role=A text="PING A 16c6d40f 645"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 645"
+TIMEOUT role=A id=16c6d40f seq=645
+TX role=A text="PING A 16c6d40f 646"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 646"
+TIMEOUT role=A id=16c6d40f seq=646
+TX role=A text="PING A 16c6d40f 647"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 647"
+TIMEOUT role=A id=16c6d40f seq=647
+TX role=A text="PING A 16c6d40f 648"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 648"
+TIMEOUT role=A id=16c6d40f seq=648
+TX role=A text="PING A 16c6d40f 649"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 649"
+TIMEOUT role=A id=16c6d40f seq=649
+TX role=A text="PING A 16c6d40f 650"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 650"
+TIMEOUT role=A id=16c6d40f seq=650
+TX role=A text="PING A 16c6d40f 651"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 651"
+TIMEOUT role=A id=16c6d40f seq=651
+TX role=A text="PING A 16c6d40f 652"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 652"
+TIMEOUT role=A id=16c6d40f seq=652
+TX role=A text="PING A 16c6d40f 653"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 653"
+TIMEOUT role=A id=16c6d40f seq=653
+TX role=A text="PING A 16c6d40f 654"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 654"
+TIMEOUT role=A id=16c6d40f seq=654
+TX role=A text="PING A 16c6d40f 655"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 655"
+TIMEOUT role=A id=16c6d40f seq=655
+TX role=A text="PING A 16c6d40f 656"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 656"
+TIMEOUT role=A id=16c6d40f seq=656
+TX role=A text="PING A 16c6d40f 657"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 657"
+TIMEOUT role=A id=16c6d40f seq=657
+TX role=A text="PING A 16c6d40f 658"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 658"
+TIMEOUT role=A id=16c6d40f seq=658
+TX role=A text="PING A 16c6d40f 659"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 659"
+TIMEOUT role=A id=16c6d40f seq=659
+TX role=A text="PING A 16c6d40f 660"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 660"
+TIMEOUT role=A id=16c6d40f seq=660
+TX role=A text="PING A 16c6d40f 661"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 661"
+TIMEOUT role=A id=16c6d40f seq=661
+TX role=A text="PING A 16c6d40f 662"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 662"
+TIMEOUT role=A id=16c6d40f seq=662
+TX role=A text="PING A 16c6d40f 663"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 663"
+TIMEOUT role=A id=16c6d40f seq=663
+TX role=A text="PING A 16c6d40f 664"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 664"
+TIMEOUT role=A id=16c6d40f seq=664
+TX role=A text="PING A 16c6d40f 665"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 665"
+TIMEOUT role=A id=16c6d40f seq=665
+TX role=A text="PING A 16c6d40f 666"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 666"
+TIMEOUT role=A id=16c6d40f seq=666
+TX role=A text="PING A 16c6d40f 667"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 667"
+TIMEOUT role=A id=16c6d40f seq=667
+TX role=A text="PING A 16c6d40f 668"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 668"
+TIMEOUT role=A id=16c6d40f seq=668
+TX role=A text="PING A 16c6d40f 669"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 669"
+TIMEOUT role=A id=16c6d40f seq=669
+TX role=A text="PING A 16c6d40f 670"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 670"
+TIMEOUT role=A id=16c6d40f seq=670
+TX role=A text="PING A 16c6d40f 671"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 671"
+TIMEOUT role=A id=16c6d40f seq=671
+TX role=A text="PING A 16c6d40f 672"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 672"
+TIMEOUT role=A id=16c6d40f seq=672
+TX role=A text="PING A 16c6d40f 673"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 673"
+TIMEOUT role=A id=16c6d40f seq=673
+TX role=A text="PING A 16c6d40f 674"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 674"
+TIMEOUT role=A id=16c6d40f seq=674
+TX role=A text="PING A 16c6d40f 675"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 675"
+TIMEOUT role=A id=16c6d40f seq=675
+TX role=A text="PING A 16c6d40f 676"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 676"
+TIMEOUT role=A id=16c6d40f seq=676
+TX role=A text="PING A 16c6d40f 677"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 677"
+TIMEOUT role=A id=16c6d40f seq=677
+TX role=A text="PING A 16c6d40f 678"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 678"
+TIMEOUT role=A id=16c6d40f seq=678
+TX role=A text="PING A 16c6d40f 679"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 679"
+TIMEOUT role=A id=16c6d40f seq=679
+TX role=A text="PING A 16c6d40f 680"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 680"
+TIMEOUT role=A id=16c6d40f seq=680
+TX role=A text="PING A 16c6d40f 681"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 681"
+TIMEOUT role=A id=16c6d40f seq=681
+TX role=A text="PING A 16c6d40f 682"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 682"
+TIMEOUT role=A id=16c6d40f seq=682
+TX role=A text="PING A 16c6d40f 683"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 683"
+TIMEOUT role=A id=16c6d40f seq=683
+TX role=A text="PING A 16c6d40f 684"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 684"
+TIMEOUT role=A id=16c6d40f seq=684
+TX role=A text="PING A 16c6d40f 685"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 685"
+TIMEOUT role=A id=16c6d40f seq=685
+TX role=A text="PING A 16c6d40f 686"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 686"
+TIMEOUT role=A id=16c6d40f seq=686
+TX role=A text="PING A 16c6d40f 687"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 687"
+TIMEOUT role=A id=16c6d40f seq=687
+TX role=A text="PING A 16c6d40f 688"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 688"
+TIMEOUT role=A id=16c6d40f seq=688
+TX role=A text="PING A 16c6d40f 689"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 689"
+TIMEOUT role=A id=16c6d40f seq=689
+TX role=A text="PING A 16c6d40f 690"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 690"
+TIMEOUT role=A id=16c6d40f seq=690
+TX role=A text="PING A 16c6d40f 691"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 691"
+TIMEOUT role=A id=16c6d40f seq=691
+TX role=A text="PING A 16c6d40f 692"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 692"
+TIMEOUT role=A id=16c6d40f seq=692
+TX role=A text="PING A 16c6d40f 693"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 693"
+TIMEOUT role=A id=16c6d40f seq=693
+TX role=A text="PING A 16c6d40f 694"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 694"
+TIMEOUT role=A id=16c6d40f seq=694
+TX role=A text="PING A 16c6d40f 695"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 695"
+TIMEOUT role=A id=16c6d40f seq=695
+TX role=A text="PING A 16c6d40f 696"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 696"
+TIMEOUT role=A id=16c6d40f seq=696
+TX role=A text="PING A 16c6d40f 697"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 697"
+TIMEOUT role=A id=16c6d40f seq=697
+TX role=A text="PING A 16c6d40f 698"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 698"
+TIMEOUT role=A id=16c6d40f seq=698
+TX role=A text="PING A 16c6d40f 699"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 699"
+TIMEOUT role=A id=16c6d40f seq=699
+TX role=A text="PING A 16c6d40f 700"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 700"
+TIMEOUT role=A id=16c6d40f seq=700
+TX role=A text="PING A 16c6d40f 701"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 701"
+TIMEOUT role=A id=16c6d40f seq=701
+TX role=A text="PING A 16c6d40f 702"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 702"
+TIMEOUT role=A id=16c6d40f seq=702
+TX role=A text="PING A 16c6d40f 703"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 703"
+TIMEOUT role=A id=16c6d40f seq=703
+TX role=A text="PING A 16c6d40f 704"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 704"
+TIMEOUT role=A id=16c6d40f seq=704
+TX role=A text="PING A 16c6d40f 705"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 705"
+TIMEOUT role=A id=16c6d40f seq=705
+TX role=A text="PING A 16c6d40f 706"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 706"
+TIMEOUT role=A id=16c6d40f seq=706
+TX role=A text="PING A 16c6d40f 707"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 707"
+TIMEOUT role=A id=16c6d40f seq=707
+TX role=A text="PING A 16c6d40f 708"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 708"
+TIMEOUT role=A id=16c6d40f seq=708
+TX role=A text="PING A 16c6d40f 709"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 709"
+TIMEOUT role=A id=16c6d40f seq=709
+TX role=A text="PING A 16c6d40f 710"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 710"
+TIMEOUT role=A id=16c6d40f seq=710
+TX role=A text="PING A 16c6d40f 711"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 711"
+TIMEOUT role=A id=16c6d40f seq=711
+TX role=A text="PING A 16c6d40f 712"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 712"
+TIMEOUT role=A id=16c6d40f seq=712
+TX role=A text="PING A 16c6d40f 713"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 713"
+TIMEOUT role=A id=16c6d40f seq=713
+TX role=A text="PING A 16c6d40f 714"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 714"
+TIMEOUT role=A id=16c6d40f seq=714
+TX role=A text="PING A 16c6d40f 715"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 715"
+TIMEOUT role=A id=16c6d40f seq=715
+TX role=A text="PING A 16c6d40f 716"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 716"
+TIMEOUT role=A id=16c6d40f seq=716
+TX role=A text="PING A 16c6d40f 717"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 717"
+TIMEOUT role=A id=16c6d40f seq=717
+TX role=A text="PING A 16c6d40f 718"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 718"
+TIMEOUT role=A id=16c6d40f seq=718
+TX role=A text="PING A 16c6d40f 719"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 719"
+TIMEOUT role=A id=16c6d40f seq=719
+TX role=A text="PING A 16c6d40f 720"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 720"
+TIMEOUT role=A id=16c6d40f seq=720
+TX role=A text="PING A 16c6d40f 721"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 721"
+TIMEOUT role=A id=16c6d40f seq=721
+TX role=A text="PING A 16c6d40f 722"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 722"
+TIMEOUT role=A id=16c6d40f seq=722
+TX role=A text="PING A 16c6d40f 723"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 723"
+TIMEOUT role=A id=16c6d40f seq=723
+TX role=A text="PING A 16c6d40f 724"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 724"
+TIMEOUT role=A id=16c6d40f seq=724
+TX role=A text="PING A 16c6d40f 725"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 725"
+TIMEOUT role=A id=16c6d40f seq=725
+TX role=A text="PING A 16c6d40f 726"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 726"
+TIMEOUT role=A id=16c6d40f seq=726
+TX role=A text="PING A 16c6d40f 727"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 727"
+TIMEOUT role=A id=16c6d40f seq=727
+TX role=A text="PING A 16c6d40f 728"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 728"
+TIMEOUT role=A id=16c6d40f seq=728
+TX role=A text="PING A 16c6d40f 729"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 729"
+TIMEOUT role=A id=16c6d40f seq=729
+TX role=A text="PING A 16c6d40f 730"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 730"
+TIMEOUT role=A id=16c6d40f seq=730
+TX role=A text="PING A 16c6d40f 731"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 731"
+TIMEOUT role=A id=16c6d40f seq=731
+TX role=A text="PING A 16c6d40f 732"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 732"
+TIMEOUT role=A id=16c6d40f seq=732
+TX role=A text="PING A 16c6d40f 733"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 733"
+TIMEOUT role=A id=16c6d40f seq=733
+TX role=A text="PING A 16c6d40f 734"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 734"
+TIMEOUT role=A id=16c6d40f seq=734
+TX role=A text="PING A 16c6d40f 735"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 735"
+TIMEOUT role=A id=16c6d40f seq=735
+TX role=A text="PING A 16c6d40f 736"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 736"
+TIMEOUT role=A id=16c6d40f seq=736
+TX role=A text="PING A 16c6d40f 737"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 737"
+TIMEOUT role=A id=16c6d40f seq=737
+TX role=A text="PING A 16c6d40f 738"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 738"
+TIMEOUT role=A id=16c6d40f seq=738
+TX role=A text="PING A 16c6d40f 739"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 739"
+TIMEOUT role=A id=16c6d40f seq=739
+TX role=A text="PING A 16c6d40f 740"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 740"
+TIMEOUT role=A id=16c6d40f seq=740
+TX role=A text="PING A 16c6d40f 741"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 741"
+TIMEOUT role=A id=16c6d40f seq=741
+TX role=A text="PING A 16c6d40f 742"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 742"
+TIMEOUT role=A id=16c6d40f seq=742
+TX role=A text="PING A 16c6d40f 743"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 743"
+TIMEOUT role=A id=16c6d40f seq=743
+TX role=A text="PING A 16c6d40f 744"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 744"
+TIMEOUT role=A id=16c6d40f seq=744
+TX role=A text="PING A 16c6d40f 745"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 745"
+TIMEOUT role=A id=16c6d40f seq=745
+TX role=A text="PING A 16c6d40f 746"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 746"
+TIMEOUT role=A id=16c6d40f seq=746
+TX role=A text="PING A 16c6d40f 747"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 747"
+TIMEOUT role=A id=16c6d40f seq=747
+TX role=A text="PING A 16c6d40f 748"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 748"
+TIMEOUT role=A id=16c6d40f seq=748
+TX role=A text="PING A 16c6d40f 749"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 749"
+TIMEOUT role=A id=16c6d40f seq=749
+TX role=A text="PING A 16c6d40f 750"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 750"
+TIMEOUT role=A id=16c6d40f seq=750
+TX role=A text="PING A 16c6d40f 751"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 751"
+TIMEOUT role=A id=16c6d40f seq=751
+TX role=A text="PING A 16c6d40f 752"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 752"
+TIMEOUT role=A id=16c6d40f seq=752
+TX role=A text="PING A 16c6d40f 753"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 753"
+TIMEOUT role=A id=16c6d40f seq=753
+TX role=A text="PING A 16c6d40f 754"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 754"
+TIMEOUT role=A id=16c6d40f seq=754
+TX role=A text="PING A 16c6d40f 755"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 755"
+TIMEOUT role=A id=16c6d40f seq=755
+TX role=A text="PING A 16c6d40f 756"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 756"
+TIMEOUT role=A id=16c6d40f seq=756
+TX role=A text="PING A 16c6d40f 757"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 757"
+TIMEOUT role=A id=16c6d40f seq=757
+TX role=A text="PING A 16c6d40f 758"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 758"
+TIMEOUT role=A id=16c6d40f seq=758
+TX role=A text="PING A 16c6d40f 759"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 759"
+TIMEOUT role=A id=16c6d40f seq=759
+TX role=A text="PING A 16c6d40f 760"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 760"
+TIMEOUT role=A id=16c6d40f seq=760
+TX role=A text="PING A 16c6d40f 761"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 761"
+TIMEOUT role=A id=16c6d40f seq=761
+TX role=A text="PING A 16c6d40f 762"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 762"
+TIMEOUT role=A id=16c6d40f seq=762
+TX role=A text="PING A 16c6d40f 763"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 763"
+TIMEOUT role=A id=16c6d40f seq=763
+TX role=A text="PING A 16c6d40f 764"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 764"
+TIMEOUT role=A id=16c6d40f seq=764
+TX role=A text="PING A 16c6d40f 765"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 765"
+TIMEOUT role=A id=16c6d40f seq=765
+TX role=A text="PING A 16c6d40f 766"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 766"
+TIMEOUT role=A id=16c6d40f seq=766
+TX role=A text="PING A 16c6d40f 767"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 767"
+TIMEOUT role=A id=16c6d40f seq=767
+TX role=A text="PING A 16c6d40f 768"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 768"
+TIMEOUT role=A id=16c6d40f seq=768
+TX role=A text="PING A 16c6d40f 769"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 769"
+TIMEOUT role=A id=16c6d40f seq=769
+TX role=A text="PING A 16c6d40f 770"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 770"
+TIMEOUT role=A id=16c6d40f seq=770
+TX role=A text="PING A 16c6d40f 771"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 771"
+TIMEOUT role=A id=16c6d40f seq=771
+TX role=A text="PING A 16c6d40f 772"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 772"
+TIMEOUT role=A id=16c6d40f seq=772
+TX role=A text="PING A 16c6d40f 773"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 773"
+TIMEOUT role=A id=16c6d40f seq=773
+TX role=A text="PING A 16c6d40f 774"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 774"
+TIMEOUT role=A id=16c6d40f seq=774
+TX role=A text="PING A 16c6d40f 775"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 775"
+TIMEOUT role=A id=16c6d40f seq=775
+TX role=A text="PING A 16c6d40f 776"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 776"
+TIMEOUT role=A id=16c6d40f seq=776
+TX role=A text="PING A 16c6d40f 777"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 777"
+TIMEOUT role=A id=16c6d40f seq=777
+TX role=A text="PING A 16c6d40f 778"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 778"
+TIMEOUT role=A id=16c6d40f seq=778
+TX role=A text="PING A 16c6d40f 779"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 779"
+TIMEOUT role=A id=16c6d40f seq=779
+TX role=A text="PING A 16c6d40f 780"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 780"
+TIMEOUT role=A id=16c6d40f seq=780
+TX role=A text="PING A 16c6d40f 781"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 781"
+TIMEOUT role=A id=16c6d40f seq=781
+TX role=A text="PING A 16c6d40f 782"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 782"
+TIMEOUT role=A id=16c6d40f seq=782
+TX role=A text="PING A 16c6d40f 783"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 783"
+TIMEOUT role=A id=16c6d40f seq=783
+TX role=A text="PING A 16c6d40f 784"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 784"
+TIMEOUT role=A id=16c6d40f seq=784
+TX role=A text="PING A 16c6d40f 785"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 785"
+TIMEOUT role=A id=16c6d40f seq=785
+TX role=A text="PING A 16c6d40f 786"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 786"
+TIMEOUT role=A id=16c6d40f seq=786
+TX role=A text="PING A 16c6d40f 787"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 787"
+TIMEOUT role=A id=16c6d40f seq=787
+TX role=A text="PING A 16c6d40f 788"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 788"
+TIMEOUT role=A id=16c6d40f seq=788
+TX role=A text="PING A 16c6d40f 789"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 789"
+TIMEOUT role=A id=16c6d40f seq=789
+TX role=A text="PING A 16c6d40f 790"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 790"
+TIMEOUT role=A id=16c6d40f seq=790
+TX role=A text="PING A 16c6d40f 791"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 791"
+TIMEOUT role=A id=16c6d40f seq=791
+TX role=A text="PING A 16c6d40f 792"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 792"
+TIMEOUT role=A id=16c6d40f seq=792
+TX role=A text="PING A 16c6d40f 793"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 793"
+TIMEOUT role=A id=16c6d40f seq=793
+TX role=A text="PING A 16c6d40f 794"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 794"
+TIMEOUT role=A id=16c6d40f seq=794
+TX role=A text="PING A 16c6d40f 795"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 795"
+TIMEOUT role=A id=16c6d40f seq=795
+TX role=A text="PING A 16c6d40f 796"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 796"
+TIMEOUT role=A id=16c6d40f seq=796
+TX role=A text="PING A 16c6d40f 797"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 797"
+TIMEOUT role=A id=16c6d40f seq=797
+TX role=A text="PING A 16c6d40f 798"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 798"
+TIMEOUT role=A id=16c6d40f seq=798
+TX role=A text="PING A 16c6d40f 799"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 799"
+TIMEOUT role=A id=16c6d40f seq=799
+TX role=A text="PING A 16c6d40f 800"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 800"
+TIMEOUT role=A id=16c6d40f seq=800
+TX role=A text="PING A 16c6d40f 801"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 801"
+TIMEOUT role=A id=16c6d40f seq=801
+TX role=A text="PING A 16c6d40f 802"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 802"
+TIMEOUT role=A id=16c6d40f seq=802
+TX role=A text="PING A 16c6d40f 803"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 803"
+TIMEOUT role=A id=16c6d40f seq=803
+TX role=A text="PING A 16c6d40f 804"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 804"
+TIMEOUT role=A id=16c6d40f seq=804
+TX role=A text="PING A 16c6d40f 805"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 805"
+TIMEOUT role=A id=16c6d40f seq=805
+TX role=A text="PING A 16c6d40f 806"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 806"
+TIMEOUT role=A id=16c6d40f seq=806
+TX role=A text="PING A 16c6d40f 807"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 807"
+TIMEOUT role=A id=16c6d40f seq=807
+TX role=A text="PING A 16c6d40f 808"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 808"
+TIMEOUT role=A id=16c6d40f seq=808
+TX role=A text="PING A 16c6d40f 809"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 809"
+TIMEOUT role=A id=16c6d40f seq=809
+TX role=A text="PING A 16c6d40f 810"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 810"
+TIMEOUT role=A id=16c6d40f seq=810
+TX role=A text="PING A 16c6d40f 811"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 811"
+TIMEOUT role=A id=16c6d40f seq=811
+TX role=A text="PING A 16c6d40f 812"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 812"
+TIMEOUT role=A id=16c6d40f seq=812
+TX role=A text="PING A 16c6d40f 813"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 813"
+TIMEOUT role=A id=16c6d40f seq=813
+TX role=A text="PING A 16c6d40f 814"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 814"
+TIMEOUT role=A id=16c6d40f seq=814
+TX role=A text="PING A 16c6d40f 815"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 815"
+TIMEOUT role=A id=16c6d40f seq=815
+TX role=A text="PING A 16c6d40f 816"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 816"
+TIMEOUT role=A id=16c6d40f seq=816
+TX role=A text="PING A 16c6d40f 817"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 817"
+TIMEOUT role=A id=16c6d40f seq=817
+TX role=A text="PING A 16c6d40f 818"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 818"
+TIMEOUT role=A id=16c6d40f seq=818
+TX role=A text="PING A 16c6d40f 819"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 819"
+TIMEOUT role=A id=16c6d40f seq=819
+TX role=A text="PING A 16c6d40f 820"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 820"
+TIMEOUT role=A id=16c6d40f seq=820
+TX role=A text="PING A 16c6d40f 821"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 821"
+TIMEOUT role=A id=16c6d40f seq=821
+TX role=A text="PING A 16c6d40f 822"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 822"
+TIMEOUT role=A id=16c6d40f seq=822
+TX role=A text="PING A 16c6d40f 823"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 823"
+TIMEOUT role=A id=16c6d40f seq=823
+TX role=A text="PING A 16c6d40f 824"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 824"
+TIMEOUT role=A id=16c6d40f seq=824
+TX role=A text="PING A 16c6d40f 825"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 825"
+TIMEOUT role=A id=16c6d40f seq=825
+TX role=A text="PING A 16c6d40f 826"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 826"
+TIMEOUT role=A id=16c6d40f seq=826
+TX role=A text="PING A 16c6d40f 827"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 827"
+TIMEOUT role=A id=16c6d40f seq=827
+TX role=A text="PING A 16c6d40f 828"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 828"
+TIMEOUT role=A id=16c6d40f seq=828
+TX role=A text="PING A 16c6d40f 829"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 829"
+TIMEOUT role=A id=16c6d40f seq=829
+TX role=A text="PING A 16c6d40f 830"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 830"
+TIMEOUT role=A id=16c6d40f seq=830
+TX role=A text="PING A 16c6d40f 831"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 831"
+TIMEOUT role=A id=16c6d40f seq=831
+TX role=A text="PING A 16c6d40f 832"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 832"
+TIMEOUT role=A id=16c6d40f seq=832
+TX role=A text="PING A 16c6d40f 833"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 833"
+TIMEOUT role=A id=16c6d40f seq=833
+TX role=A text="PING A 16c6d40f 834"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 834"
+TIMEOUT role=A id=16c6d40f seq=834
+TX role=A text="PING A 16c6d40f 835"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 835"
+TIMEOUT role=A id=16c6d40f seq=835
+TX role=A text="PING A 16c6d40f 836"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 836"
+TIMEOUT role=A id=16c6d40f seq=836
+TX role=A text="PING A 16c6d40f 837"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 837"
+TIMEOUT role=A id=16c6d40f seq=837
+TX role=A text="PING A 16c6d40f 838"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 838"
+TIMEOUT role=A id=16c6d40f seq=838
+TX role=A text="PING A 16c6d40f 839"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 839"
+TIMEOUT role=A id=16c6d40f seq=839
+TX role=A text="PING A 16c6d40f 840"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 840"
+TIMEOUT role=A id=16c6d40f seq=840
+TX role=A text="PING A 16c6d40f 841"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 841"
+TIMEOUT role=A id=16c6d40f seq=841
+TX role=A text="PING A 16c6d40f 842"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 842"
+TIMEOUT role=A id=16c6d40f seq=842
+TX role=A text="PING A 16c6d40f 843"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 843"
+TIMEOUT role=A id=16c6d40f seq=843
+TX role=A text="PING A 16c6d40f 844"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 844"
+TIMEOUT role=A id=16c6d40f seq=844
+TX role=A text="PING A 16c6d40f 845"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 845"
+TIMEOUT role=A id=16c6d40f seq=845
+TX role=A text="PING A 16c6d40f 846"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 846"
+TIMEOUT role=A id=16c6d40f seq=846
+TX role=A text="PING A 16c6d40f 847"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 847"
+TIMEOUT role=A id=16c6d40f seq=847
+TX role=A text="PING A 16c6d40f 848"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 848"
+TIMEOUT role=A id=16c6d40f seq=848
+TX role=A text="PING A 16c6d40f 849"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 849"
+TIMEOUT role=A id=16c6d40f seq=849
+TX role=A text="PING A 16c6d40f 850"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 850"
+TIMEOUT role=A id=16c6d40f seq=850
+TX role=A text="PING A 16c6d40f 851"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 851"
+TIMEOUT role=A id=16c6d40f seq=851
+TX role=A text="PING A 16c6d40f 852"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 852"
+TIMEOUT role=A id=16c6d40f seq=852
+TX role=A text="PING A 16c6d40f 853"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 853"
+TIMEOUT role=A id=16c6d40f seq=853
+TX role=A text="PING A 16c6d40f 854"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 854"
+TIMEOUT role=A id=16c6d40f seq=854
+TX role=A text="PING A 16c6d40f 855"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 855"
+TIMEOUT role=A id=16c6d40f seq=855
+TX role=A text="PING A 16c6d40f 856"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 856"
+TIMEOUT role=A id=16c6d40f seq=856
+TX role=A text="PING A 16c6d40f 857"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 857"
+TIMEOUT role=A id=16c6d40f seq=857
+TX role=A text="PING A 16c6d40f 858"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 858"
+TIMEOUT role=A id=16c6d40f seq=858
+TX role=A text="PING A 16c6d40f 859"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 859"
+TIMEOUT role=A id=16c6d40f seq=859
+TX role=A text="PING A 16c6d40f 860"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 860"
+TIMEOUT role=A id=16c6d40f seq=860
+TX role=A text="PING A 16c6d40f 861"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 861"
+TIMEOUT role=A id=16c6d40f seq=861
+TX role=A text="PING A 16c6d40f 862"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 862"
+TIMEOUT role=A id=16c6d40f seq=862
+TX role=A text="PING A 16c6d40f 863"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 863"
+TIMEOUT role=A id=16c6d40f seq=863
+TX role=A text="PING A 16c6d40f 864"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 864"
+TIMEOUT role=A id=16c6d40f seq=864
+TX role=A text="PING A 16c6d40f 865"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 865"
+TIMEOUT role=A id=16c6d40f seq=865
+TX role=A text="PING A 16c6d40f 866"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 866"
+TIMEOUT role=A id=16c6d40f seq=866
+TX role=A text="PING A 16c6d40f 867"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 867"
+TIMEOUT role=A id=16c6d40f seq=867
+TX role=A text="PING A 16c6d40f 868"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 868"
+TIMEOUT role=A id=16c6d40f seq=868
+TX role=A text="PING A 16c6d40f 869"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 869"
+TIMEOUT role=A id=16c6d40f seq=869
+TX role=A text="PING A 16c6d40f 870"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 870"
+TIMEOUT role=A id=16c6d40f seq=870
+TX role=A text="PING A 16c6d40f 871"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 871"
+TIMEOUT role=A id=16c6d40f seq=871
+TX role=A text="PING A 16c6d40f 872"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 872"
+TIMEOUT role=A id=16c6d40f seq=872
+TX role=A text="PING A 16c6d40f 873"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 873"
+TIMEOUT role=A id=16c6d40f seq=873
+TX role=A text="PING A 16c6d40f 874"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 874"
+TIMEOUT role=A id=16c6d40f seq=874
+TX role=A text="PING A 16c6d40f 875"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 875"
+TIMEOUT role=A id=16c6d40f seq=875
+TX role=A text="PING A 16c6d40f 876"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 876"
+TIMEOUT role=A id=16c6d40f seq=876
+TX role=A text="PING A 16c6d40f 877"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 877"
+TIMEOUT role=A id=16c6d40f seq=877
+TX role=A text="PING A 16c6d40f 878"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 878"
+TIMEOUT role=A id=16c6d40f seq=878
+TX role=A text="PING A 16c6d40f 879"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 879"
+TIMEOUT role=A id=16c6d40f seq=879
+TX role=A text="PING A 16c6d40f 880"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 880"
+TIMEOUT role=A id=16c6d40f seq=880
+TX role=A text="PING A 16c6d40f 881"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 881"
+TIMEOUT role=A id=16c6d40f seq=881
+TX role=A text="PING A 16c6d40f 882"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 882"
+TIMEOUT role=A id=16c6d40f seq=882
+TX role=A text="PING A 16c6d40f 883"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 883"
+TIMEOUT role=A id=16c6d40f seq=883
+TX role=A text="PING A 16c6d40f 884"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 884"
+TIMEOUT role=A id=16c6d40f seq=884
+TX role=A text="PING A 16c6d40f 885"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 885"
+TIMEOUT role=A id=16c6d40f seq=885
+TX role=A text="PING A 16c6d40f 886"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 886"
+TIMEOUT role=A id=16c6d40f seq=886
+TX role=A text="PING A 16c6d40f 887"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 887"
+TIMEOUT role=A id=16c6d40f seq=887
+TX role=A text="PING A 16c6d40f 888"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 888"
+TIMEOUT role=A id=16c6d40f seq=888
+TX role=A text="PING A 16c6d40f 889"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 889"
+TIMEOUT role=A id=16c6d40f seq=889
+TX role=A text="PING A 16c6d40f 890"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 890"
+TIMEOUT role=A id=16c6d40f seq=890
+TX role=A text="PING A 16c6d40f 891"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 891"
+TIMEOUT role=A id=16c6d40f seq=891
+TX role=A text="PING A 16c6d40f 892"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 892"
+TIMEOUT role=A id=16c6d40f seq=892
+TX role=A text="PING A 16c6d40f 893"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 893"
+TIMEOUT role=A id=16c6d40f seq=893
+TX role=A text="PING A 16c6d40f 894"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 894"
+TIMEOUT role=A id=16c6d40f seq=894
+TX role=A text="PING A 16c6d40f 895"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 895"
+TIMEOUT role=A id=16c6d40f seq=895
+TX role=A text="PING A 16c6d40f 896"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 896"
+TIMEOUT role=A id=16c6d40f seq=896
+TX role=A text="PING A 16c6d40f 897"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 897"
+TIMEOUT role=A id=16c6d40f seq=897
+TX role=A text="PING A 16c6d40f 898"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 898"
+TIMEOUT role=A id=16c6d40f seq=898
+TX role=A text="PING A 16c6d40f 899"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 899"
+TIMEOUT role=A id=16c6d40f seq=899
+TX role=A text="PING A 16c6d40f 900"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 900"
+TIMEOUT role=A id=16c6d40f seq=900
+TX role=A text="PING A 16c6d40f 901"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 901"
+TIMEOUT role=A id=16c6d40f seq=901
+TX role=A text="PING A 16c6d40f 902"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 902"
+TIMEOUT role=A id=16c6d40f seq=902
+TX role=A text="PING A 16c6d40f 903"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 903"
+TIMEOUT role=A id=16c6d40f seq=903
+TX role=A text="PING A 16c6d40f 904"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 904"
+TIMEOUT role=A id=16c6d40f seq=904
+TX role=A text="PING A 16c6d40f 905"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 905"
+TIMEOUT role=A id=16c6d40f seq=905
+TX role=A text="PING A 16c6d40f 906"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 906"
+TIMEOUT role=A id=16c6d40f seq=906
+TX role=A text="PING A 16c6d40f 907"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 907"
+TIMEOUT role=A id=16c6d40f seq=907
+TX role=A text="PING A 16c6d40f 908"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 908"
+TIMEOUT role=A id=16c6d40f seq=908
+TX role=A text="PING A 16c6d40f 909"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 909"
+TIMEOUT role=A id=16c6d40f seq=909
+TX role=A text="PING A 16c6d40f 910"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 910"
+TIMEOUT role=A id=16c6d40f seq=910
+TX role=A text="PING A 16c6d40f 911"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 911"
+TIMEOUT role=A id=16c6d40f seq=911
+TX role=A text="PING A 16c6d40f 912"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 912"
+TIMEOUT role=A id=16c6d40f seq=912
+TX role=A text="PING A 16c6d40f 913"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 913"
+TIMEOUT role=A id=16c6d40f seq=913
+TX role=A text="PING A 16c6d40f 914"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 914"
+TIMEOUT role=A id=16c6d40f seq=914
+TX role=A text="PING A 16c6d40f 915"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 915"
+TIMEOUT role=A id=16c6d40f seq=915
+TX role=A text="PING A 16c6d40f 916"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 916"
+TIMEOUT role=A id=16c6d40f seq=916
+TX role=A text="PING A 16c6d40f 917"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 917"
+TIMEOUT role=A id=16c6d40f seq=917
+TX role=A text="PING A 16c6d40f 918"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 918"
+TIMEOUT role=A id=16c6d40f seq=918
+TX role=A text="PING A 16c6d40f 919"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 919"
+TIMEOUT role=A id=16c6d40f seq=919
+TX role=A text="PING A 16c6d40f 920"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 920"
+TIMEOUT role=A id=16c6d40f seq=920
+TX role=A text="PING A 16c6d40f 921"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 921"
+TIMEOUT role=A id=16c6d40f seq=921
+TX role=A text="PING A 16c6d40f 922"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 922"
+TIMEOUT role=A id=16c6d40f seq=922
+TX role=A text="PING A 16c6d40f 923"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 923"
+TIMEOUT role=A id=16c6d40f seq=923
+TX role=A text="PING A 16c6d40f 924"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 924"
+TIMEOUT role=A id=16c6d40f seq=924
+TX role=A text="PING A 16c6d40f 925"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 925"
+TIMEOUT role=A id=16c6d40f seq=925
+TX role=A text="PING A 16c6d40f 926"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 926"
+TIMEOUT role=A id=16c6d40f seq=926
+TX role=A text="PING A 16c6d40f 927"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 927"
+TIMEOUT role=A id=16c6d40f seq=927
+TX role=A text="PING A 16c6d40f 928"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 928"
+TIMEOUT role=A id=16c6d40f seq=928
+TX role=A text="PING A 16c6d40f 929"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 929"
+TIMEOUT role=A id=16c6d40f seq=929
+TX role=A text="PING A 16c6d40f 930"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 930"
+TIMEOUT role=A id=16c6d40f seq=930
+TX role=A text="PING A 16c6d40f 931"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 931"
+TIMEOUT role=A id=16c6d40f seq=931
+TX role=A text="PING A 16c6d40f 932"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 932"
+TIMEOUT role=A id=16c6d40f seq=932
+TX role=A text="PING A 16c6d40f 933"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 933"
+TIMEOUT role=A id=16c6d40f seq=933
+TX role=A text="PING A 16c6d40f 934"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 934"
+TIMEOUT role=A id=16c6d40f seq=934
+TX role=A text="PING A 16c6d40f 935"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 935"
+TIMEOUT role=A id=16c6d40f seq=935
+TX role=A text="PING A 16c6d40f 936"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 936"
+TIMEOUT role=A id=16c6d40f seq=936
+TX role=A text="PING A 16c6d40f 937"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 937"
+TIMEOUT role=A id=16c6d40f seq=937
+TX role=A text="PING A 16c6d40f 938"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 938"
+TIMEOUT role=A id=16c6d40f seq=938
+TX role=A text="PING A 16c6d40f 939"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 939"
+TIMEOUT role=A id=16c6d40f seq=939
+TX role=A text="PING A 16c6d40f 940"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 940"
+TIMEOUT role=A id=16c6d40f seq=940
+TX role=A text="PING A 16c6d40f 941"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 941"
+TIMEOUT role=A id=16c6d40f seq=941
+TX role=A text="PING A 16c6d40f 942"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 942"
+TIMEOUT role=A id=16c6d40f seq=942
+TX role=A text="PING A 16c6d40f 943"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 943"
+TIMEOUT role=A id=16c6d40f seq=943
+TX role=A text="PING A 16c6d40f 944"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 944"
+TIMEOUT role=A id=16c6d40f seq=944
+TX role=A text="PING A 16c6d40f 945"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 945"
+TIMEOUT role=A id=16c6d40f seq=945
+TX role=A text="PING A 16c6d40f 946"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 946"
+TIMEOUT role=A id=16c6d40f seq=946
+TX role=A text="PING A 16c6d40f 947"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 947"
+TIMEOUT role=A id=16c6d40f seq=947
+TX role=A text="PING A 16c6d40f 948"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 948"
+TIMEOUT role=A id=16c6d40f seq=948
+TX role=A text="PING A 16c6d40f 949"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 949"
+TIMEOUT role=A id=16c6d40f seq=949
+TX role=A text="PING A 16c6d40f 950"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 950"
+TIMEOUT role=A id=16c6d40f seq=950
+TX role=A text="PING A 16c6d40f 951"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 951"
+TIMEOUT role=A id=16c6d40f seq=951
+TX role=A text="PING A 16c6d40f 952"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 952"
+TIMEOUT role=A id=16c6d40f seq=952
+TX role=A text="PING A 16c6d40f 953"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 953"
+TIMEOUT role=A id=16c6d40f seq=953
+TX role=A text="PING A 16c6d40f 954"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 954"
+TIMEOUT role=A id=16c6d40f seq=954
+TX role=A text="PING A 16c6d40f 955"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 955"
+TIMEOUT role=A id=16c6d40f seq=955
+TX role=A text="PING A 16c6d40f 956"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 956"
+TIMEOUT role=A id=16c6d40f seq=956
+TX role=A text="PING A 16c6d40f 957"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 957"
+TIMEOUT role=A id=16c6d40f seq=957
+TX role=A text="PING A 16c6d40f 958"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 958"
+TIMEOUT role=A id=16c6d40f seq=958
+TX role=A text="PING A 16c6d40f 959"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 959"
+TIMEOUT role=A id=16c6d40f seq=959
+TX role=A text="PING A 16c6d40f 960"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 960"
+TIMEOUT role=A id=16c6d40f seq=960
+TX role=A text="PING A 16c6d40f 961"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 961"
+TIMEOUT role=A id=16c6d40f seq=961
+TX role=A text="PING A 16c6d40f 962"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 962"
+TIMEOUT role=A id=16c6d40f seq=962
+TX role=A text="PING A 16c6d40f 963"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 963"
+TIMEOUT role=A id=16c6d40f seq=963
+TX role=A text="PING A 16c6d40f 964"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 964"
+TIMEOUT role=A id=16c6d40f seq=964
+TX role=A text="PING A 16c6d40f 965"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 965"
+TIMEOUT role=A id=16c6d40f seq=965
+TX role=A text="PING A 16c6d40f 966"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 966"
+TIMEOUT role=A id=16c6d40f seq=966
+TX role=A text="PING A 16c6d40f 967"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 967"
+TIMEOUT role=A id=16c6d40f seq=967
+TX role=A text="PING A 16c6d40f 968"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 968"
+TIMEOUT role=A id=16c6d40f seq=968
+TX role=A text="PING A 16c6d40f 969"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 969"
+TIMEOUT role=A id=16c6d40f seq=969
+TX role=A text="PING A 16c6d40f 970"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 970"
+TIMEOUT role=A id=16c6d40f seq=970
+TX role=A text="PING A 16c6d40f 971"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 971"
+TIMEOUT role=A id=16c6d40f seq=971
+TX role=A text="PING A 16c6d40f 972"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 972"
+TIMEOUT role=A id=16c6d40f seq=972
+TX role=A text="PING A 16c6d40f 973"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 973"
+TIMEOUT role=A id=16c6d40f seq=973
+TX role=A text="PING A 16c6d40f 974"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 974"
+TIMEOUT role=A id=16c6d40f seq=974
+TX role=A text="PING A 16c6d40f 975"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 975"
+TIMEOUT role=A id=16c6d40f seq=975
+TX role=A text="PING A 16c6d40f 976"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 976"
+TIMEOUT role=A id=16c6d40f seq=976
+TX role=A text="PING A 16c6d40f 977"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 977"
+TIMEOUT role=A id=16c6d40f seq=977
+TX role=A text="PING A 16c6d40f 978"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 978"
+TIMEOUT role=A id=16c6d40f seq=978
+TX role=A text="PING A 16c6d40f 979"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 979"
+TIMEOUT role=A id=16c6d40f seq=979
+TX role=A text="PING A 16c6d40f 980"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 980"
+TIMEOUT role=A id=16c6d40f seq=980
+TX role=A text="PING A 16c6d40f 981"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 981"
+TIMEOUT role=A id=16c6d40f seq=981
+TX role=A text="PING A 16c6d40f 982"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 982"
+TIMEOUT role=A id=16c6d40f seq=982
+TX role=A text="PING A 16c6d40f 983"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 983"
+TIMEOUT role=A id=16c6d40f seq=983
+TX role=A text="PING A 16c6d40f 984"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 984"
+TIMEOUT role=A id=16c6d40f seq=984
+TX role=A text="PING A 16c6d40f 985"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 985"
+TIMEOUT role=A id=16c6d40f seq=985
+TX role=A text="PING A 16c6d40f 986"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 986"
+TIMEOUT role=A id=16c6d40f seq=986
+TX role=A text="PING A 16c6d40f 987"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 987"
+TIMEOUT role=A id=16c6d40f seq=987
+TX role=A text="PING A 16c6d40f 988"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 988"
+TIMEOUT role=A id=16c6d40f seq=988
+TX role=A text="PING A 16c6d40f 989"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 989"
+TIMEOUT role=A id=16c6d40f seq=989
+TX role=A text="PING A 16c6d40f 990"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 990"
+TIMEOUT role=A id=16c6d40f seq=990
+TX role=A text="PING A 16c6d40f 991"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 991"
+TIMEOUT role=A id=16c6d40f seq=991
+TX role=A text="PING A 16c6d40f 992"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 992"
+TIMEOUT role=A id=16c6d40f seq=992
+TX role=A text="PING A 16c6d40f 993"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 993"
+TIMEOUT role=A id=16c6d40f seq=993
+TX role=A text="PING A 16c6d40f 994"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 994"
+TIMEOUT role=A id=16c6d40f seq=994
+TX role=A text="PING A 16c6d40f 995"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 995"
+TIMEOUT role=A id=16c6d40f seq=995
+TX role=A text="PING A 16c6d40f 996"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 996"
+TIMEOUT role=A id=16c6d40f seq=996
+TX role=A text="PING A 16c6d40f 997"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 997"
+TIMEOUT role=A id=16c6d40f seq=997
+TX role=A text="PING A 16c6d40f 998"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 998"
+TIMEOUT role=A id=16c6d40f seq=998
+TX role=A text="PING A 16c6d40f 999"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 999"
+TIMEOUT role=A id=16c6d40f seq=999
+TX role=A text="PING A 16c6d40f 1000"
+RX_UNEXPECTED role=A text="PING A 16c6d40f 1000"
+TIMEOUT role=A id=16c6d40f seq=1000
+SUMMARY role=A id=16c6d40f status=FAIL sent=1000 received=0 lost=1000 errors=0 unexpected=999 rtt_min_us=0 rtt_mean_us=0.00 rtt_max_us=0 duration_ms=256000
