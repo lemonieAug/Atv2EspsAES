@@ -1,0 +1,75 @@
+# Testes no computador (NAO e execucao nas placas) - 2026-10-19T21:17:55Z
+# Comando: sh Codigo/testes/executar_testes.sh
+# Fontes: Codigo/src/aes128.c=4cfbc2aa2cc4c3ed Codigo/src/pkcs7_ecb.c=f00954d9d1f0bee0 Codigo/src/analise.c=87f5e9e143c83c2d Codigo/src/dupla.c=e0aff3e88c367e3b Codigo/src/quadro.c=897d0c3cef7f9942 Codigo/src/vetores_pdf.c=d25f287181dcea53 Codigo/testes/teste_host.c=645561c70eef2821 
+cc (GCC) 16.2.1 20260810
+Testes no computador (nao e execucao nas placas)
+PASS sbox[00]=63
+PASS sbox[01]=7c
+PASS sbox[53]=ed
+PASS sbox[ff]=16
+PASS sbox inversa desfaz a sbox nos 256 valores
+PASS xtime(57)=ae (FIPS-197 4.2.1)
+PASS 57*83=c1 (FIPS-197 4.2)
+PASS FIPS-197 Apendice B cifrar obtido=3925841d02dc09fbdc118597196a0b32
+PASS FIPS-197 Apendice B decifrar obtido=3243f6a8885a308d313198a2e0370734
+PASS FIPS-197 Apendice C.1 cifrar obtido=69c4e0d86a7b0430d8cdb78070b4c55a
+PASS FIPS-197 Apendice C.1 decifrar obtido=00112233445566778899aabbccddeeff
+PASS FIPS A.1 chave de rodada 0 obtido=2b7e151628aed2a6abf7158809cf4f3c
+PASS FIPS A.1 chave de rodada 1 obtido=a0fafe1788542cb123a339392a6c7605
+PASS FIPS A.1 chave de rodada 10 obtido=d014f9a8c9ee2589e13f0cc8b6630ca6
+PASS FIPS B rodada 1 (1) AddRoundKey inicial obtido=193de3bea0f4e22b9ac68d2ae9f84808
+PASS FIPS B rodada 1 (2) SubBytes obtido=d42711aee0bf98f1b8b45de51e415230
+PASS FIPS B rodada 1 (3) ShiftRows obtido=d4bf5d30e0b452aeb84111f11e2798e5
+PASS FIPS B rodada 1 (4) MixColumns obtido=046681e5e0cb199a48f8d37a2806264c
+PASS FIPS B rodada 1 (5) AddRoundKey chave 1 obtido=a49c7ff2689f352b6b5bea43026a5049
+PASS InvMixColumns desfaz MixColumns obtido=d4bf5d30e0b452aeb84111f11e2798e5
+PASS InvShiftRows desfaz ShiftRows obtido=d42711aee0bf98f1b8b45de51e415230
+PASS InvSubBytes desfaz SubBytes obtido=193de3bea0f4e22b9ac68d2ae9f84808
+PASS exemplo: derivar chave
+PASS exemplo: chave ASCII obtido=32303233313030313230323331303032
+PASS exemplo: mensagem A:20231001;B:20231002 (21 bytes)
+PASS exemplo: cifrar mensagem
+PASS exemplo: mensagem com PKCS#7 obtido=413a32303233313030313b423a32303233313030320b0b0b0b0b0b0b0b0b0b0b
+PASS exemplo: cifrado ECB obtido=3a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+PASS exemplo: quadro tem 34 bytes
+PASS exemplo: quadro AA|02|blocos obtido=aa023a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+PASS exemplo: padding valido na decifragem
+PASS exemplo: mensagem recuperada identica
+PASS ECB bloco 1 "LIGAR LED VERDE." obtido=e0c22a6f02664f487dc9528642203dec
+PASS ECB bloco 2 "DESLIGAR LED    " obtido=2b4d065ea65478b60696616244cd5070
+PASS ECB bloco 3 "LIGAR LED VERDE." obtido=e0c22a6f02664f487dc9528642203dec
+PASS chave: matricula curta completa com 0 a esquerda
+PASS chave: usa os 8 ultimos digitos
+PASS chave: ignora caracteres que nao sao digitos
+PASS chave: matricula sem digitos e rejeitada
+PASS PKCS#7 ida e volta com 0 bytes
+PASS PKCS#7 ida e volta com 1 bytes
+PASS PKCS#7 ida e volta com 15 bytes
+PASS PKCS#7 ida e volta com 16 bytes
+PASS PKCS#7 ida e volta com 17 bytes
+PASS PKCS#7 ida e volta com 31 bytes
+PASS PKCS#7 ida e volta com 32 bytes
+PASS PKCS#7 ida e volta com 33 bytes
+PASS PKCS#7: bloco inteiro de 0x10 e valido
+PASS PKCS#7: rejeita valor 0x00
+PASS PKCS#7: rejeita valor > 16
+PASS PKCS#7: rejeita bytes inconsistentes
+PASS PKCS#7: rejeita tamanho nao multiplo de 16
+PASS PKCS#7: rejeita tamanho zero
+PASS PKCS#7: recusa saida sem capacidade
+PASS receptor: sincroniza no 0xAA depois de lixo
+PASS receptor: quadro incompleto expira
+PASS receptor: quadro seguinte completo apos timeout
+PASS receptor: n=0 rejeitado
+PASS receptor: byte atrasado abandona o quadro
+PASS receptor: e depois aceita quadro completo
+PASS receptor: limite total de tempo do quadro
+PASS quadro: 255 blocos montado
+PASS quadro: 0 blocos recusado
+PASS quadro: 256 blocos recusado
+PASS bit 0 = 0x80 do byte 0; bit 15 = 0x01 do byte 1
+PASS contagem de bits diferentes
+INFO avalanche FIPS B, bit 0 da chave: 59/128 bits do cifrado mudaram
+RESUMO verificacoes=66 falhas=0 status=PASS
+# Conferencia externa (OpenSSL 3.6.5, so referencia, fora do codigo entregue):
+# exemplo PDF: 3a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166

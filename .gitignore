@@ -14,3 +14,6 @@ Codigo/ferramentas/painel-operador/
 # Sistema operacional/editores
 .DS_Store
 *.swp
+
+# Binario dos testes do computador
+Codigo/testes/build/

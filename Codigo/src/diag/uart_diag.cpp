@@ -23,6 +23,10 @@ static void beginRun() {
   sent = received = lost = errors = unexpected = 0;
   minRtt = UINT32_MAX; maxRtt = 0; sumRtt = 0;
   waiting = false; running = true;
+  // Ruido do boot pode deixar uma linha invalida pela metade com discardLine
+  // ativo, o que descartava a resposta da sequencia 1 ate o proximo LF.
+  while (linkUart.available()) linkUart.read();
+  rxUsed = 0; discardLine = false;
   runStarted = nextSend = millis();
   Serial.printf("RUN role=A id=%08lx packets=%lu timeout_us=%lu\n",
                 (unsigned long)runId, (unsigned long)kPackets, (unsigned long)kTimeoutUs);
@@ -100,7 +104,7 @@ static void readLink() {
 void setup() {
   Serial.begin(115200);
   delay(300);
-  Serial.printf("BOOT role=%c firmware=uart-only-v1 chip=%s revision=%d cores=%d "
+  Serial.printf("BOOT role=%c firmware=uart-only-v2 chip=%s revision=%d cores=%d "
                 "flash_bytes=%lu psram_bytes=%lu efuse_mac=%012llx\n",
                 kRole, ESP.getChipModel(), ESP.getChipRevision(), ESP.getChipCores(),
                 (unsigned long)ESP.getFlashChipSize(), (unsigned long)ESP.getPsramSize(),
