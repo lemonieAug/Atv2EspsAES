@@ -11,7 +11,10 @@ em 1.000; AES ainda não foi implementado. Consulte o
 - `acesso-liberado-2026-10-18.json`: diagnóstico e captura após liberar a ACL.
 - `monitor-a-firmware-anterior.log`: boot real de A e logs do firmware DFPlayer
   preexistente; não é execução do firmware UART deste projeto.
-- `sha256-2026-10-18.json`: hashes das fontes/configuração e evidências.
+- `sha256-2026-10-18.json`: hashes das fontes/configuração e evidências em
+  18/10, preservados como registro histórico. Documentos editados depois
+  divergem desses hashes. Os itens `Codigo/ferramentas/painel-operador/*` são
+  da cópia local de laboratório e não estão versionados no repositório.
 - `build-esp_a-7.1.3-pass.log` e `build-esp_b-7.1.3-pass.log`: builds UART
   bem-sucedidos no reteste; comprovam compilação, não execução física.
 - `reteste-2026-10-18-2352.json`: resultados MCP do reteste e diagnóstico das portas.

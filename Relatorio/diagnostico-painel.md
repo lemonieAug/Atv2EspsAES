@@ -120,7 +120,8 @@ mantêm o perfil de visualização. Uma rota de consulta autenticada informa o p
 da sessão à interface, que mostra `ADMINISTRADOR · augusto` quando aplicável.
 As verificações do servidor que exigem origem e cabeçalho de aprovação foram
 preservadas. Há backup e instruções de restauração em
-[painel-operador/README.md](../Codigo/ferramentas/painel-operador/README.md).
+`Codigo/ferramentas/painel-operador/README.md`, cópia local da máquina de
+laboratório que não é versionada no repositório, por decisão do usuário.
 
 Em armazenamento isolado, 14 verificações de autenticação e autorização
 passaram. Uma sessão de operador alcançou a rota de aprovação para um ID
