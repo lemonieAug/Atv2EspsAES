@@ -1,0 +1,65 @@
+{
+  "data": "2026-10-19",
+  "horario_utc_aproximado": "21:40-21:45",
+  "execucao": "física, nas duas placas reais",
+  "firmware": "aes128-ecb-v1 com Codigo/src/dupla.h contendo as matrículas reais (DUPLA_DADOS_FICTICIOS 0)",
+  "dupla": {
+    "A": {"nome": "Augusto", "matricula": "2023178440013", "placa": "transmissor, USB location 3-3, MAC a8:42:e3:8f:a9:d0"},
+    "B": {"nome": "Gustavo", "matricula": "202127844251", "placa": "receptor, USB location 3-1, MAC d8:bc:38:fd:a8:80"},
+    "origem": "informado pelo usuário em 19/10/2026, nessa ordem"
+  },
+  "ligacao": "A TX2/GPIO17 -> B RX2/GPIO16; B TX2/GPIO17 -> A RX2/GPIO16; GND comum",
+  "uart": "UART2, 115200 bps, 8N1, quadro binário AA | n | 16n",
+  "build_e_gravacao": {
+    "esp_a": {"firmware_sha256": "12eef7619ea6e91a52e3020139901a28b4144c927ab89daf7c6ba70916abb82b", "flash_bytes": 281293, "aprovacao": "approval-c3381874-25ef-4d19-bf22-b29635bca248", "esptool": "4 regiões com hash verificado", "logs": ["build-aes-dupla-esp_a-2026-10-19.log", "upload-aes-dupla-esp_a-2026-10-19.log"]},
+    "esp_b": {"firmware_sha256": "b4791b23ddbf14bcb0298f76753ebb291c49ab5cf4aaebcc8dceb650b365ae8e", "flash_bytes": 279481, "aprovacao": "approval-30a5a5ca-9653-4692-a899-2fbf1381c357", "esptool": "4 regiões com hash verificado", "logs": ["build-aes-dupla-esp_b-2026-10-19.log", "upload-aes-dupla-esp_b-2026-10-19.log"]}
+  },
+  "testes_no_computador": "71/71 PASS, incluindo chave, mensagem, PKCS#7 e cifrado da dupla (testes-host-dupla-2026-10-19.log)",
+  "autoteste_nas_placas": {"A": "11/11 PASS", "B": "11/11 PASS"},
+  "etapa3": {
+    "chave_ascii": "7844001327844251",
+    "chave_hex": "37383434303031333237383434323531",
+    "mensagem": "A:2023178440013;B:202127844251",
+    "mensagem_bytes": 30,
+    "pkcs7": "2 bytes de valor 0x02",
+    "mensagem_pkcs7_blocos": ["413a323032333137383434303031333b", "423a3230323132373834343235310202"],
+    "cifrado_blocos": ["2e3e460ec295383cec6a018765ff0531", "30b51beef909b9d823300de92a5e9fb3"],
+    "quadro_tx": "aa022e3e460ec295383cec6a018765ff053130b51beef909b9d823300de92a5e9fb3",
+    "chave_rodada_0": "37383434303031333237383434323531",
+    "chave_rodada_1": "15aef32c259ec21f17a9fa2b239bcf1a",
+    "bloco1_rodada1": {
+      "entrada": "413a323032333137383434303031333b",
+      "1_addroundkey_inicial_chave0": "76020604020300040a030c040403060a",
+      "2_subbytes": "38776ff2777b63f2677bfef2f27b6f67",
+      "3_shiftrows": "387bfe67777b6ff2677b6ff2f27763f2",
+      "4_mixcolumns": "64b00d03fec2df72ded2cf42f74b4ee6",
+      "5_addroundkey_chave1": "711efe2fdb5c1d6dc97b3569d4d081fc"
+    }
+  },
+  "avalanche": {
+    "convencao": "bit i = máscara 0x80 >> (i % 8) do byte i/8",
+    "chave_bit0": {"chave_alterada_hex": "b7383434303031333237383434323531", "cifrado_alterado": "57b5ec185110fd4f14f9ed7dba6698022aabec351d705bf380d5727964c39534", "bloco1": "72/128 (56.25%)", "bloco2": "70/128 (54.69%)", "total": "142/256 (55.47%)"},
+    "mensagem_bit0": {"cifrado_alterado": "470a0a558d4fc29f5e9510762c2de1ba30b51beef909b9d823300de92a5e9fb3", "bloco1": "69/128 (53.91%)", "bloco2": "0/128 (0.00%)", "total": "69/256 (26.95%)", "nota": "em ECB só o bloco que contém o bit invertido muda"}
+  },
+  "experimento_ecb_pagina2": "3 blocos iguais aos esperados do PDF em A; bloco 3 = bloco 1",
+  "transmissoes": [
+    {"origem": "envio automático de A logo após a gravação", "b_descartados_antes": 2143, "resultado": "B recuperou a mensagem da dupla; PKCS#7 válido; igual_a_mensagem_da_dupla=SIM"},
+    {"origem": "ENVIO 1 após EN em A, com B reiniciado por EN", "b_descartados_antes": 100, "resultado": "B recuperou a mensagem da dupla; cifrado recebido idêntico ao enviado"}
+  ],
+  "conferencias": [
+    "OpenSSL 3.6.5 (referência externa, fora do código entregue): cifrado da mensagem e cifrado com o bit 0 da chave invertido idênticos aos das placas; 142 bits diferentes.",
+    "Implementação Python escrita só para conferência: chave de rodada 1 e os cinco estados do bloco 1 idênticos aos das placas.",
+    "Primeira palavra da chave de rodada 1 conferida manualmente (RotWord/SubWord/Rcon)."
+  ],
+  "logs": ["aes-dupla-a-2026-10-19.log", "aes-dupla-b-2026-10-19.log"],
+  "sha256": {
+    "aes-dupla-a-2026-10-19.log": "4455812e781d8c8a4f30de1802eda1d2df90882945288cac397d1247905d2c26",
+    "aes-dupla-b-2026-10-19.log": "173c1b4174cac8dad4becaddf4d2ac0b04b404ed096d7b65cf611c24ed06dd16",
+    "build-aes-dupla-esp_a-2026-10-19.log": "422acada0945f6f1c400789b4289b173d965aba1ff4121821b49dbe528656b6c",
+    "build-aes-dupla-esp_b-2026-10-19.log": "4bbc8368c69cf894bd269740a8f1f82933a562e4cd60166fa0f4d7af7cb8e2a5",
+    "upload-aes-dupla-esp_a-2026-10-19.log": "bc36128ff7d6db325bdedfc59e2ec8475fcf287c9c427098778eef5a77d60ce1",
+    "upload-aes-dupla-esp_b-2026-10-19.log": "d183e80af5798f22de3090dcfdf16da7c87a1ff0acfe818c8651663ed8144241",
+    "testes-host-dupla-2026-10-19.log": "8b11d6624f5fe88bb1f18133e24491687ed3252a28471a9bded358c714d9de8a"
+  },
+  "limites": "Logs extraídos das respostas do MCP desta sessão. Os monitores mostram registros dos firmwares, não uma captura elétrica independente da UART2. A avalanche registrada é a padrão do boot (bit 0); outros bits podem ser medidos com AVALANCHE CHAVE/MSG <bit>."
+}

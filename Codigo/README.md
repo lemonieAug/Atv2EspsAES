@@ -2,9 +2,9 @@
 
 O firmware do trabalho está implementado e foi validado nas duas placas reais
 em 19/10/2026: AES-128 do zero em C, ECB, PKCS#7 e o quadro binário
-`0xAA | n | 16·n` na UART2. **As matrículas reais ainda estão PENDENTES**; até
-lá o firmware usa as matrículas fictícias do enunciado e avisa isso em todo
-registro. O estado detalhado está no
+`0xAA | n | 16·n` na UART2. O primeiro ensaio usou as matrículas fictícias do
+enunciado; o segundo, com as matrículas reais de Augusto (A) e Gustavo (B), está
+em [aes-dupla-2026-10-19.json](evidencias/aes-dupla-2026-10-19.json). O estado detalhado está no
 [registro de laboratório](../Relatorio/validacao-laboratorio.md) e no
 [resumo do ensaio](evidencias/aes-ensaio-2026-10-19.json).
 
@@ -65,10 +65,11 @@ porque B continua com a chave da dupla.
 
 ## Matrículas da dupla
 
-Edite `src/dupla.h`: troque `DUPLA_MATRICULA_A` e `DUPLA_MATRICULA_B`, mude
-`DUPLA_DADOS_FICTICIOS` para `0`, rode os testes do computador e grave **as duas
-placas**, porque A e B precisam da mesma chave. Os registros da Etapa 3 com
-os dados reais só existem depois dessa gravação.
+`src/dupla.h` contém A = 2023178440013 (Augusto) e B = 202127844251 (Gustavo),
+com `DUPLA_DADOS_FICTICIOS 0`. Chave: `7844001327844251` (últimos 8 dígitos de
+cada um, em ASCII). Mensagem: `A:2023178440013;B:202127844251` (30 bytes, mais
+2 bytes `0x02` de PKCS#7). Para mudar os dados, edite esse arquivo, rode os testes
+do computador e grave **as duas placas**, porque A e B precisam da mesma chave.
 
 ## Testes no computador
 
@@ -132,14 +133,14 @@ de laboratório.
 
 | Item | Valor |
 | --- | --- |
-| Integrante/matrícula A | PENDENTE |
-| Integrante/matrícula B | PENDENTE |
+| Integrante/matrícula A | Augusto — 2023178440013 (informado pelo usuário em 19/10) |
+| Integrante/matrícula B | Gustavo — 202127844251 (informado pelo usuário em 19/10) |
 | Modelo dos chips | A: ESP32-D0WD-V3 v3.0; B: ESP32-D0WD-V3 v3.1; módulos ESP32-WROOM-32 informados pelo usuário |
 | Pinos da UART2 | TX GPIO17 / RX GPIO16 (TX2/RX2 na serigrafia) |
 | Ferramenta e versão | PlatformIO MCP 3.1.0; Core 6.2.0; espressif32 7.1.3 (Arduino) |
 | Gravação A/B | `aes128-ecb-v1` gravado e verificado pelo esptool em 19/10 |
-| Comunicação AES A→B | PASS com matrículas fictícias; repetir com as reais |
-| Registros da Etapa 3 com dados reais | PENDENTE |
+| Comunicação AES A→B | PASS com as matrículas fictícias e com as reais (19/10) |
+| Registros da Etapa 3 com dados reais | Capturados em 19/10: [aes-dupla-2026-10-19.json](evidencias/aes-dupla-2026-10-19.json) |
 
 Os dados em [testes/vetores.json](testes/vetores.json) vêm do PDF. Os valores
 de matrícula ali são fictícios e não substituem os dados da dupla.

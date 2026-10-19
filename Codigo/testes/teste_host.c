@@ -177,6 +177,29 @@ static void teste_chave_regras(void) {
   conferir("chave: matricula sem digitos e rejeitada", dupla_derivar_chave("abc", "1", k) != 0);
 }
 
+// Dados reais configurados em dupla.h. O cifrado esperado foi calculado com o
+// OpenSSL 3.6.5 apenas como referencia externa de conferencia.
+static void teste_dados_da_dupla(void) {
+  uint8_t chave[16];
+  conferir("dupla: dados reais configurados (DUPLA_DADOS_FICTICIOS=0)", DUPLA_DADOS_FICTICIOS == 0);
+  conferir("dupla: chave = ultimos 8 de A + ultimos 8 de B",
+           dupla_derivar_chave(DUPLA_MATRICULA_A, DUPLA_MATRICULA_B, chave) == 0 &&
+               memcmp(chave, "7844001327844251", 16) == 0);
+  char msg[64];
+  const size_t n = dupla_montar_mensagem(DUPLA_MATRICULA_A, DUPLA_MATRICULA_B, msg, sizeof msg);
+  conferir("dupla: mensagem A:2023178440013;B:202127844251 (30 bytes)",
+           n == 30 && strcmp(msg, "A:2023178440013;B:202127844251") == 0);
+  aes128_ctx ctx;
+  aes128_iniciar(&ctx, chave);
+  uint8_t preenchida[32], cifrado[32], esperado[32];
+  size_t tam = 0;
+  analise_cifrar_mensagem(&ctx, (const uint8_t *)msg, n, preenchida, cifrado, sizeof cifrado, &tam);
+  conferir("dupla: PKCS#7 acrescenta 2 bytes 0x02",
+           tam == 32 && preenchida[30] == 0x02 && preenchida[31] == 0x02);
+  de_hex("2e3e460ec295383cec6a018765ff053130b51beef909b9d823300de92a5e9fb3", esperado);
+  conferir_bytes("dupla: cifrado igual a referencia OpenSSL", cifrado, esperado, 32);
+}
+
 static void teste_pkcs7(void) {
   uint8_t buf[64], m[48];
   size_t t = 0, tm = 0;
@@ -299,6 +322,7 @@ int main(void) {
   teste_exemplo_pdf();
   teste_ecb_pdf();
   teste_chave_regras();
+  teste_dados_da_dupla();
   teste_pkcs7();
   teste_receptor();
   teste_avalanche();

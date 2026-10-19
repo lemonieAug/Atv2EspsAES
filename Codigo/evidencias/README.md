@@ -2,8 +2,8 @@
 
 Há evidências reais de identificação dos chips, builds, gravações e UART nas
 placas. O enlace físico bidirecional foi demonstrado e o firmware AES foi
-validado nas duas placas com as matrículas fictícias do enunciado; os dados
-reais da dupla continuam PENDENTES. Consulte o
+validado nas duas placas, primeiro com as matrículas fictícias do enunciado e
+depois com as matrículas reais da dupla. Consulte o
 [registro de laboratório](../../Relatorio/validacao-laboratorio.md).
 
 - `preflight-2026-10-18.json`: respostas reais do MCP e correção dos papéis A/B.
@@ -88,6 +88,12 @@ reais da dupla continuam PENDENTES. Consulte o
   A; mensagem da dupla, mensagem nova de 36 bytes e reenvio pelo botão BOOT
   recuperados em B, com cifrados idênticos aos enviados; com 1 bit da chave
   invertido em A, B rejeitou o PKCS#7.
+- `aes-dupla-2026-10-19.json`, `aes-dupla-a-2026-10-19.log`, `aes-dupla-b-2026-10-19.log`,
+  `build-aes-dupla-*`, `upload-aes-dupla-*` e `testes-host-dupla-2026-10-19.log`:
+  ensaio **com as matrículas reais** (A Augusto 2023178440013, B Gustavo
+  202127844251), ~21:40-21:45 UTC. Testes do PC 71/71; autoteste 11/11 em A e B;
+  registros da Etapa 3 (chave, PKCS#7, cifrado, chaves de rodada 0 e 1, cinco
+  estados) e avalanche; B recuperou a mensagem da dupla nos dois envios.
 
 Ao adicionar resultados, informe data, versão do código, ferramenta e comando
 utilizados, dados de entrada e se a execução ocorreu no computador ou nas placas.

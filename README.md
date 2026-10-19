@@ -3,9 +3,10 @@
 Ambiente de trabalho organizado a partir do [enunciado](AES_Trabalho.pdf).
 O firmware está em `Codigo/src/`: AES-128 do zero em C, ECB, PKCS#7 e quadro
 binário `0xAA | n | 16·n` na UART2. O transmissor é `esp_a` e o receptor `esp_b`,
-no `platformio.ini` da raiz. Ele foi validado nas duas placas reais em 19/10/2026
-com as **matrículas fictícias do enunciado**; as matrículas reais, o relatório e a
-apresentação continuam PENDENTES. Consulte o
+no `platformio.ini` da raiz. Ele foi validado nas duas placas reais em 19/10/2026,
+com as matrículas fictícias do enunciado e depois com as da dupla, Augusto (A,
+2023178440013) e Gustavo (B, 202127844251). O relatório e a apresentação continuam
+PENDENTES. Consulte o
 [estado real da validação](Relatorio/validacao-laboratorio.md) e as
 [instruções do código](Codigo/README.md).
 
@@ -35,9 +36,8 @@ comando de status dedicado nesta auditoria.
 
 ## Informações a definir
 
-- Nomes e matrículas completas dos integrantes A e B.
 - Prazo de entrega, não informado no PDF.
-- Endereço do repositório GitHub, não informado no PDF.
+- Repositório GitHub: https://github.com/lemonieAug/Atv2EspsAES- (público).
 
 Na sessão de laboratório foi utilizado o PlatformIO MCP instalado (Core 6.2.0)
 com espressif32 7.1.3. Os builds `esp_a` e `esp_b` passaram e o firmware AES
@@ -54,8 +54,8 @@ reconectar.
 
 1. ~~Implementar AES, PKCS#7, ECB e o quadro, e validar no PC e nas placas~~
    (feito em 19/10 com as matrículas fictícias).
-2. Informar as matrículas reais em `Codigo/src/dupla.h` e gravar as duas placas.
-3. Registrar estados intermediários, avalanche e experimento ECB com os dados da dupla.
+2. ~~Gravar as matrículas reais e registrar Etapa 3, avalanche e ECB~~ (feito em 19/10).
+3. Revisão do código pela dupla (cada um explica o trecho do colega).
 4. Escrever `Apresentacao/README.md` e ensaiar a demonstração nos dois monitores.
 5. Finalizar relatório e apresentação usando as evidências obtidas.
 6. Opcional: gravar `diag_a`/`diag_b` e repetir o PING/PONG até 1.000/1.000.

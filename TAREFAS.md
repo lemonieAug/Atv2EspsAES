@@ -12,7 +12,8 @@ Marcar como concluído somente quando houver implementação ou evidência verif
 - [x] Instalar Claude Code CLI nativo 2.1.303; `claude doctor` sem problemas e
       `claude mcp list` com PlatformIO conectado.
 - [ ] Confirmar autenticação da conta Claude Code na sessão interativa.
-- [ ] Informar integrantes, ordem A/B e matrículas completas.
+- [x] Informar integrantes, ordem A/B e matrículas completas: A = Augusto, 2023178440013;
+      B = Gustavo, 202127844251 (informado pelo usuário em 19/10).
 - [x] Definir placas, pinos e ferramenta de desenvolvimento (ESP32-WROOM-32 informado; chip confirmado via esptool; UART2 RX16/TX17; PlatformIO MCP).
 - [ ] Configurar compilação, dependências e instruções reproduzíveis.
 
@@ -44,14 +45,15 @@ Marcar como concluído somente quando houver implementação ou evidência verif
 - [x] Implementar o transmissor com quadro binário AA | n | 16*n bytes (`transmissor.cpp`).
 - [x] Implementar receptor com sincronização, tempo limite e validação do quadro
       (`receptor.cpp`, `quadro.c`).
-- [x] Validar transmissão e recuperação da mensagem nas duas placas reais (19/10 ~21:23 UTC,
-      com as matrículas fictícias: mensagem da dupla, mensagem nova de 36 bytes, chave
-      com 1 bit invertido rejeitada, reenvio pelo botão BOOT). Repetir com as reais.
-- [ ] Capturar chave, mensagem preenchida, cifrado e chaves de rodada 0 e 1 — procedimento
-      validado nas placas com dados fictícios; PENDENTE com as matrículas reais.
-- [ ] Capturar os cinco estados solicitados do primeiro bloco — idem; PENDENTE dados reais.
-- [ ] Executar avalanche e registrar contagem e percentual de bits alterados — idem
-      (fictício: chave bit 0 → 131/256, 51,17%); PENDENTE dados reais.
+- [x] Validar transmissão e recuperação da mensagem nas duas placas reais: com as
+      matrículas fictícias (19/10 ~21:23 UTC: mensagem nova, chave errada rejeitada,
+      botão BOOT) e com as reais (19/10 ~21:43 UTC, `Codigo/evidencias/aes-dupla-2026-10-19.json`).
+- [x] Capturar chave, mensagem preenchida, cifrado e chaves de rodada 0 e 1 com os
+      dados da dupla (placa A, 19/10 ~21:43 UTC; `aes-dupla-2026-10-19.json`).
+- [x] Capturar os cinco estados solicitados do primeiro bloco (idem; conferidos com
+      uma implementação Python independente).
+- [x] Executar avalanche e registrar contagem e percentual de bits alterados: bit 0 da
+      chave 142/256 (55,47%); bit 0 da mensagem 69/128 no bloco 1 e 0 no bloco 2.
 - [x] Executar os três blocos do experimento ECB da página 2 (chave do exemplo, nas duas
       placas; bloco 3 = bloco 1).
 - [ ] Comentar e revisar o código do transmissor e receptor — código comentado; falta a

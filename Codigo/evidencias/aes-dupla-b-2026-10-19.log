@@ -1,0 +1,53 @@
+# Captura serial real: aes128-ecb-v1 com as matriculas reais, placa B (receptor, Gustavo 202127844251), 2026-10-19 ~21:42-21:45 UTC
+# MCP session 84b1c395-c624-4bf4-85ad-d7e4cea6fc85; /dev/ttyUSB1; USB location 3-1; 115200 baud; MAC esptool d8:bc:38:fd:a8:80
+# Linhas 1-9: quadro do envio automatico apos a gravacao de A; depois boot completo de B por EN e quadro do boot de A.
+# Linhas extraidas sem alteracao das respostas serial_session_read (cursores 0, 9; total 49).
+[B] QUADRO 1 recebido marcador=0xaa n=2 bytes=34 descartados_antes=2143
+[B] CIFRADO_RECEBIDO bloco 1: 2e3e460ec295383cec6a018765ff0531
+[B] CIFRADO_RECEBIDO bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[B] DECIFRADO_COM_PKCS7 bloco 1: 413a323032333137383434303031333b
+[B] DECIFRADO_COM_PKCS7 bloco 2: 423a3230323132373834343235310202
+[B] PKCS7 status=valido removidos=2 bytes de valor 0x02
+[B] MENSAGEM_RECUPERADA tamanho=30 texto="A:2023178440013;B:202127844251"
+[B] MENSAGEM_RECUPERADA_HEX 413a323032333137383434303031333b423a323032313237383434323531
+[B] COMPARACAO igual_a_mensagem_da_dupla=SIM
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+[B] BOOT firmware=aes128-ecb-v1 papel=receptor chip=ESP32-D0WD-V3 revisao=3 efuse_mac=80a8fd38bcd8
+[B] AUTOTESTE PASS FIPS-197 Apendice B_cifrar obtido=3925841d02dc09fbdc118597196a0b32
+[B] AUTOTESTE PASS FIPS-197 Apendice B_decifrar obtido=3243f6a8885a308d313198a2e0370734
+[B] AUTOTESTE PASS FIPS-197 Apendice C.1_cifrar obtido=69c4e0d86a7b0430d8cdb78070b4c55a
+[B] AUTOTESTE PASS FIPS-197 Apendice C.1_decifrar obtido=00112233445566778899aabbccddeeff
+[B] AUTOTESTE PASS exemplo_ficticio_chave obtido=32303233313030313230323331303032
+[B] AUTOTESTE PASS exemplo_ficticio_pkcs7 obtido=413a32303233313030313b423a32303233313030320b0b0b0b0b0b0b0b0b0b0b
+[B] AUTOTESTE PASS exemplo_ficticio_cifrado obtido=3a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+[B] AUTOTESTE PASS exemplo_ficticio_decifrar_e_remover_pkcs7
+[B] AUTOTESTE PASS ecb_pdf_bloco_1 obtido=e0c22a6f02664f487dc9528642203dec
+[B] AUTOTESTE PASS ecb_pdf_bloco_2 obtido=2b4d065ea65478b60696616244cd5070
+[B] AUTOTESTE PASS ecb_pdf_bloco_3 obtido=e0c22a6f02664f487dc9528642203dec
+[B] AUTOTESTE resumo status=PASS aprovados=11/11
+[B] CHAVE ascii="7844001327844251" hex=37383434303031333237383434323531 bits_diferentes_da_chave_da_dupla=0
+[B] MENSAGEM_DA_DUPLA tamanho=30 texto="A:2023178440013;B:202127844251"
+[B] UART2_PRONTA rx=16 tx=17 baud=115200 formato=8N1 quadro=AA|n|16n
+[B] AJUDA ESTADO | AJUDA
+[B] AJUDA AUTOTESTE | ETAPA3 | ECB | CHAVE | BITCHAVE <0..127> | CHAVERESET
+[B] AJUDA AVALANCHE CHAVE <0..127> | AVALANCHE MSG <bit da mensagem da dupla>
+[B] PRONTO aguardando 0xAA; timeout entre bytes=100 ms total=1000 ms
+[B] QUADRO 1 recebido marcador=0xaa n=2 bytes=34 descartados_antes=100
+[B] CIFRADO_RECEBIDO bloco 1: 2e3e460ec295383cec6a018765ff0531
+[B] CIFRADO_RECEBIDO bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[B] DECIFRADO_COM_PKCS7 bloco 1: 413a323032333137383434303031333b
+[B] DECIFRADO_COM_PKCS7 bloco 2: 423a3230323132373834343235310202
+[B] PKCS7 status=valido removidos=2 bytes de valor 0x02
+[B] MENSAGEM_RECUPERADA tamanho=30 texto="A:2023178440013;B:202127844251"
+[B] MENSAGEM_RECUPERADA_HEX 413a323032333137383434303031333b423a323032313237383434323531
+[B] COMPARACAO igual_a_mensagem_da_dupla=SIM

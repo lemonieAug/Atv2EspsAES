@@ -1,0 +1,93 @@
+# Captura serial real: aes128-ecb-v1 com as matriculas reais, placa A (transmissor, Augusto 2023178440013), 2026-10-19 ~21:43-21:45 UTC
+# MCP session ba234738-69f9-44c4-9ae5-0eacfbe00ccb; /dev/ttyUSB0; USB location 3-3; 115200 baud; MAC esptool a8:42:e3:8f:a9:d0
+# Ligacao: A TX2/17 -> B RX2/16, B TX2/17 -> A RX2/16, GND comum. Linhas 1-10: envio automatico apos a gravacao (boot anterior a abertura do monitor); depois boot completo por EN.
+# Linhas extraidas sem alteracao das respostas serial_session_read (cursores 0, 10; total 89).
+[A] ENVIO 1 inicio
+[A] CHAVE ascii="7844001327844251" hex=37383434303031333237383434323531 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_ORIGINAL tamanho=30 texto="A:2023178440013;B:202127844251"
+[A] PKCS7 acrescentados=2 bytes de valor 0x02 tamanho_final=32
+[A] MENSAGEM_PKCS7 bloco 1: 413a323032333137383434303031333b
+[A] MENSAGEM_PKCS7 bloco 2: 423a3230323132373834343235310202
+[A] CIFRADO_ENVIADO bloco 1: 2e3e460ec295383cec6a018765ff0531
+[A] CIFRADO_ENVIADO bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[A] QUADRO_TX aa022e3e460ec295383cec6a018765ff053130b51beef909b9d823300de92a5e9fb3
+[A] ENVIO 1 fim bytes=34 escritos=34 blocos=2 marcador=0xaa
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+[A] BOOT firmware=aes128-ecb-v1 papel=transmissor chip=ESP32-D0WD-V3 revisao=3 efuse_mac=d0a98fe342a8
+[A] AUTOTESTE PASS FIPS-197 Apendice B_cifrar obtido=3925841d02dc09fbdc118597196a0b32
+[A] AUTOTESTE PASS FIPS-197 Apendice B_decifrar obtido=3243f6a8885a308d313198a2e0370734
+[A] AUTOTESTE PASS FIPS-197 Apendice C.1_cifrar obtido=69c4e0d86a7b0430d8cdb78070b4c55a
+[A] AUTOTESTE PASS FIPS-197 Apendice C.1_decifrar obtido=00112233445566778899aabbccddeeff
+[A] AUTOTESTE PASS exemplo_ficticio_chave obtido=32303233313030313230323331303032
+[A] AUTOTESTE PASS exemplo_ficticio_pkcs7 obtido=413a32303233313030313b423a32303233313030320b0b0b0b0b0b0b0b0b0b0b
+[A] AUTOTESTE PASS exemplo_ficticio_cifrado obtido=3a3784991ab0acaa88d5fd94cb7b74adcbea1d9e3e1f39da47111cf69064b166
+[A] AUTOTESTE PASS exemplo_ficticio_decifrar_e_remover_pkcs7
+[A] AUTOTESTE PASS ecb_pdf_bloco_1 obtido=e0c22a6f02664f487dc9528642203dec
+[A] AUTOTESTE PASS ecb_pdf_bloco_2 obtido=2b4d065ea65478b60696616244cd5070
+[A] AUTOTESTE PASS ecb_pdf_bloco_3 obtido=e0c22a6f02664f487dc9528642203dec
+[A] AUTOTESTE resumo status=PASS aprovados=11/11
+[A] CHAVE ascii="7844001327844251" hex=37383434303031333237383434323531 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_DA_DUPLA tamanho=30 texto="A:2023178440013;B:202127844251"
+[A] UART2_PRONTA rx=16 tx=17 baud=115200 formato=8N1 quadro=AA|n|16n
+[A] ETAPA3 inicio
+[A] CHAVE ascii="7844001327844251" hex=37383434303031333237383434323531 bits_diferentes_da_chave_da_dupla=0
+[A] ETAPA3 MENSAGEM tamanho=30 texto="A:2023178440013;B:202127844251"
+[A] ETAPA3 PKCS7 tamanho_final=32 acrescentados=2 valor=0x02
+[A] ETAPA3 MENSAGEM_PKCS7 bloco 1: 413a323032333137383434303031333b
+[A] ETAPA3 MENSAGEM_PKCS7 bloco 2: 423a3230323132373834343235310202
+[A] ETAPA3 CIFRADO bloco 1: 2e3e460ec295383cec6a018765ff0531
+[A] ETAPA3 CIFRADO bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[A] ETAPA3 CHAVE_RODADA_0 37383434303031333237383434323531
+[A] ETAPA3 CHAVE_RODADA_1 15aef32c259ec21f17a9fa2b239bcf1a
+[A] ETAPA3 BLOCO1 entrada 413a323032333137383434303031333b
+[A] ETAPA3 BLOCO1 (1)_AddRoundKey_inicial_chave0 76020604020300040a030c040403060a
+[A] ETAPA3 BLOCO1 (2)_SubBytes 38776ff2777b63f2677bfef2f27b6f67
+[A] ETAPA3 BLOCO1 (3)_ShiftRows 387bfe67777b6ff2677b6ff2f27763f2
+[A] ETAPA3 BLOCO1 (4)_MixColumns 64b00d03fec2df72ded2cf42f74b4ee6
+[A] ETAPA3 BLOCO1 (5)_AddRoundKey_chave1 711efe2fdb5c1d6dc97b3569d4d081fc
+[A] ETAPA3 fim
+[A] AVALANCHE alvo=chave bit=0 (byte 0, mascara 0x80)
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 1: 2e3e460ec295383cec6a018765ff0531
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[A] AVALANCHE CIFRADO_ALTERADO bloco 1: 57b5ec185110fd4f14f9ed7dba669802
+[A] AVALANCHE CIFRADO_ALTERADO bloco 2: 2aabec351d705bf380d5727964c39534
+[A] AVALANCHE bloco 1: 72/128 bits diferentes (56.25%)
+[A] AVALANCHE bloco 2: 70/128 bits diferentes (54.69%)
+[A] AVALANCHE total: 142/256 bits diferentes (55.47%)
+[A] AVALANCHE alvo=mensagem bit=0 (byte 0, mascara 0x80)
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 1: 2e3e460ec295383cec6a018765ff0531
+[A] AVALANCHE CIFRADO_ORIGINAL bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[A] AVALANCHE CIFRADO_ALTERADO bloco 1: 470a0a558d4fc29f5e9510762c2de1ba
+[A] AVALANCHE CIFRADO_ALTERADO bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[A] AVALANCHE bloco 1: 69/128 bits diferentes (53.91%)
+[A] AVALANCHE bloco 2: 0/128 bits diferentes (0.00%)
+[A] AVALANCHE total: 69/256 bits diferentes (26.95%)
+[A] ECB chave_do_exemplo 32303233313030313230323331303032
+[A] ECB bloco 1 claro="LIGAR LED VERDE." cifrado=e0c22a6f02664f487dc9528642203dec esperado_pdf=SIM
+[A] ECB bloco 2 claro="DESLIGAR LED    " cifrado=2b4d065ea65478b60696616244cd5070 esperado_pdf=SIM
+[A] ECB bloco 3 claro="LIGAR LED VERDE." cifrado=e0c22a6f02664f487dc9528642203dec esperado_pdf=SIM
+[A] ECB bloco3_igual_bloco1=SIM (blocos claros iguais -> cifrados iguais)
+[A] AJUDA ENVIAR | MSG <texto> | MSGRESET | MENSAGEM | AJUDA | botao BOOT = ENVIAR
+[A] AJUDA AUTOTESTE | ETAPA3 | ECB | CHAVE | BITCHAVE <0..127> | CHAVERESET
+[A] AJUDA AVALANCHE CHAVE <0..127> | AVALANCHE MSG <bit da mensagem da dupla>
+[A] PRONTO envio automatico em 3000 ms
+[A] ENVIO 1 inicio
+[A] CHAVE ascii="7844001327844251" hex=37383434303031333237383434323531 bits_diferentes_da_chave_da_dupla=0
+[A] MENSAGEM_ORIGINAL tamanho=30 texto="A:2023178440013;B:202127844251"
+[A] PKCS7 acrescentados=2 bytes de valor 0x02 tamanho_final=32
+[A] MENSAGEM_PKCS7 bloco 1: 413a323032333137383434303031333b
+[A] MENSAGEM_PKCS7 bloco 2: 423a3230323132373834343235310202
+[A] CIFRADO_ENVIADO bloco 1: 2e3e460ec295383cec6a018765ff0531
+[A] CIFRADO_ENVIADO bloco 2: 30b51beef909b9d823300de92a5e9fb3
+[A] QUADRO_TX aa022e3e460ec295383cec6a018765ff053130b51beef909b9d823300de92a5e9fb3
+[A] ENVIO 1 fim bytes=34 escritos=34 blocos=2 marcador=0xaa

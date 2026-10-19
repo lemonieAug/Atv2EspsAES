@@ -81,8 +81,8 @@ permanecem PENDENTES; esta etapa autoriza somente seu planejamento.
 
 | Participante | Trecho escrito pelo colega que irá explicar | Preparação |
 | --- | --- | --- |
-| A — PENDENTE | PENDENTE | PENDENTE |
-| B — PENDENTE | PENDENTE | PENDENTE |
+| A — Augusto (2023178440013) | PENDENTE | PENDENTE |
+| B — Gustavo (202127844251) | PENDENTE | PENDENTE |
 
 ## Preparação da demonstração
 

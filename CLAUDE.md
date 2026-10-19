@@ -51,10 +51,11 @@ Leia `Relatorio/validacao-laboratorio.md` antes de retomar. Estado confirmado:
   PONG B; para esse teste, o eco é o critério. As falhas anteriores podem ter
   usado RX0/TX0 segundo esclarecimento posterior do usuário; não afirme causa
   física mais específica que essa evidência.
-- Próximo passo: com as matrículas reais em `Codigo/src/dupla.h`
-  (`DUPLA_DADOS_FICTICIOS 0`), rodar os testes do PC, gravar `esp_a` e `esp_b`
-  e capturar a Etapa 3 da dupla. Matrículas continuam PENDENTES; não as invente.
-  Opcional: gravar `diag_a`/`diag_b` para a sequência estrita de 1.000/1.000.
+- **Atualização ~21:45 UTC:** dupla A = Augusto 2023178440013, B = Gustavo
+  202127844251 em `Codigo/src/dupla.h`; as duas placas gravadas com esses dados e
+  a Etapa 3 capturada (`Codigo/evidencias/aes-dupla-2026-10-19.json`).
+- Próximo passo: relatório (`Relatorio/`), `Apresentacao/README.md` e ensaio da
+  demonstração. Opcional: `diag_a`/`diag_b` para a sequência de 1.000/1.000.
 - Todas as operações de build, flash e serial nas placas devem passar pelo
   PlatformIO MCP conforme `platformio-mcp:pio-manager`; não use `pio`, esptool ou
   monitor serial do shell para contornar o MCP.

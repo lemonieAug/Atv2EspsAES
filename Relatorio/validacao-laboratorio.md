@@ -2,6 +2,39 @@
 
 Data: 18/10/2026 (America/Cuiaba). Evidências do MCP usam UTC.
 
+## Firmware AES com as matrículas da dupla — 19/10/2026, ~21:40-21:45 UTC
+
+Dupla informada pelo usuário: **A = Augusto, 2023178440013** (transmissor, `3-3`)
+e **B = Gustavo, 202127844251** (receptor, `3-1`). `Codigo/src/dupla.h` foi
+atualizado (`DUPLA_DADOS_FICTICIOS 0`), os testes do PC passaram 71/71 e as duas
+placas foram gravadas individualmente, com aprovação e hashes verificados pelo
+esptool. Execução física; resumo em
+[aes-dupla-2026-10-19.json](../Codigo/evidencias/aes-dupla-2026-10-19.json).
+
+| Registro (Etapa 3) | Valor obtido na placa A |
+| --- | --- |
+| Chave (ASCII / hex) | `7844001327844251` / `37383434303031333237383434323531` |
+| Mensagem | `A:2023178440013;B:202127844251` (30 bytes) |
+| Com PKCS#7, blocos 1 e 2 | `413a323032333137383434303031333b` · `423a3230323132373834343235310202` |
+| Cifrado, blocos 1 e 2 | `2e3e460ec295383cec6a018765ff0531` · `30b51beef909b9d823300de92a5e9fb3` |
+| Chave de rodada 0 | `37383434303031333237383434323531` |
+| Chave de rodada 1 | `15aef32c259ec21f17a9fa2b239bcf1a` |
+| (1) AddRoundKey inicial | `76020604020300040a030c040403060a` |
+| (2) SubBytes | `38776ff2777b63f2677bfef2f27b6f67` |
+| (3) ShiftRows | `387bfe67777b6ff2677b6ff2f27763f2` |
+| (4) MixColumns | `64b00d03fec2df72ded2cf42f74b4ee6` |
+| (5) AddRoundKey (chave 1) | `711efe2fdb5c1d6dc97b3569d4d081fc` |
+| Avalanche, bit 0 da chave | 142/256 bits (55,47%): bloco 1 72/128, bloco 2 70/128 |
+| Avalanche, bit 0 da mensagem | 69/256 (26,95%): bloco 1 69/128 (53,91%), bloco 2 0/128 |
+
+Autoteste 11/11 em A e B. B recebeu o quadro `aa02…` nos dois envios (após a
+gravação e após o EN), validou o PKCS#7 (2 × `0x02`) e mostrou a mensagem
+original. O OpenSSL, como referência externa, reproduziu o cifrado e o cifrado
+com o bit 0 da chave invertido. Uma implementação Python escrita só para
+conferência reproduziu a chave de rodada 1 e os cinco estados. Logs:
+[A](../Codigo/evidencias/aes-dupla-a-2026-10-19.log) e
+[B](../Codigo/evidencias/aes-dupla-b-2026-10-19.log).
+
 ## Firmware AES nas duas placas — 19/10/2026, ~21:17-21:35 UTC
 
 Execução física com o firmware `aes128-ecb-v1` (commit `434a01f`) e as
@@ -39,8 +72,8 @@ Logs: [A](../Codigo/evidencias/aes-ensaio-a-2026-10-19.log),
 [boot de B](../Codigo/evidencias/aes-ensaio-b-boot-2026-10-19.log) e
 [botão de A](../Codigo/evidencias/aes-ensaio-a-botao-2026-10-19.log). Os monitores
 mostram registros dos firmwares, não uma captura elétrica independente da UART2.
-**Pendente:** repetir com as matrículas reais e registrar a Etapa 3 da dupla. O
-diagnóstico PING/PONG corrigido (`diag_a`/`diag_b`) foi compilado, mas não gravado.
+A repetição com as matrículas reais está na seção anterior. O diagnóstico
+PING/PONG corrigido (`diag_a`/`diag_b`) foi compilado, mas não gravado.
 
 ## Estado consolidado após retomada — 19/10/2026
 

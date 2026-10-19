@@ -3,14 +3,13 @@
 
 // Dados da dupla e regras do enunciado (secao 2) para chave e mensagem.
 //
-// PENDENTE: as matriculas reais ainda nao foram informadas. Ate la valem as
-// matriculas FICTICIAS do exemplo do enunciado, e os dois firmwares avisam
-// isso em todo registro. Para usar os dados reais, troque os dois valores
-// abaixo (mesmo arquivo nas duas placas), mude DUPLA_DADOS_FICTICIOS para 0
-// e grave esp_a e esp_b novamente.
-#define DUPLA_MATRICULA_A "20231001"
-#define DUPLA_MATRICULA_B "20231002"
-#define DUPLA_DADOS_FICTICIOS 1
+// Matriculas reais da dupla, informadas pelo usuario em 19/10/2026, na ordem
+// A (transmissor) e B (receptor). O mesmo arquivo vale para as duas placas:
+// apos qualquer alteracao, grave esp_a e esp_b novamente.
+// DUPLA_DADOS_FICTICIOS = 1 apenas quando usar as matriculas do exemplo do PDF.
+#define DUPLA_MATRICULA_A "2023178440013"
+#define DUPLA_MATRICULA_B "202127844251"
+#define DUPLA_DADOS_FICTICIOS 0
 
 #include <stddef.h>
 #include <stdint.h>
