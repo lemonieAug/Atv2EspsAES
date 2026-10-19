@@ -56,8 +56,8 @@ reconectar.
    (feito em 19/10 com as matrículas fictícias).
 2. ~~Gravar as matrículas reais e registrar Etapa 3, avalanche e ECB~~ (feito em 19/10).
 3. Revisão do código pela dupla (cada um explica o trecho do colega).
-4. Escrever `Apresentacao/README.md` e ensaiar a demonstração nos dois monitores.
-5. Finalizar relatório e apresentação usando as evidências obtidas.
+4. ~~Finalizar o relatório~~ ([Relatorio/relatorio.pdf](Relatorio/relatorio.pdf), 4 páginas).
+5. Escrever `Apresentacao/README.md`, preparar a apresentação e ensaiar a demonstração.
 6. Opcional: gravar `diag_a`/`diag_b` e repetir o PING/PONG até 1.000/1.000.
 
 O relatório e o roteiro podem ser preparados em paralelo com o código; os

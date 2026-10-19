@@ -62,8 +62,10 @@ Marcar como concluído somente quando houver implementação ou evidência verif
 ## Entrega
 
 - [x] Registrar diagnóstico real e impedimentos do laboratório em `Relatorio/validacao-laboratorio.md`.
-- [ ] Finalizar relatório com resultados e discussão de ECB.
-- [ ] Gerar PDF do relatório e verificar limite de quatro páginas.
+- [x] Finalizar relatório com resultados e discussão de ECB (`Relatorio/relatorio.md`,
+      7 diagramas, linguagem acessível).
+- [x] Gerar PDF do relatório e verificar limite de quatro páginas (`Relatorio/relatorio.pdf`,
+      4 páginas, conferidas pelo script `Relatorio/ferramentas/gerar_relatorio.py`).
 - [ ] Preparar apresentação e explicação de cada transformação.
 - [ ] Preparar e ensaiar a demonstração AES em dois monitores USB/serial:
       mensagem original, PKCS#7 e ciphertext enviado em A; ciphertext recebido
