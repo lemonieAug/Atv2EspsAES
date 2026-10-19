@@ -15,7 +15,8 @@ Marcar como concluído somente quando houver implementação ou evidência verif
 - [x] Informar integrantes, ordem A/B e matrículas completas: A = Augusto, 2023178440013;
       B = Gustavo, 202127844251 (informado pelo usuário em 19/10).
 - [x] Definir placas, pinos e ferramenta de desenvolvimento (ESP32-WROOM-32 informado; chip confirmado via esptool; UART2 RX16/TX17; PlatformIO MCP).
-- [ ] Configurar compilação, dependências e instruções reproduzíveis.
+- [x] Configurar compilação, dependências e instruções reproduzíveis (`platformio.ini`,
+      `Codigo/README.md`, `Codigo/testes/executar_testes.sh`).
 
 ## Código e validação
 
@@ -66,7 +67,9 @@ Marcar como concluído somente quando houver implementação ou evidência verif
       7 diagramas, linguagem acessível).
 - [x] Gerar PDF do relatório e verificar limite de quatro páginas (`Relatorio/relatorio.pdf`,
       4 páginas, conferidas pelo script `Relatorio/ferramentas/gerar_relatorio.py`).
-- [ ] Preparar apresentação e explicação de cada transformação.
+- [x] Preparar apresentação e explicação de cada transformação (`Apresentacao/slides/`,
+      27 slides com notas de fala; valores conferidos com as evidências em 19/10).
+      Falta a revisão e o ensaio pela dupla.
 - [ ] Preparar e ensaiar a demonstração AES em dois monitores USB/serial:
       mensagem original, PKCS#7 e ciphertext enviado em A; ciphertext recebido
       e mensagem recuperada em B, conforme `Apresentacao/roteiro.md`.
@@ -76,7 +79,9 @@ Marcar como concluído somente quando houver implementação ou evidência verif
       captura de evidências e solução de problemas; validar o passo a passo
       em ensaio nas duas placas. Requisito adicional do usuário, com apenas
       o planejamento aprovado nesta etapa.
+      Guia escrito em 19/10 (`Apresentacao/README.md`); falta o ensaio que o valide.
 - [ ] Ensaiar explicação cruzada: cada integrante explica código do colega.
 - [ ] Ensaiar mudança de mensagem e inversão de um bit durante a demonstração.
-- [ ] Disponibilizar código comentado no GitHub quando solicitado.
+- [x] Disponibilizar código comentado no GitHub: https://github.com/lemonieAug/Atv2EspsAES-
+      (público, publicado com autorização do usuário em 19/10).
 - [ ] Fazer demonstração e arguição com as duas placas reais.

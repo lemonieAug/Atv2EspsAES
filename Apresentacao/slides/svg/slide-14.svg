@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">CÓDIGO REAL</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">O ciclo completo aparece neste trecho</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">A última rodada pula MixColumns, como exige o AES.</tspan>
+</text>
+<rect x="64" y="322" width="1472" height="415" rx="18" fill="#F0F4FA" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="64" y="322" width="1472" height="43" rx="14" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="82" y="349">aes128.c · dentro de aes128_cifrar_bloco()</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans Mono,sans-serif" font-size="30" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="86" y="415">  aes_add_round_key(s, ctx-&gt;chaves_rodada[0]);</tspan>
+<tspan x="86" y="452.2">  for (int r = 1; r &lt;= AES128_RODADAS; ++r) {</tspan>
+<tspan x="86" y="489.4">    aes_sub_bytes(s);</tspan>
+<tspan x="86" y="526.6">    aes_shift_rows(s);</tspan>
+<tspan x="86" y="563.8">    if (r != AES128_RODADAS) aes_mix_columns(s);</tspan>
+<tspan x="86" y="601">    aes_add_round_key(s, ctx-&gt;chaves_rodada[r]);</tspan>
+<tspan x="86" y="638.2">  }</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="84" y="799">Para voltar ao texto: etapas inversas e chaves usadas da rodada 10 até a 0.</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">14 / 27</tspan>
+</text>
+</svg>

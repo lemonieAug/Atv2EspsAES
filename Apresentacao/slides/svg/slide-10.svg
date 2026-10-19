@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">TRANSFORMAÇÃO 2</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">ShiftRows: cada linha anda um pouco</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">Linha 0 fica. As outras giram 1, 2 e 3 posições para a esquerda.</tspan>
+</text>
+<rect x="120" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="155" y="386">38</tspan>
+</text>
+<rect x="195" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="230" y="386">77</tspan>
+</text>
+<rect x="270" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="305" y="386">67</tspan>
+</text>
+<rect x="345" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="380" y="386">f2</tspan>
+</text>
+<rect x="120" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="155" y="461">77</tspan>
+</text>
+<rect x="195" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="230" y="461">7b</tspan>
+</text>
+<rect x="270" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="305" y="461">7b</tspan>
+</text>
+<rect x="345" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="380" y="461">7b</tspan>
+</text>
+<rect x="120" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="155" y="536">6f</tspan>
+</text>
+<rect x="195" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="230" y="536">63</tspan>
+</text>
+<rect x="270" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="305" y="536">fe</tspan>
+</text>
+<rect x="345" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="380" y="536">6f</tspan>
+</text>
+<rect x="120" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="155" y="611">f2</tspan>
+</text>
+<rect x="195" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="230" y="611">f2</tspan>
+</text>
+<rect x="270" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="305" y="611">f2</tspan>
+</text>
+<rect x="345" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="380" y="611">67</tspan>
+</text>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="24" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="126" y="699">ANTES</tspan>
+</text>
+<rect x="1160" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1195" y="386">38</tspan>
+</text>
+<rect x="1235" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1270" y="386">77</tspan>
+</text>
+<rect x="1310" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1345" y="386">67</tspan>
+</text>
+<rect x="1385" y="346" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1420" y="386">f2</tspan>
+</text>
+<rect x="1160" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1195" y="461">7b</tspan>
+</text>
+<rect x="1235" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1270" y="461">7b</tspan>
+</text>
+<rect x="1310" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1345" y="461">7b</tspan>
+</text>
+<rect x="1385" y="421" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1420" y="461">77</tspan>
+</text>
+<rect x="1160" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1195" y="536">fe</tspan>
+</text>
+<rect x="1235" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1270" y="536">6f</tspan>
+</text>
+<rect x="1310" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1345" y="536">6f</tspan>
+</text>
+<rect x="1385" y="496" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1420" y="536">63</tspan>
+</text>
+<rect x="1160" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1195" y="611">67</tspan>
+</text>
+<rect x="1235" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1270" y="611">f2</tspan>
+</text>
+<rect x="1310" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1345" y="611">f2</tspan>
+</text>
+<rect x="1385" y="571" width="70" height="70" rx="8" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="26" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1420" y="611">f2</tspan>
+</text>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="24" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="1165" y="699">DEPOIS</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="490" y="380">Linha 0</tspan>
+</text>
+<line x1="700" y1="380" x2="1090" y2="380" stroke="#D7E1EE" stroke-width="3" />
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="24" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="695" y="368">fica no lugar</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="490" y="455">Linha 1</tspan>
+</text>
+<line x1="700" y1="455" x2="1090" y2="455" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="24" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="695" y="443">1 posição à esquerda</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="490" y="530">Linha 2</tspan>
+</text>
+<line x1="700" y1="530" x2="1090" y2="530" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="24" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="695" y="518">2 posições à esquerda</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="490" y="605">Linha 3</tspan>
+</text>
+<line x1="700" y1="605" x2="1090" y2="605" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="24" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="695" y="593">3 posições à esquerda</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">10 / 27</tspan>
+</text>
+</svg>

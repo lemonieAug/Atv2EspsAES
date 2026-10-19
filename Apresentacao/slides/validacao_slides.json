@@ -1,0 +1,241 @@
+{
+  "origem": "Leitura de código e evidências locais; nenhuma operação de hardware",
+  "total_slides": 27,
+  "tema": "claro",
+  "formato": "16:9",
+  "verificacoes": [
+    "Todos os hashes declarados em aes-dupla-2026-10-19.json conferidos",
+    "Textos dentro das caixas e do quadro",
+    "PPTX com textos e formas editáveis",
+    "PDF e imagens renderizados dos mesmos dados",
+    "Notas de fala e fontes em todos os slides"
+  ],
+  "evidencias": [
+    {
+      "arquivo": "aes-dupla-a-2026-10-19.log",
+      "sha256": "4455812e781d8c8a4f30de1802eda1d2df90882945288cac397d1247905d2c26",
+      "confere": true
+    },
+    {
+      "arquivo": "aes-dupla-b-2026-10-19.log",
+      "sha256": "173c1b4174cac8dad4becaddf4d2ac0b04b404ed096d7b65cf611c24ed06dd16",
+      "confere": true
+    },
+    {
+      "arquivo": "build-aes-dupla-esp_a-2026-10-19.log",
+      "sha256": "422acada0945f6f1c400789b4289b173d965aba1ff4121821b49dbe528656b6c",
+      "confere": true
+    },
+    {
+      "arquivo": "build-aes-dupla-esp_b-2026-10-19.log",
+      "sha256": "4bbc8368c69cf894bd269740a8f1f82933a562e4cd60166fa0f4d7af7cb8e2a5",
+      "confere": true
+    },
+    {
+      "arquivo": "upload-aes-dupla-esp_a-2026-10-19.log",
+      "sha256": "bc36128ff7d6db325bdedfc59e2ec8475fcf287c9c427098778eef5a77d60ce1",
+      "confere": true
+    },
+    {
+      "arquivo": "upload-aes-dupla-esp_b-2026-10-19.log",
+      "sha256": "d183e80af5798f22de3090dcfdf16da7c87a1ff0acfe818c8651663ed8144241",
+      "confere": true
+    },
+    {
+      "arquivo": "testes-host-dupla-2026-10-19.log",
+      "sha256": "8b11d6624f5fe88bb1f18133e24491687ed3252a28471a9bded358c714d9de8a",
+      "confere": true
+    }
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "titulo": "AES-128 entre dois ESP32",
+      "objetos_editaveis": 39,
+      "notas": true,
+      "fontes": "AES_Trabalho.pdf; Codigo/evidencias/aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 2,
+      "titulo": "O que queremos mostrar?",
+      "objetos_editaveis": 25,
+      "notas": false,
+      "fontes": "AES_Trabalho.pdf, páginas 1–2"
+    },
+    {
+      "slide": 3,
+      "titulo": "Dois caminhos: UART para dados, USB para observar",
+      "objetos_editaveis": 64,
+      "notas": true,
+      "fontes": "Codigo/src/comum.cpp; Codigo/evidencias/aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 4,
+      "titulo": "Um texto também é uma sequência de números",
+      "objetos_editaveis": 24,
+      "notas": false,
+      "fontes": "AES_Trabalho.pdf, páginas 1–2"
+    },
+    {
+      "slide": 5,
+      "titulo": "A chave nasce das matrículas",
+      "objetos_editaveis": 20,
+      "notas": true,
+      "fontes": "Codigo/src/dupla.c; Codigo/src/dupla.h; evidência aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 6,
+      "titulo": "O AES precisa de blocos completos",
+      "objetos_editaveis": 77,
+      "notas": true,
+      "fontes": "Codigo/src/pkcs7_ecb.c; evidência aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 7,
+      "titulo": "No código: completar e cifrar",
+      "objetos_editaveis": 17,
+      "notas": true,
+      "fontes": "Codigo/src/pkcs7_ecb.c; Codigo/src/analise.c"
+    },
+    {
+      "slide": 8,
+      "titulo": "O AES transforma um bloco em 10 rodadas",
+      "objetos_editaveis": 32,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes128_cifrar_bloco()"
+    },
+    {
+      "slide": 9,
+      "titulo": "SubBytes: trocar cada byte por outro",
+      "objetos_editaveis": 21,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes_sub_bytes() e aes_gerar_tabelas()"
+    },
+    {
+      "slide": 10,
+      "titulo": "ShiftRows: cada linha anda um pouco",
+      "objetos_editaveis": 86,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes_shift_rows(); evidência aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 11,
+      "titulo": "MixColumns: uma coluna se mistura por dentro",
+      "objetos_editaveis": 38,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes_mix_columns() e aes_xtime()"
+    },
+    {
+      "slide": 12,
+      "titulo": "AddRoundKey: a chave entra na transformação",
+      "objetos_editaveis": 20,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes_add_round_key(); evidência aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 13,
+      "titulo": "Uma chave inicial gera as chaves das rodadas",
+      "objetos_editaveis": 23,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes128_iniciar(); evidência aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 14,
+      "titulo": "O ciclo completo aparece neste trecho",
+      "objetos_editaveis": 13,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes128_cifrar_bloco()"
+    },
+    {
+      "slide": 15,
+      "titulo": "Como B sabe onde a mensagem começa e termina?",
+      "objetos_editaveis": 24,
+      "notas": true,
+      "fontes": "Codigo/src/quadro.c; Codigo/src/transmissor.cpp; AES_Trabalho.pdf, p. 1"
+    },
+    {
+      "slide": 16,
+      "titulo": "Na placa B, o caminho acontece ao contrário",
+      "objetos_editaveis": 20,
+      "notas": true,
+      "fontes": "Codigo/src/receptor.cpp · processar_quadro(); Codigo/src/quadro.c"
+    },
+    {
+      "slide": 17,
+      "titulo": "O que a turma verá nos dois monitores",
+      "objetos_editaveis": 18,
+      "notas": true,
+      "fontes": "Codigo/evidencias/aes-dupla-a-2026-10-19.log; aes-dupla-b-2026-10-19.log"
+    },
+    {
+      "slide": 18,
+      "titulo": "Demonstração ao vivo: três passos",
+      "objetos_editaveis": 22,
+      "notas": true,
+      "fontes": "Codigo/README.md; Codigo/src/transmissor.cpp; Codigo/src/comum.cpp"
+    },
+    {
+      "slide": 19,
+      "titulo": "Como sabemos que o resultado está correto?",
+      "objetos_editaveis": 20,
+      "notas": true,
+      "fontes": "Codigo/evidencias/testes-host-dupla-2026-10-19.log; aes-dupla-2026-10-19.json"
+    },
+    {
+      "slide": 20,
+      "titulo": "Um único bit muda muitos bits do resultado",
+      "objetos_editaveis": 18,
+      "notas": true,
+      "fontes": "Codigo/evidencias/aes-dupla-2026-10-19.json · avalanche"
+    },
+    {
+      "slide": 21,
+      "titulo": "Por que o ECB revela padrões?",
+      "objetos_editaveis": 31,
+      "notas": true,
+      "fontes": "AES_Trabalho.pdf, p. 2; Codigo/src/vetores_pdf.c; logs aes-dupla"
+    },
+    {
+      "slide": 22,
+      "titulo": "Cifrar não garante que ninguém alterou os dados",
+      "objetos_editaveis": 18,
+      "notas": true,
+      "fontes": "AES_Trabalho.pdf, p. 2; Codigo/src/receptor.cpp; aes-ensaio-2026-10-19.json"
+    },
+    {
+      "slide": 23,
+      "titulo": "O que conseguimos demonstrar",
+      "objetos_editaveis": 19,
+      "notas": true,
+      "fontes": "Codigo/evidencias/aes-dupla-2026-10-19.json; Apresentacao/roteiro.md"
+    },
+    {
+      "slide": 24,
+      "titulo": "Apoio: os cinco estados do primeiro bloco",
+      "objetos_editaveis": 23,
+      "notas": true,
+      "fontes": "Codigo/evidencias/aes-dupla-2026-10-19.json · etapa3.bloco1_rodada1"
+    },
+    {
+      "slide": 25,
+      "titulo": "Apoio: a decifragem desfaz o caminho",
+      "objetos_editaveis": 12,
+      "notas": true,
+      "fontes": "Codigo/src/aes128.c · aes128_decifrar_bloco()"
+    },
+    {
+      "slide": 26,
+      "titulo": "Apoio: encontre a resposta que não chegou",
+      "objetos_editaveis": 19,
+      "notas": true,
+      "fontes": "Codigo/evidencias/uart-pingpong-2026-10-19.json; uart-pingpong-a/b-2026-10-19.log"
+    },
+    {
+      "slide": 27,
+      "titulo": "Fontes e preparação final",
+      "objetos_editaveis": 16,
+      "notas": true,
+      "fontes": "AES_Trabalho.pdf; Codigo/src; Codigo/evidencias; Apresentacao/roteiro.md"
+    }
+  ]
+}

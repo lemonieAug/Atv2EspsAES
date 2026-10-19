@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">POR DENTRO DO AES</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">O AES transforma um bloco em 10 rodadas</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">A cada rodada, substituímos, deslocamos, misturamos e combinamos com a chave.</tspan>
+</text>
+<rect x="64" y="322" width="300" height="38" rx="10" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="76" y="346">ANTES DAS RODADAS</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="31" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="388" y="356">AddRoundKey com a chave 0</tspan>
+</text>
+<rect x="64" y="414" width="340" height="218" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="64" y="414" width="7" height="218" rx="0" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="89" y="469">SubBytes</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="89" y="542">Troca cada byte</tspan>
+</text>
+<line x1="407" y1="526" x2="436" y2="526" stroke="#2165D6" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="442" y="414" width="340" height="218" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="442" y="414" width="7" height="218" rx="0" fill="#008774" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="467" y="469">ShiftRows</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="467" y="542">Desloca as linhas</tspan>
+</text>
+<line x1="785" y1="526" x2="814" y2="526" stroke="#2165D6" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="820" y="414" width="340" height="218" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="820" y="414" width="7" height="218" rx="0" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="845" y="469">MixColumns</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="845" y="542">Mistura as colunas</tspan>
+</text>
+<line x1="1163" y1="526" x2="1192" y2="526" stroke="#2165D6" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="1198" y="414" width="340" height="218" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="1198" y="414" width="7" height="218" rx="0" fill="#008774" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="1223" y="469">AddRoundKey</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="1223" y="542">Combina com a chave</tspan>
+</text>
+<rect x="64" y="710" width="1472" height="66" rx="14" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="26" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="752">Rodadas 1 a 9: as quatro etapas. Rodada 10: sem MixColumns.</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">08 / 27</tspan>
+</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">LIMITES E ESCOLHAS</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">Cifrar não garante que ninguém alterou os dados</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">ECB não autentica: um atacante pode repetir ou trocar blocos.</tspan>
+</text>
+<rect x="64" y="325" width="707" height="298" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="64" y="325" width="7" height="298" rx="0" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="89" y="380">NO TRABALHO</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="89" y="453">ECB + PKCS#7</tspan>
+<tspan x="89" y="487.72"></tspan>
+<tspan x="89" y="522.44">Ajuda a estudar a cifra e enxergar blocos</tspan>
+<tspan x="89" y="557.16">repetidos.</tspan>
+</text>
+<rect x="815" y="325" width="721" height="298" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="815" y="325" width="7" height="298" rx="0" fill="#008774" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="840" y="380">EM UM PRODUTO</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="840" y="453">Um modo autenticado, como GCM, com chave</tspan>
+<tspan x="840" y="487.72">secreta e nonce único por chave.</tspan>
+</text>
+<rect x="64" y="710" width="1472" height="66" rx="14" fill="#FFF1D9" stroke="none" stroke-width="2"/>
+<text fill="#A76A12" font-family="Noto Sans,sans-serif" font-size="26" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="752">Padding inválido pode revelar um erro. Padding válido não comprova integridade.</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">22 / 27</tspan>
+</text>
+</svg>

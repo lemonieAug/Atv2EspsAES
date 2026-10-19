@@ -17,8 +17,9 @@
 
 ## Demonstração planejada em dois monitores
 
-**Estado:** planejamento aprovado pelo usuário; implementação e execução
-PENDENTES. Esta apresentação detalha a demonstração ao vivo prevista no PDF.
+**Estado:** firmware implementado e executado nas duas placas em 19/10/2026
+([evidências](../Codigo/evidencias/aes-dupla-2026-10-19.json)); o passo a passo
+está em [README.md](README.md). Falta o ensaio da apresentação pela dupla.
 
 | Monitor USB/serial de A — transmissor | Monitor USB/serial de B — receptor |
 | --- | --- |
@@ -37,8 +38,8 @@ Sequência prevista para a aula:
 
 1. Identificar A/B e abrir seus monitores lado a lado antes do envio.
 2. Mostrar em A a mensagem da dupla e os bytes de preenchimento.
-3. Iniciar a transmissão pelo procedimento que vier a ser implementado e
-   documentado; o mecanismo de início/repetição da demonstração AES é PENDENTE.
+3. Iniciar a transmissão: A envia sozinha 3 s após o EN; para repetir, `ENVIAR`
+   no monitor de A ou o botão BOOT de A (ver [README.md](README.md)).
 4. Comparar todos os bytes do ciphertext enviado por A com os recebidos por B.
 5. Comparar o comprimento e todos os bytes da mensagem recuperada com a original.
 6. Salvar os logs dos dois lados como evidência do mesmo ensaio.
@@ -74,8 +75,8 @@ O guia deverá conter:
   ausência de dados, timeout, quadro incompleto ou padding inválido.
 
 **Aceitação do README:** executar um ensaio seguindo o guia nas duas placas e
-registrar configuração, resultado e evidências. Redação e validação do guia
-permanecem PENDENTES; esta etapa autoriza somente seu planejamento.
+registrar configuração, resultado e evidências. Redação concluída em
+[README.md](README.md) (19/10/2026); a validação em ensaio continua PENDENTE.
 
 ## Responsabilidades da dupla
 

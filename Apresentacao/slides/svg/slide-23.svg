@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">CONVERSA COM A TURMA</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">O que conseguimos demonstrar</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">O código faz as transformações e as placas recuperam a mensagem da dupla.</tspan>
+</text>
+<rect x="64" y="330" width="95" height="38" rx="10" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="76" y="354">01</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="36" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="190" y="368">A transforma o texto em bytes cifrados.</tspan>
+</text>
+<rect x="64" y="442" width="95" height="38" rx="10" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="76" y="466">02</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="36" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="190" y="480">A UART transporta o quadro binário.</tspan>
+</text>
+<rect x="64" y="554" width="95" height="38" rx="10" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="76" y="578">03</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="36" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="190" y="592">B recupera exatamente a mensagem original.</tspan>
+</text>
+<rect x="64" y="739" width="1472" height="66" rx="14" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="26" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="781">Pergunta para a turma: se dois blocos forem iguais, o que o ECB deixa aparecer?</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">23 / 27</tspan>
+</text>
+</svg>

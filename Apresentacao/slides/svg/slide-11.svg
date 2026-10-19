@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">TRANSFORMAÇÃO 3</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">MixColumns: uma coluna se mistura por dentro</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">Cada byte de saída depende dos quatro bytes daquela coluna.</tspan>
+</text>
+<rect x="94" y="324" width="130" height="70" rx="18" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="159" y="372">38</tspan>
+</text>
+<line x1="247" y1="359" x2="540" y2="492" stroke="#2165D6" stroke-width="3" />
+<rect x="94" y="412" width="130" height="70" rx="18" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="159" y="460">7b</tspan>
+</text>
+<line x1="247" y1="447" x2="540" y2="492" stroke="#2165D6" stroke-width="3" />
+<rect x="94" y="500" width="130" height="70" rx="18" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="159" y="548">fe</tspan>
+</text>
+<line x1="247" y1="535" x2="540" y2="492" stroke="#2165D6" stroke-width="3" />
+<rect x="94" y="588" width="130" height="70" rx="18" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="159" y="636">67</tspan>
+</text>
+<line x1="247" y1="623" x2="540" y2="492" stroke="#2165D6" stroke-width="3" />
+<rect x="553" y="385" width="360" height="205" rx="18" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="36" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="732" y="474">Misturar com</tspan>
+<tspan x="732" y="518.64">regras do AES</tspan>
+</text>
+<line x1="927" y1="492" x2="1230" y2="359" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1250" y="324" width="130" height="70" rx="18" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1315" y="372">64</tspan>
+</text>
+<line x1="927" y1="492" x2="1230" y2="447" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1250" y="412" width="130" height="70" rx="18" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1315" y="460">b0</tspan>
+</text>
+<line x1="927" y1="492" x2="1230" y2="535" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1250" y="500" width="130" height="70" rx="18" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1315" y="548">0d</tspan>
+</text>
+<line x1="927" y1="492" x2="1230" y2="623" stroke="#008774" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1250" y="588" width="130" height="70" rx="18" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans Mono,sans-serif" font-size="33" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1315" y="636">03</tspan>
+</text>
+<rect x="64" y="672" width="1472" height="164" rx="18" fill="#F0F4FA" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="64" y="672" width="1472" height="43" rx="14" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="82" y="699">aes128.c · multiplicação por 02</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans Mono,sans-serif" font-size="22" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="86" y="757">uint8_t aes_xtime(uint8_t a) {</tspan>
+<tspan x="86" y="784.28">  return (uint8_t)((a &lt;&lt; 1) ^ ((a &amp; 0x80) ? 0x1b : 0x00));</tspan>
+<tspan x="86" y="811.56">}</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">11 / 27</tspan>
+</text>
+</svg>

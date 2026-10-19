@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">MONTAGEM FÍSICA</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">Dois caminhos: UART para dados, USB para observar</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">TX é a saída de dados. RX é a entrada. GND dá uma referência elétrica comum.</tspan>
+</text>
+<rect x="101" y="319" width="315" height="345" rx="22" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="140" y="355" width="237" height="236" rx="15" fill="#182B45" stroke="none" stroke-width="2"/>
+<rect x="124" y="374" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="374" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="398" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="398" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="422" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="422" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="446" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="446" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="470" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="470" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="494" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="494" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="518" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="518" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="124" y="542" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="372" y="542" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="177" y="389" width="161" height="110" rx="8" fill="#CED8E3" stroke="none" stroke-width="2"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="34" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="258" y="450">ESP32</tspan>
+</text>
+<rect x="227" y="549" width="63" height="59" rx="6" fill="#C0CAD8" stroke="none" stroke-width="2"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="19" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="259" y="582">USB</tspan>
+</text>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="30" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="258.5" y="643">A · transmissor</tspan>
+</text>
+<rect x="1185" y="319" width="315" height="345" rx="22" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="1224" y="355" width="237" height="236" rx="15" fill="#182B45" stroke="none" stroke-width="2"/>
+<rect x="1208" y="374" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="374" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="398" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="398" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="422" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="422" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="446" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="446" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="470" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="470" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="494" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="494" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="518" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="518" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1208" y="542" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1456" y="542" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1261" y="389" width="161" height="110" rx="8" fill="#CED8E3" stroke="none" stroke-width="2"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="34" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1342" y="450">ESP32</tspan>
+</text>
+<rect x="1311" y="549" width="63" height="59" rx="6" fill="#C0CAD8" stroke="none" stroke-width="2"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="19" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1343" y="582">USB</tspan>
+</text>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="30" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1342.5" y="643">B · receptor</tspan>
+</text>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="28" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="455" y="368">GPIO17 / TX</tspan>
+</text>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="28" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="910" y="368">GPIO16 / RX</tspan>
+</text>
+<line x1="423" y1="405" x2="1171" y2="405" stroke="#2165D6" stroke-width="5" marker-end="url(#arr)"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="28" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="455" y="480">GPIO16 / RX</tspan>
+</text>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="28" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="910" y="480">GPIO17 / TX</tspan>
+</text>
+<line x1="1171" y1="520" x2="423" y2="520" stroke="#008774" stroke-width="4" marker-end="url(#arr)"/>
+<line x1="423" y1="612" x2="1171" y2="612" stroke="#52657B" stroke-width="4" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="695" y="652">GND comum</tspan>
+</text>
+<rect x="64" y="738" width="1472" height="66" rx="14" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="26" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="780">UART2: 115200 bps, 8N1. USB de cada placa: um monitor serial.</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">03 / 27</tspan>
+</text>
+</svg>

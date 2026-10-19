@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">CÓDIGO REAL</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">Na placa B, o caminho acontece ao contrário</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">Receber → decifrar → conferir o preenchimento → recuperar a mensagem.</tspan>
+</text>
+<rect x="64" y="326" width="1472" height="245" rx="18" fill="#F0F4FA" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="64" y="326" width="1472" height="43" rx="14" fill="#EAF1FF" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="82" y="353">receptor.cpp · dentro de processar_quadro()</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans Mono,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="86" y="417">  ecb_decifrar(&amp;g_ctx, rx.dados, claro, rx.n);</tspan>
+<tspan x="86" y="451.72">  log_blocos(&quot;DECIFRADO_COM_PKCS7&quot;, claro, tamanho);</tspan>
+<tspan x="86" y="486.44">  size_t tamanho_msg = 0;</tspan>
+<tspan x="86" y="521.16">  const pkcs7_resultado r = pkcs7_validar(claro, tamanho, &amp;tamanho_msg);</tspan>
+</text>
+<rect x="64" y="620" width="700" height="175" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="64" y="620" width="7" height="175" rx="0" fill="#008774" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="89" y="675">PADDING VÁLIDO</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="89" y="748">Remove o preenchimento e mostra o texto.</tspan>
+</text>
+<rect x="807" y="620" width="729" height="175" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="807" y="620" width="7" height="175" rx="0" fill="#A76A12" stroke="none" stroke-width="2"/>
+<text fill="#A76A12" font-family="Noto Sans,sans-serif" font-size="32" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="832" y="675">PADDING INVÁLIDO</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="832" y="748">Descarta a mensagem e registra o motivo.</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">16 / 27</tspan>
+</text>
+</svg>

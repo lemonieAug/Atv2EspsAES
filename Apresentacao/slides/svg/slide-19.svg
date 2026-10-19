@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">EVIDÊNCIAS REAIS</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">Como sabemos que o resultado está correto?</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">Conferimos valores conhecidos antes de usar a chave da dupla.</tspan>
+</text>
+<rect x="64" y="327" width="464" height="215" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="65" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="86" y="420">71 / 71</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="25" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="86" y="492">Verificações no computador</tspan>
+</text>
+<rect x="568" y="327" width="464" height="215" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="65" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="590" y="420">11 / 11</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="25" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="590" y="492">Autoteste na placa A</tspan>
+</text>
+<rect x="1072" y="327" width="464" height="215" rx="18" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="65" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="1094" y="420">11 / 11</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="25" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="1094" y="492">Autoteste na placa B</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="29" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="85" y="619">FIPS-197 C.1 · ciphertext esperado e conferido</tspan>
+</text>
+<text fill="#2165D6" font-family="Noto Sans Mono,sans-serif" font-size="40" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="85" y="688">69c4e0d86a7b0430d8cdb78070b4c55a</tspan>
+</text>
+<text fill="#A76A12" font-family="Noto Sans,sans-serif" font-size="25" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="85" y="796">Mil pacotes AES, latência AES e envio AES B→A: sem validação documentada.</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">19 / 27</tspan>
+</text>
+</svg>

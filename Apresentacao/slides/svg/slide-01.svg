@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FAFBFE" stroke="none" stroke-width="2"/>
+<rect x="64" y="62" width="7" height="31" rx="3" fill="#2165D6" stroke="none" stroke-width="2"/>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="22" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="88" y="85">TRABALHO PRÁTICO</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="52" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="64" y="176">AES-128 entre dois ESP32</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="27" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="67" y="246">Criptografia, comunicação UART e recuperação da mensagem.</tspan>
+</text>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="66" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="77" y="387">Uma mensagem.</tspan>
+<tspan x="77" y="468.84000000000003">Duas placas.</tspan>
+<tspan x="77" y="550.6800000000001">O mesmo texto no final.</tspan>
+</text>
+<rect x="1050" y="309" width="315" height="345" rx="22" fill="#FFFFFF" stroke="#D7E1EE" stroke-width="2"/>
+<rect x="1089" y="345" width="237" height="236" rx="15" fill="#182B45" stroke="none" stroke-width="2"/>
+<rect x="1073" y="364" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="364" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="388" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="388" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="412" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="412" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="436" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="436" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="460" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="460" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="484" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="484" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="508" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="508" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1073" y="532" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1321" y="532" width="21" height="10" rx="2" fill="#A76A12" stroke="none" stroke-width="2"/>
+<rect x="1126" y="379" width="161" height="110" rx="8" fill="#CED8E3" stroke="none" stroke-width="2"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="34" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1207" y="440">ESP32</tspan>
+</text>
+<rect x="1176" y="539" width="63" height="59" rx="6" fill="#C0CAD8" stroke="none" stroke-width="2"/>
+<text fill="#182B45" font-family="Noto Sans,sans-serif" font-size="19" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1208" y="572">USB</tspan>
+</text>
+<text fill="#2165D6" font-family="Noto Sans,sans-serif" font-size="30" font-weight="700" text-anchor="middle" xml:space="preserve">
+<tspan x="1207.5" y="633">A envia</tspan>
+</text>
+<ellipse cx="1031" cy="454" rx="34" ry="40" fill="#FFFFFF" stroke="#2165D6" stroke-width="3"/>
+<rect x="988" y="457" width="86" height="73" rx="12" fill="#FFFFFF" stroke="#2165D6" stroke-width="2"/>
+<ellipse cx="1031.5" cy="485.5" rx="6.5" ry="6.5" fill="#2165D6" stroke="none" stroke-width="3"/>
+<rect x="1029" y="489" width="5" height="16" rx="1" fill="#2165D6" stroke="none" stroke-width="2"/>
+<rect x="81" y="655" width="300" height="38" rx="10" fill="#E4F6F0" stroke="none" stroke-width="2"/>
+<text fill="#008774" font-family="Noto Sans,sans-serif" font-size="18" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="93" y="679">DADOS REAIS DA DUPLA</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="28" font-weight="400" text-anchor="start" xml:space="preserve">
+<tspan x="82" y="737">Augusto · 2023178440013</tspan>
+<tspan x="82" y="771.72">Gustavo · 202127844251</tspan>
+</text>
+<line x1="64" y1="848" x2="1536" y2="848" stroke="#D7E1EE" stroke-width="1" />
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="17" font-weight="700" text-anchor="start" xml:space="preserve">
+<tspan x="65" y="878">AES-128 · AUGUSTO + GUSTAVO</tspan>
+</text>
+<text fill="#52657B" font-family="Noto Sans,sans-serif" font-size="18" font-weight="400" text-anchor="end" xml:space="preserve">
+<tspan x="1536" y="877">01 / 27</tspan>
+</text>
+</svg>
